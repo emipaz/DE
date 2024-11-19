@@ -1,0 +1,1345 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Modulo_2</title>
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+        
+    </head>
+    <body>
+        <h1>Introducción a la Ingeniería de Datos - Módulo 2: Semana 2</h1>
+<h2>Descripción</h2>
+<p>En esta semana, profundizaremos en el ciclo de vida de la ingeniería de datos y sus aspectos subyacentes, que se introdujeron en la semana anterior. Aprenderemos sobre las etapas del ciclo de vida de los datos, desde la generación hasta la disponibilidad para su uso en análisis y aprendizaje automático.</p>
+<h2>Contenido de la Semana</h2>
+<h3>Ciclo de Vida de la Ingeniería de Datos</h3>
+<p>El ciclo de vida de la ingeniería de datos se compone de varias etapas clave:</p>
+<ol>
+<li><strong>Generación de Datos</strong>: </li>
+<li>
+<p>Ocurre en sistemas de origen antes de que comience el trabajo del ingeniero de datos.</p>
+</li>
+<li>
+<p><strong>Ingestión</strong>: </p>
+</li>
+<li>
+<p>Proceso de obtener datos crudos de diversas fuentes.</p>
+</li>
+<li>
+<p><strong>Transformación</strong>: </p>
+</li>
+<li>
+<p>Conversión de datos crudos en información útil.</p>
+</li>
+<li>
+<p><strong>Almacenamiento</strong>: </p>
+</li>
+<li>
+<p>Guardar los datos transformados para su uso posterior.</p>
+</li>
+<li>
+<p><strong>Servir Datos</strong>: </p>
+</li>
+<li>Hacer que los datos estén disponibles para casos de uso como análisis y aprendizaje automático.</li>
+</ol>
+<h3>Aspectos Subyacentes del Ciclo de Vida</h3>
+<p>En la segunda lección de esta semana, exploraremos los siguientes aspectos subyacentes:</p>
+<ul>
+<li><strong>Seguridad</strong></li>
+<li><strong>Gestión de Datos</strong></li>
+<li><strong>Data Ops</strong></li>
+<li><strong>Arquitectura de Datos</strong></li>
+<li><strong>Orquestación</strong></li>
+<li><strong>Ingeniería de Software</strong></li>
+</ul>
+<h3>Enfoque de Aprendizaje</h3>
+<p>Es importante destacar que el enfoque de esta semana, al igual que el de la semana anterior, se centra más en un marco mental de alto nivel para la ingeniería de datos que en la construcción real de infraestructura de datos. Este marco mental es crucial para el éxito en todos los aspectos del trabajo como ingeniero de datos.</p>
+<h3>Actividad Práctica</h3>
+<p>Al final de la semana, aplicaremos este marco mental en la práctica utilizando AWS Cloud. En la actividad de laboratorio, trabajarás en tu primer pipeline de datos en la nube de extremo a extremo.</p>
+<h2>Conclusión</h2>
+<p>Únete a mí en el próximo video para comenzar a explorar la generación de datos y los sistemas de origen.</p>
+<hr />
+<h1>Introducción a la Generación de Datos en Sistemas de Origen</h1>
+<p>La primera etapa del ciclo de vida de la ingeniería de datos es la generación de datos y los sistemas de origen. Como ingeniero de datos, tu rol implica consumir datos de diversas fuentes. A continuación, se presentan los conceptos clave sobre la generación de datos en sistemas de origen.</p>
+<h2>Fuentes Comunes de Datos</h2>
+<h3>1. Bases de Datos</h3>
+<p>Las bases de datos son uno de los sistemas de origen más comunes. Pueden ser:
+- <strong>Bases de datos relacionales</strong>: Representadas como tablas de datos relacionados.
+- <strong>Sistemas NoSQL</strong>: Incluyen bases de datos de clave-valor, almacenes de documentos, entre otros.</p>
+<h3>2. Archivos</h3>
+<p>Los datos también pueden ser consumidos en forma de archivos, tales como:
+- Archivos de texto
+- Archivos de audio (por ejemplo, MP3)
+- Archivos de video
+- Otros tipos de archivos</p>
+<h3>3. APIs (Interfaz de Programación de Aplicaciones)</h3>
+<p>Las APIs permiten realizar solicitudes web para obtener datos en formatos específicos, como XML o JSON.</p>
+<h3>4. Plataformas de Compartición de Datos</h3>
+<p>Estas plataformas permiten a las organizaciones compartir datos internamente o con terceros.</p>
+<h3>5. Dispositivos IoT (Internet de las Cosas)</h3>
+<p>Los dispositivos IoT son cada vez más comunes y pueden transmitir datos en tiempo real a una base de datos, accesibles a través de APIs o plataformas de compartición de datos.</p>
+<h2>Desafíos en la Generación de Datos</h2>
+<p>En un mundo ideal, los sistemas de origen entregarían datos de manera consistente y oportuna. Sin embargo, en la realidad, estos sistemas pueden ser impredecibles. Algunos de los problemas comunes incluyen:
+- Caídas del sistema
+- Cambios en el formato o esquema de los datos
+- Cambios en los datos mismos</p>
+<h3>Ejemplo de Desafío</h3>
+<p>Un ingeniero de datos recuerda un incidente en el que un equipo de ingenieros de software reorganizó las columnas de una base de datos sin notificarlo, lo que interrumpió los flujos de trabajo de datos downstream.</p>
+<h2>Importancia de la Colaboración</h2>
+<p>Es esencial comprender cómo están configurados los sistemas de origen y qué cambios se pueden esperar en los datos. Para tener éxito, es recomendable:
+- Trabajar directamente con los propietarios de los sistemas de origen.
+- Entender cómo generan datos y cómo estos pueden cambiar con el tiempo.
+- Evaluar cómo esos cambios impactarán en los sistemas downstream que construyes.</p>
+<p>Desarrollar buenas relaciones de trabajo con los interesados de los sistemas de origen es una parte crucial de la ingeniería de datos.</p>
+<h2>Conclusión</h2>
+<p>La generación de datos en sistemas de origen es un aspecto fundamental en la ingeniería de datos. En el próximo video, se explorará la fase de ingestión de datos desde estos sistemas de origen.</p>
+<hr />
+<h3>Tabla Resumen de Sistemas de Origen</h3>
+<table>
+<thead>
+<tr>
+<th>Tipo de Sistema</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bases de Datos</td>
+<td>Relacionales y NoSQL</td>
+</tr>
+<tr>
+<td>Archivos</td>
+<td>Texto, audio, video, etc.</td>
+</tr>
+<tr>
+<td>APIs</td>
+<td>Solicitudes web para obtener datos</td>
+</tr>
+<tr>
+<td>Plataformas de Datos</td>
+<td>Compartición de datos entre organizaciones</td>
+</tr>
+<tr>
+<td>Dispositivos IoT</td>
+<td>Transmisión de datos en tiempo real</td>
+</tr>
+</tbody>
+</table>
+<h3>Lista de Desafíos Comunes</h3>
+<ul>
+<li>Caídas del sistema</li>
+<li>Cambios en el formato de datos</li>
+<li>Cambios en el esquema de datos</li>
+<li>Cambios en los datos mismos</li>
+</ul>
+<p>¡Únete al próximo video para aprender sobre la ingestión de datos desde sistemas de origen!</p>
+<hr />
+<h1>Introducción a la Ingestión de Datos</h1>
+<p>La ingestión de datos es un paso fundamental en la ingeniería de datos, donde se mueve información cruda desde sistemas de origen hacia un pipeline de datos para su posterior procesamiento. Este proceso puede representar uno de los mayores cuellos de botella en el ciclo de vida de la ingeniería de datos.</p>
+<h2>Conceptos Clave</h2>
+<ol>
+<li><strong>Sistemas de Origen</strong>: Entender cómo funcionan y generan datos es crucial para evitar problemas comunes en la fase de ingestión.</li>
+<li><strong>Frecuencia de Ingestión</strong>: Decidir con qué frecuencia se debe mover la información desde los sistemas de origen hacia el pipeline de datos es una decisión crítica. Las opciones incluyen:</li>
+<li><strong>Ingestión por Lotes</strong>: Procesar datos en intervalos de tiempo predefinidos (por ejemplo, cada hora o cada día).</li>
+<li><strong>Ingestión en Streaming</strong>: Procesar datos en tiempo real, haciendo que estén disponibles para sistemas posteriores casi inmediatamente.</li>
+</ol>
+<h2>Comparación entre Ingestión por Lotes y Streaming</h2>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Ingestión por Lotes</th>
+<th>Ingestión en Streaming</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frecuencia de Ingestión</td>
+<td>Periódica (ej. diaria, horaria)</td>
+<td>Continua, en tiempo real</td>
+</tr>
+<tr>
+<td>Herramientas</td>
+<td>Procesamiento por lotes</td>
+<td>Plataformas de streaming de eventos</td>
+</tr>
+<tr>
+<td>Casos de Uso</td>
+<td>Análisis, reportes semanales</td>
+<td>Detección de anomalías en tiempo real</td>
+</tr>
+<tr>
+<td>Costos</td>
+<td>Generalmente menor en tiempo y recursos</td>
+<td>Puede ser más costoso en mantenimiento</td>
+</tr>
+<tr>
+<td>Ejemplo de Uso</td>
+<td>Modelos de trading</td>
+<td>Monitoreo en tiempo real</td>
+</tr>
+</tbody>
+</table>
+<h2>Consideraciones para la Ingestión</h2>
+<ul>
+<li><strong>Costo y Mantenimiento</strong>: Evaluar si la ingestión en streaming es más costosa en términos de tiempo, dinero y mantenimiento en comparación con la ingestión por lotes.</li>
+<li><strong>Impacto en el Pipeline de Datos</strong>: Analizar cómo la elección entre ingestión por lotes y streaming influye en el resto del pipeline de datos.</li>
+<li><strong>Captura de Datos Cambiantes (CDC)</strong>: Utilizar CDC para activar procesos de ingestión basados en cambios en los datos del sistema de origen.</li>
+<li><strong>Enfoque de Ingestión</strong>: Decidir entre un enfoque de "push" (el sistema de origen envía datos) o "pull" (se extraen datos del sistema de origen).</li>
+</ul>
+<h2>Recomendaciones</h2>
+<ul>
+<li>La ingestión por lotes es adecuada para muchos casos de uso comunes, como el trading de modelos y reportes semanales.</li>
+<li>Adoptar un sistema de ingestión en streaming solo después de identificar un caso de negocio que justifique sus desventajas en comparación con la ingestión por lotes.</li>
+<li>La ingestión en streaming y por lotes a menudo coexisten en un pipeline de datos, donde se eligen los límites entre ambos.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>La ingestión de datos es un componente esencial en la ingeniería de datos, y la elección entre ingestión por lotes y streaming debe basarse en un análisis cuidadoso de los requisitos del negocio y las características de los datos. En el próximo video, exploraremos el almacenamiento de datos, que es parte integral de cada etapa en el ciclo de vida de la ingeniería de datos.</p>
+<hr />
+<h1>Introducción a la Ingeniería de Datos - Módulo 2: Almacenamiento</h1>
+<h2>Descripción</h2>
+<p>En este módulo, exploraremos cómo interactuamos con los sistemas de almacenamiento de datos en nuestra vida diaria y cómo estos conceptos son fundamentales para el trabajo de un ingeniero de datos. Discutiremos los diferentes tipos de almacenamiento, sus características, y cómo elegir las soluciones adecuadas para nuestras arquitecturas.</p>
+<h2>Interacción Diaria con Sistemas de Almacenamiento</h2>
+<ul>
+<li><strong>Dispositivos Comunes</strong>: </li>
+<li>Laptop: Creación, eliminación y movimiento de archivos.</li>
+<li>Smartphone: Envío y recepción de mensajes, interacción con aplicaciones.</li>
+<li><strong>Tipos de Almacenamiento</strong>:</li>
+<li><strong>Discos Duros y SSD</strong>: Almacenamiento de archivos.</li>
+<li><strong>RAM</strong>: Almacenamiento temporal para acceso rápido.</li>
+</ul>
+<h2>Componentes de Almacenamiento</h2>
+<table>
+<thead>
+<tr>
+<th>Tipo de Almacenamiento</th>
+<th>Velocidad de Lectura/Escritura</th>
+<th>Costo Relativo</th>
+<th>Volatilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Discos Magnéticos</td>
+<td>Lenta</td>
+<td>Bajo</td>
+<td>No</td>
+</tr>
+<tr>
+<td>SSD</td>
+<td>Rápida</td>
+<td>Moderado</td>
+<td>No</td>
+</tr>
+<tr>
+<td>RAM</td>
+<td>Muy Rápida</td>
+<td>Alto</td>
+<td>Sí</td>
+</tr>
+</tbody>
+</table>
+<h3>Comparación de Almacenamiento</h3>
+<ul>
+<li><strong>Discos Magnéticos</strong>: </li>
+<li>Aún son fundamentales en sistemas modernos debido a su bajo costo (2-3 veces más baratos que SSD).</li>
+<li><strong>SSD</strong>: </li>
+<li>Ofrecen velocidades más rápidas, pero son más costosos.</li>
+<li><strong>RAM</strong>: </li>
+<li>Proporciona acceso rápido, pero es volátil y costosa (30-50 veces más que SSD).</li>
+</ul>
+<h2>Sistemas de Almacenamiento Modernos</h2>
+<ul>
+<li><strong>Almacenamiento en la Nube</strong>: Distribuido en múltiples centros de datos.</li>
+<li><strong>Componentes Críticos</strong>:</li>
+<li>Redes</li>
+<li>CPU</li>
+<li>Serialización</li>
+<li>Compresión</li>
+<li>Caché</li>
+</ul>
+<h2>Abstracciones de Almacenamiento</h2>
+<ul>
+<li><strong>Tipos de Abstracciones</strong>:</li>
+<li><strong>Data Warehouse</strong>: Almacenamiento estructurado.</li>
+<li><strong>Data Lake</strong>: Almacenamiento de datos en bruto.</li>
+<li><strong>Data Lake House</strong>: Combinación de ambos conceptos.</li>
+</ul>
+<h3>Jerarquía de Almacenamiento</h3>
+<ol>
+<li><strong>Ingredientes Crudos</strong>: Discos, RAM, SSD, redes, serialización.</li>
+<li><strong>Sistemas de Almacenamiento</strong>: Bases de datos, almacenamiento de objetos.</li>
+<li><strong>Abstracciones de Almacenamiento</strong>: Herramientas que combinan sistemas para satisfacer necesidades de almacenamiento.</li>
+</ol>
+<h2>Importancia del Conocimiento en Almacenamiento</h2>
+<ul>
+<li>Comprender los detalles de los sistemas de almacenamiento es crucial para evitar problemas de rendimiento y costos.</li>
+<li>Ejemplo de error: Uso de inserciones de fila directa en lugar de un enfoque de carga masiva, resultando en un alto costo y bajo rendimiento.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Como ingeniero de datos, es esencial ser consciente de las soluciones de almacenamiento y sus implicaciones. A lo largo de este curso, profundizaremos en los detalles de diversas soluciones de almacenamiento y su impacto en el ciclo de vida de la ingeniería de datos.</p>
+<h2>Próximo Tema</h2>
+<p>En el siguiente módulo, abordaremos la siguiente etapa del ciclo de vida de la ingeniería de datos: la transformación de datos.</p>
+<hr />
+<h1>Introducción a la Ingeniería de Datos - Módulo 2: Consultas, Modelado y Transformación</h1>
+<h2>Descripción</h2>
+<p>En este módulo, se explora la etapa de transformación del ciclo de vida de la ingeniería de datos, donde los ingenieros de datos añaden valor al convertir datos en bruto en información útil para los usuarios finales. Se abordan tres componentes clave: consultas, modelado y transformación.</p>
+<h2>Contenido</h2>
+<h3>1. La Etapa de Transformación</h3>
+<p>La transformación es el proceso de convertir datos en bruto en información útil. Esto es crucial para los analistas de negocios y científicos de datos, quienes dependen de datos bien estructurados para realizar análisis y reportes.</p>
+<h3>2. Componentes de la Transformación</h3>
+<p>La transformación se compone de tres partes:</p>
+<ul>
+<li><strong>Consultas</strong></li>
+<li><strong>Modelado</strong></li>
+<li><strong>Transformación</strong></li>
+</ul>
+<h4>2.1 Consultas</h4>
+<p>Las consultas son solicitudes para leer registros de una base de datos o sistema de almacenamiento. Se utiliza principalmente SQL (Structured Query Language) para realizar estas consultas. </p>
+<p><strong>Ejemplo de elementos en una consulta:</strong>
+- Limpieza de datos
+- Uniones (joins)
+- Agregaciones</p>
+<p><strong>Consecuencias de consultas mal escritas:</strong>
+- Impacto en el rendimiento de la base de datos
+- "Explosión de filas" (row explosion)
+- Retrasos en reportes y análisis</p>
+<h4>2.2 Modelado de Datos</h4>
+<p>El modelado de datos implica elegir una estructura coherente para los datos, reflejando las relaciones con el mundo real. Es esencial para hacer que los datos sean útiles para el negocio.</p>
+<p><strong>Ejemplo de modelado:</strong>
+- Normalización y desnormalización de datos para facilitar el acceso a los analistas.</p>
+<p><strong>Aspectos a considerar:</strong>
+- Definiciones y terminología de los stakeholders
+- Objetivos comerciales relacionados con los datos</p>
+<h4>2.3 Transformación de Datos</h4>
+<p>La transformación de datos implica manipular y enriquecer los datos para su uso posterior. Esto puede incluir:</p>
+<ul>
+<li>Adición de marcas de tiempo</li>
+<li>Transformaciones durante la ingestión</li>
+<li>Normalización y agregación para reportes</li>
+</ul>
+<h3>3. Ejercicios Prácticos</h3>
+<p>A lo largo del curso, se realizarán ejercicios prácticos que involucrarán consultas, modelado y transformación de datos.</p>
+<h2>Conclusión</h2>
+<p>La etapa de transformación es fundamental en el ciclo de vida de la ingeniería de datos, y comprender sus componentes es esencial para proporcionar datos útiles a los usuarios finales. En el próximo video, se abordará la etapa final del ciclo de vida de la ingeniería de datos: la entrega de datos para casos de uso posteriores.</p>
+<hr />
+<h1>Introducción a la Ingeniería de Datos - Módulo 2: Servir Datos</h1>
+<h2>Descripción</h2>
+<p>En esta lección, exploramos la etapa final del ciclo de vida de la ingeniería de datos: servir datos. Esta fase no solo implica hacer que los datos estén disponibles, sino que también permite a los interesados extraer valor comercial de ellos. A continuación, se presentan los conceptos clave y los casos de uso asociados con esta etapa.</p>
+<h2>Contenido</h2>
+<h3>Fases del Ciclo de Vida de la Ingeniería de Datos</h3>
+<ol>
+<li><strong>Ingesta de Datos</strong></li>
+<li><strong>Transformación de Datos</strong></li>
+<li><strong>Almacenamiento de Datos</strong></li>
+<li><strong>Servir Datos</strong></li>
+</ol>
+<h3>Casos de Uso para Servir Datos</h3>
+<p>Los datos tienen valor cuando se utilizan para casos de uso prácticos, como:</p>
+<ul>
+<li><strong>Analítica</strong></li>
+<li><strong>Aprendizaje Automático</strong></li>
+<li><strong>Reverse ETL</strong></li>
+</ul>
+<h4>1. Analítica</h4>
+<p>La analítica implica identificar insights y patrones clave dentro de los datos. Los ingenieros de datos sirven datos que alimentan las siguientes formas comunes de analítica:</p>
+<ul>
+<li><strong>Inteligencia de Negocios (BI)</strong>: </li>
+<li>Los analistas exploran datos históricos y actuales para descubrir insights.</li>
+<li>Se presentan en forma de informes o dashboards.</li>
+<li>
+<p>Ejemplo: Monitoreo de campañas de marketing y métricas de experiencia del cliente.</p>
+</li>
+<li>
+<p><strong>Analítica Operativa</strong>:</p>
+</li>
+<li>Monitoreo de datos en tiempo real para acciones inmediatas.</li>
+<li>
+<p>Ejemplo: Un equipo de e-commerce que necesita saber si su sitio web está caído.</p>
+</li>
+<li>
+<p><strong>Analítica Embebida</strong>:</p>
+</li>
+<li>Aplicaciones que muestran datos históricos y en tiempo real a los usuarios.</li>
+<li>Ejemplo: Dashboards de bancos o aplicaciones de termostatos inteligentes.</li>
+</ul>
+<h4>2. Aprendizaje Automático</h4>
+<p>El rol del ingeniero de datos puede incluir servir datos para:</p>
+<ul>
+<li><strong>Almacenes de características</strong>: Facilitan el entrenamiento de modelos.</li>
+<li><strong>Inferencia en tiempo real</strong>: Proveer datos para decisiones instantáneas.</li>
+<li><strong>Sistemas de metadatos y catalogación</strong>: Rastrean la historia y linaje de los datos.</li>
+</ul>
+<h4>3. Reverse ETL</h4>
+<p>Este proceso implica tomar datos transformados y alimentarlos de nuevo en sistemas de origen. Ejemplo:</p>
+<ul>
+<li>Datos de un sistema de gestión de relaciones con clientes (CRM) se transforman y almacenan en un data warehouse.</li>
+<li>Los resultados de modelos de análisis se devuelven al CRM para mejorar la información del cliente.</li>
+</ul>
+<h3>Resumen</h3>
+<p>Hemos revisado las fases del ciclo de vida de la ingeniería de datos y los diferentes casos de uso para servir datos. En la próxima lección, profundizaremos en los aspectos subyacentes de cada fase del ciclo de vida.</p>
+<h2>Tabla Resumen de Casos de Uso</h2>
+<table>
+<thead>
+<tr>
+<th>Caso de Uso</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inteligencia de Negocios (BI)</td>
+<td>Análisis de datos históricos y actuales para decisiones estratégicas.</td>
+</tr>
+<tr>
+<td>Analítica Operativa</td>
+<td>Monitoreo de datos en tiempo real para acciones inmediatas.</td>
+</tr>
+<tr>
+<td>Analítica Embebida</td>
+<td>Aplicaciones que muestran datos a los usuarios.</td>
+</tr>
+<tr>
+<td>Aprendizaje Automático</td>
+<td>Servir datos para entrenamiento de modelos y decisiones en tiempo real.</td>
+</tr>
+<tr>
+<td>Reverse ETL</td>
+<td>Alimentar datos transformados de vuelta a sistemas de origen.</td>
+</tr>
+</tbody>
+</table>
+<h2>Conclusión</h2>
+<p>La etapa de servir datos es crucial para maximizar el valor de los datos en diversas aplicaciones. A medida que avanzamos en el curso, exploraremos más a fondo cada uno de estos casos de uso y sus implicaciones en la ingeniería de datos.</p>
+<hr />
+<h1>Introducción a la Ingeniería de Datos: Módulo 2</h1>
+<h2>Descripción</h2>
+<p>En este módulo, se explora el ciclo de vida de la ingeniería de datos, que incluye la ingesta, transformación, almacenamiento y entrega de datos a los usuarios finales. La ingeniería de datos ha evolucionado significativamente en la última década, ampliando su alcance más allá de la tecnología.</p>
+<h2>Evolución de la Ingeniería de Datos</h2>
+<ul>
+<li><strong>Ciclo de Vida de la Ingeniería de Datos</strong>: Ingesta, transformación, almacenamiento y entrega de datos.</li>
+<li><strong>Madurez del Campo</strong>: Hace diez años, el enfoque principal de un ingeniero de datos era la capa tecnológica. Hoy en día, el campo se ha expandido para incluir prácticas empresariales tradicionales y nuevas.</li>
+</ul>
+<h2>Prácticas Clave en Ingeniería de Datos</h2>
+<p>Las prácticas que se aplican a lo largo del ciclo de vida de la ingeniería de datos se conocen como "corrientes subyacentes". Estas incluyen:</p>
+<table>
+<thead>
+<tr>
+<th>Corrientes Subyacentes</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Seguridad</strong></td>
+<td>Protección de datos y cumplimiento normativo.</td>
+</tr>
+<tr>
+<td><strong>Gestión de Datos</strong></td>
+<td>Estrategias para la organización y calidad de datos.</td>
+</tr>
+<tr>
+<td><strong>DataOps</strong></td>
+<td>Prácticas para mejorar la colaboración y la eficiencia en el manejo de datos.</td>
+</tr>
+<tr>
+<td><strong>Arquitectura de Datos</strong></td>
+<td>Diseño y estructura de sistemas de datos.</td>
+</tr>
+<tr>
+<td><strong>Orquestación</strong></td>
+<td>Coordinación de procesos y flujos de trabajo.</td>
+</tr>
+<tr>
+<td><strong>Ingeniería de Software</strong></td>
+<td>Desarrollo y mantenimiento de software relacionado con datos.</td>
+</tr>
+</tbody>
+</table>
+<h2>Próximos Pasos</h2>
+<p>En los próximos videos, se examinarán más a fondo cada una de estas corrientes subyacentes. Posteriormente, se explorará cómo el ciclo de vida de la ingeniería de datos y estas corrientes se manifiestan en la práctica, específicamente en la nube de AWS.</p>
+<p>¡Comencemos!</p>
+<hr />
+<h1>Introducción a la Seguridad en la Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los conceptos clave sobre la seguridad en la ingeniería de datos, basados en la transcripción del video del módulo 2 del curso "Introducción a la Ingeniería de Datos". Se abordan principios fundamentales, mejores prácticas y la importancia de la cultura de seguridad en las organizaciones.</p>
+<h2>Principios Fundamentales de Seguridad</h2>
+<ol>
+<li><strong>Confianza en el Manejo de Datos Sensibles</strong></li>
+<li>Los ingenieros de datos son responsables de proteger información personal y empresarial sensible.</li>
+<li>
+<p>La confianza de los propietarios de datos es crucial.</p>
+</li>
+<li>
+<p><strong>Principio de Mínimos Privilegios</strong></p>
+</li>
+<li>Proporcionar acceso solo a los datos y recursos necesarios para realizar tareas específicas.</li>
+<li>
+<p>Aplicar este principio tanto a otros usuarios como a uno mismo.</p>
+</li>
+<li>
+<p><strong>Sensibilidad de los Datos</strong></p>
+</li>
+<li>Hacer visible la información sensible solo cuando sea absolutamente necesario.</li>
+<li>
+<p>Evitar la ingestión de datos sensibles sin un propósito claro.</p>
+</li>
+<li>
+<p><strong>Seguridad en la Nube</strong></p>
+</li>
+<li>Comprender la gestión de identidad y acceso (IAM), métodos de cifrado y protocolos de red.</li>
+</ol>
+<h2>Mejores Prácticas</h2>
+<ul>
+<li><strong>Adoptar una Mentalidad Defensiva</strong></li>
+<li>Ser cauteloso al proporcionar credenciales o datos sensibles.</li>
+<li>
+<p>Diseñar sistemas de almacenamiento y tuberías de datos considerando posibles escenarios de ataque.</p>
+</li>
+<li>
+<p><strong>Prevención de Filtraciones de Datos</strong></p>
+</li>
+<li>
+<p>La mayoría de las filtraciones de datos son causadas por errores humanos, como compartir contraseñas de manera insegura o caer en ataques de phishing.</p>
+</li>
+<li>
+<p><strong>Cultura de Seguridad Organizacional</strong></p>
+</li>
+<li>La seguridad debe ser una prioridad compartida por todos los miembros de la organización.</li>
+<li>Evitar el "teatro de seguridad", donde se cumplen formalidades sin una verdadera cultura de seguridad.</li>
+</ul>
+<h2>Tabla de Comparación de Principios de Seguridad</h2>
+<table>
+<thead>
+<tr>
+<th>Principio</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mínimos Privilegios</td>
+<td>Acceso limitado a datos y recursos necesarios.</td>
+</tr>
+<tr>
+<td>Sensibilidad de Datos</td>
+<td>Visibilidad de información sensible solo cuando es necesario.</td>
+</tr>
+<tr>
+<td>Prevención de Filtraciones</td>
+<td>Conciencia sobre errores humanos y ataques comunes.</td>
+</tr>
+<tr>
+<td>Cultura de Seguridad</td>
+<td>Compromiso organizacional con la seguridad de datos.</td>
+</tr>
+</tbody>
+</table>
+<h2>Conclusión</h2>
+<p>La seguridad en la ingeniería de datos no solo se basa en principios y protocolos, sino también en la responsabilidad individual y colectiva. A medida que avanzamos en el curso, se explorarán más aspectos de la seguridad en la arquitectura de datos.</p>
+<h2>Próximo Tema</h2>
+<p>En el próximo video, se abordará la gestión de datos como un componente clave en el ciclo de vida de la ingeniería de datos.</p>
+<hr />
+<h1>Introducción a la Gestión de Datos</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los conceptos clave sobre la gestión de datos, su importancia y las áreas de conocimiento que la componen, según el módulo 2 del curso de Introducción a la Ingeniería de Datos. Se hace énfasis en el papel del ingeniero de datos y la relevancia de la calidad de los datos.</p>
+<h2>Importancia de la Gestión de Datos</h2>
+<p>La gestión de datos es crucial para maximizar el valor de los activos de datos en una organización. La <strong>Data Management Association International (DAMA)</strong> es una organización dedicada a proporcionar recursos para una gestión de datos efectiva. Su publicación principal, el <strong>Data Management Book of Knowledge (DMBOK)</strong>, es un recurso valioso para entender las prácticas de gestión de datos.</p>
+<h3>Definición de Gestión de Datos</h3>
+<p>Según el DMBOK, la gestión de datos se define como:</p>
+<blockquote>
+<p>"El desarrollo, ejecución y supervisión de planes, programas y prácticas que entregan, controlan, protegen y mejoran el valor de los activos de datos e información a lo largo de su ciclo de vida."</p>
+</blockquote>
+<h2>Áreas de Conocimiento en Gestión de Datos</h2>
+<p>La gestión de datos abarca múltiples facetas y disciplinas. El DMBOK identifica <strong>11 áreas de conocimiento</strong> en gestión de datos, que incluyen:</p>
+<table>
+<thead>
+<tr>
+<th>Área de Conocimiento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gobernanza de Datos</td>
+</tr>
+<tr>
+<td>Modelado de Datos</td>
+</tr>
+<tr>
+<td>Integración de Datos</td>
+</tr>
+<tr>
+<td>Interoperabilidad</td>
+</tr>
+<tr>
+<td>Metadatos</td>
+</tr>
+<tr>
+<td>Seguridad</td>
+</tr>
+<tr>
+<td>Calidad de Datos</td>
+</tr>
+<tr>
+<td>Usabilidad</td>
+</tr>
+<tr>
+<td>Gestión de Datos Maestros</td>
+</tr>
+<tr>
+<td>Almacenamiento de Datos</td>
+</tr>
+<tr>
+<td>Arquitectura de Datos</td>
+</tr>
+</tbody>
+</table>
+<h3>Gobernanza de Datos</h3>
+<p>La gobernanza de datos es una función de gestión de datos que asegura la calidad, integridad, seguridad y usabilidad de los datos recolectados en una organización. Esta área interactúa con otras áreas de conocimiento y es fundamental para el éxito de la gestión de datos.</p>
+<h2>Calidad de los Datos</h2>
+<p>La calidad de los datos es un tema profundo y matizado, pero se puede resumir en los siguientes puntos clave:</p>
+<ul>
+<li><strong>Precisión</strong>: Los datos deben ser correctos y reflejar la realidad.</li>
+<li><strong>Completitud</strong>: Los datos deben estar completos y no faltar información relevante.</li>
+<li><strong>Descubribilidad</strong>: Los datos deben ser fáciles de encontrar y acceder.</li>
+<li><strong>Disponibilidad</strong>: Los datos deben estar disponibles en el momento adecuado.</li>
+</ul>
+<p>Los datos de alta calidad son herramientas poderosas para la toma de decisiones y aportan un gran valor a la organización. En contraste, los datos de baja calidad pueden llevar a decisiones erróneas y afectar negativamente a la organización.</p>
+<h2>Conclusión</h2>
+<p>La gestión de datos es un aspecto esencial en la ingeniería de datos. A lo largo del curso, se explorarán más a fondo las áreas de conocimiento y se aprenderá cómo monitorear y asegurar la calidad de los datos en los pipelines de datos. En el próximo video, se abordará la arquitectura de datos y su relación con el ciclo de vida de los datos.</p>
+<hr />
+<h1>Introducción a la Arquitectura de Datos</h1>
+<p>La arquitectura de datos puede considerarse como un mapa o plano para los sistemas de datos de una organización. En este módulo, exploraremos los principios clave que guían el diseño de sistemas de datos efectivos y cómo estos pueden adaptarse a las necesidades cambiantes de una empresa.</p>
+<h2>Definición de Arquitectura de Datos</h2>
+<p>Según el libro <em>Fundamentals of Data Engineering</em> de Matt Housley y el autor de este curso, la arquitectura de datos se define como:</p>
+<blockquote>
+<p>"El diseño de sistemas para apoyar las necesidades de datos en evolución de una empresa, logrado a través de decisiones flexibles y reversibles alcanzadas mediante una cuidadosa evaluación de compensaciones."</p>
+</blockquote>
+<h3>Desglose de la Definición</h3>
+<ol>
+<li>
+<p><strong>Evolución de las Necesidades de Datos</strong>: La arquitectura de datos debe soportar no solo las necesidades actuales, sino también las futuras. Esto implica que el diseño es un esfuerzo continuo.</p>
+</li>
+<li>
+<p><strong>Decisiones Flexibles y Reversibles</strong>: Las decisiones tomadas deben permitir adaptaciones a medida que las necesidades de la organización cambian.</p>
+</li>
+<li>
+<p><strong>Evaluación de Compensaciones</strong>: Las decisiones de diseño deben considerar factores como rendimiento, costo y escalabilidad.</p>
+</li>
+</ol>
+<h2>Principios de una Buena Arquitectura de Datos</h2>
+<p>A continuación, se presentan los principios fundamentales que se revisarán a lo largo del curso:</p>
+<table>
+<thead>
+<tr>
+<th>Principio</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Elegir componentes comunes sabiamente</strong></td>
+<td>Seleccionar componentes que ofrezcan las características adecuadas para proyectos individuales y faciliten la colaboración entre equipos.</td>
+</tr>
+<tr>
+<td><strong>2. Planificar para el fracaso</strong></td>
+<td>Diseñar la arquitectura no solo para el funcionamiento óptimo, sino también para situaciones de fallo.</td>
+</tr>
+<tr>
+<td><strong>3. Arquitectura para la escalabilidad</strong></td>
+<td>Crear sistemas que puedan aumentar o disminuir su capacidad según la demanda.</td>
+</tr>
+<tr>
+<td><strong>4. La arquitectura es liderazgo</strong></td>
+<td>Pensar como un arquitecto y buscar mentoría para liderar y guiar a otros miembros del equipo.</td>
+</tr>
+<tr>
+<td><strong>5. Siempre estar arquitectando</strong></td>
+<td>La arquitectura no es un evento único; se debe evaluar y ajustar continuamente.</td>
+</tr>
+<tr>
+<td><strong>6. Construir sistemas desacoplados</strong></td>
+<td>Crear sistemas compuestos por componentes individuales que se puedan intercambiar fácilmente.</td>
+</tr>
+<tr>
+<td><strong>7. Tomar decisiones reversibles</strong></td>
+<td>Permitir cambios en la arquitectura sin necesidad de una reestructuración completa.</td>
+</tr>
+<tr>
+<td><strong>8. Priorizar la seguridad</strong></td>
+<td>Integrar principios de seguridad en el diseño, como el principio de menor privilegio y el principio de confianza cero.</td>
+</tr>
+<tr>
+<td><strong>9. Adoptar FinOps</strong></td>
+<td>Optimizar los sistemas para costos y generación de ingresos en un entorno de nube, donde los sistemas son escalables y de pago por uso.</td>
+</tr>
+</tbody>
+</table>
+<h2>Conclusión</h2>
+<p>Estos principios son fundamentales para desarrollar una arquitectura de datos robusta y adaptable. En las próximas sesiones, profundizaremos en cada uno de estos principios y su aplicación práctica en la ingeniería de datos. </p>
+<p>¡Únete al próximo video donde exploraremos el concepto de DataOps!</p>
+<hr />
+<h1>Introducción a DataOps</h1>
+<h2>Descripción</h2>
+<p>DataOps es un enfoque emergente en la ingeniería de datos que busca mejorar la calidad y el proceso de desarrollo de productos de datos, similar a cómo DevOps lo hace en el desarrollo de software. Este documento resume los conceptos clave de DataOps, sus pilares fundamentales y la importancia de la automatización, la observabilidad y la respuesta a incidentes en la gestión de datos.</p>
+<h2>Orígenes de DataOps</h2>
+<p>DataOps se inspira en el marco de DevOps, que surgió alrededor de 2007 para eliminar los silos entre los equipos de desarrollo y despliegue de software. Al igual que DevOps, DataOps busca:</p>
+<ul>
+<li>Eliminar cuellos de botella.</li>
+<li>Reducir desperdicios.</li>
+<li>Identificar problemas rápidamente.</li>
+<li>Iterar de manera rápida.</li>
+</ul>
+<h2>Pilares de DataOps</h2>
+<p>DataOps se basa en tres pilares fundamentales:</p>
+<table>
+<thead>
+<tr>
+<th>Pilar</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Automatización</strong></td>
+<td>Implementación de procesos automáticos para la gestión de cambios en los datos y su procesamiento.</td>
+</tr>
+<tr>
+<td><strong>Observabilidad</strong></td>
+<td>Monitoreo constante de los sistemas de datos para detectar fallos antes de que afecten a los usuarios.</td>
+</tr>
+<tr>
+<td><strong>Respuesta a Incidentes</strong></td>
+<td>Capacidad de identificar y resolver rápidamente las causas raíz de los problemas en los sistemas de datos.</td>
+</tr>
+</tbody>
+</table>
+<h3>1. Automatización</h3>
+<p>La automatización en DataOps se asemeja a la integración y entrega continua (CI/CD) en DevOps. Permite:</p>
+<ul>
+<li>Automatizar procesos manuales en la construcción, prueba y despliegue de datos.</li>
+<li>Acelerar ciclos de revisión y despliegue.</li>
+<li>Reducir errores y aumentar la eficiencia.</li>
+</ul>
+<h4>Ejemplo de Automatización</h4>
+<p>Imaginemos que un ingeniero de datos debe construir un pipeline que ingesta datos de múltiples fuentes. Sin automatización, el proceso podría ser manual y propenso a errores. Con un enfoque de programación, se pueden establecer horarios para la ejecución de tareas, pero esto puede ser ineficiente.</p>
+<p>Adoptar un marco de orquestación como <strong>Airflow</strong> permite:</p>
+<ul>
+<li>Verificar dependencias entre tareas.</li>
+<li>Iniciar automáticamente tareas sucesivas una vez que las anteriores se completan.</li>
+<li>Notificar errores para evitar que tareas dependientes se ejecuten incorrectamente.</li>
+</ul>
+<h3>2. Observabilidad</h3>
+<p>La observabilidad es crucial porque todos los sistemas de datos eventualmente fallan. La falta de monitoreo puede llevar a:</p>
+<ul>
+<li>Datos incorrectos en informes.</li>
+<li>Decisiones mal informadas.</li>
+<li>Pérdida de confianza por parte de los interesados.</li>
+</ul>
+<p>Es fundamental establecer sistemas de monitoreo para detectar problemas antes de que sean reportados por otros.</p>
+<h3>3. Respuesta a Incidentes</h3>
+<p>La respuesta a incidentes implica:</p>
+<ul>
+<li>Identificar rápidamente las causas raíz de un problema.</li>
+<li>Resolverlo de manera eficiente.</li>
+<li>Fomentar una comunicación abierta y sin culpas entre los miembros del equipo.</li>
+</ul>
+<p>Los ingenieros de datos deben ser proactivos en la identificación de problemas antes de que sean reportados.</p>
+<h2>Conclusión</h2>
+<p>DataOps es un conjunto de prácticas en evolución que busca mejorar la calidad y eficiencia en la gestión de datos. Aunque no todas las organizaciones han adoptado estas prácticas, es esencial para los ingenieros de datos estar familiarizados con estos conceptos y su aplicación en el ciclo de vida de la ingeniería de datos.</p>
+<h2>Próximos Pasos</h2>
+<p>En la siguiente sección, se explorará más a fondo el concepto de orquestación, un componente clave de DataOps y fundamental en las arquitecturas y pipelines de datos modernos.</p>
+<hr />
+<h1>Orquestación en Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>La orquestación en el contexto de la ingeniería de datos se asemeja a un director de orquesta que coordina diferentes instrumentos para crear una buena música. En este caso, el "música" es el flujo de datos a través de un pipeline, donde cada tarea debe ser gestionada y ejecutada de manera eficiente.</p>
+<h2>Conceptos Clave</h2>
+<ul>
+<li><strong>Orquestación</strong>: Proceso de coordinar y gestionar tareas en un pipeline de datos.</li>
+<li><strong>Pipeline de Datos</strong>: Conjunto de procesos que permiten la ingesta, transformación, almacenamiento y entrega de datos.</li>
+<li><strong>DAG (Directed Acyclic Graph)</strong>: Representación gráfica de cómo fluye la información a través de un pipeline, donde los nodos son tareas y las aristas son las dependencias entre ellas.</li>
+</ul>
+<h2>Importancia de la Orquestación</h2>
+<p>La orquestación es fundamental en el ciclo de vida de la ingeniería de datos y en las operaciones de datos (DataOps). Permite:</p>
+<ul>
+<li>Automatizar la ejecución de tareas.</li>
+<li>Establecer dependencias entre tareas.</li>
+<li>Monitorear el estado de las tareas y recibir alertas en caso de fallos.</li>
+</ul>
+<h2>Enfoques de Orquestación</h2>
+<ol>
+<li>
+<p><strong>Ejecución Manual</strong>: Inicialmente, un ingeniero de datos puede ejecutar manualmente cada tarea en el pipeline. Esto es útil en las etapas de prototipado, pero no es sostenible a largo plazo.</p>
+</li>
+<li>
+<p><strong>Programación Pura</strong>: Se pueden programar tareas para que se ejecuten a horas específicas. Sin embargo, esto puede llevar a problemas si una tarea falla o si las tareas no se completan en el orden correcto.</p>
+</li>
+<li>
+<p><strong>Frameworks de Orquestación</strong>: Herramientas modernas como Apache Airflow, Dagster, Prefect y Mage permiten construir pipelines de datos sofisticados con capacidades de monitoreo y gestión de dependencias.</p>
+</li>
+</ol>
+<h2>Ejemplo de un DAG</h2>
+<p>A continuación se presenta un ejemplo simplificado de un DAG para un pipeline de datos:</p>
+<table>
+<thead>
+<tr>
+<th>Tarea</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ingesta de Datos</td>
+<td>Extraer datos de múltiples fuentes.</td>
+</tr>
+<tr>
+<td>Transformación 1</td>
+<td>Transformar datos en vuelo desde la fuente 4.</td>
+</tr>
+<tr>
+<td>Almacenamiento</td>
+<td>Almacenar datos extraídos en el sistema de almacenamiento.</td>
+</tr>
+<tr>
+<td>Transformación 2</td>
+<td>Transformar datos para el caso de uso de Machine Learning.</td>
+</tr>
+<tr>
+<td>Almacenamiento ML</td>
+<td>Almacenar datos transformados para Machine Learning.</td>
+</tr>
+<tr>
+<td>Transformación 3</td>
+<td>Transformar datos para el caso de uso de Analytics.</td>
+</tr>
+<tr>
+<td>Almacenamiento Analytics</td>
+<td>Almacenar datos transformados para Analytics.</td>
+</tr>
+</tbody>
+</table>
+<h3>Visualización del DAG</h3>
+<pre><code>[Fuente 1] --&gt; [Ingesta de Datos] --&gt; [Almacenamiento]
+[Fuente 2] --&gt; [Ingesta de Datos] --&gt; [Almacenamiento]
+[Fuente 3] --&gt; [Ingesta de Datos] --&gt; [Almacenamiento]
+[Fuente 4] --&gt; [Ingesta de Datos] --&gt; [Transformación 1] --&gt; [Almacenamiento]
+</code></pre>
+<h2>Conclusión</h2>
+<p>La orquestación es un componente esencial en la ingeniería de datos que permite gestionar de manera eficiente el flujo de datos a través de un pipeline. A medida que avanzamos en el curso, se explorarán más a fondo las herramientas y técnicas para implementar orquestación en proyectos de datos.</p>
+<h2>Próximo Tema</h2>
+<p>En el siguiente video, se explorará la relación entre la ingeniería de software y el rol del ingeniero de datos.</p>
+<hr />
+<h1>Introducción a la Ingeniería de Datos - Módulo 2: Ingeniería de Software</h1>
+<h2>Descripción</h2>
+<p>En esta lección, exploramos los aspectos fundamentales de la ingeniería de software dentro del ciclo de vida de la ingeniería de datos. Se discuten la importancia de escribir código de calidad y cómo la ingeniería de software ha evolucionado para convertirse en un componente esencial de la ingeniería de datos.</p>
+<h2>Contenido</h2>
+<h3>Conceptos Clave</h3>
+<ol>
+<li><strong>Ciclo de Vida de la Ingeniería de Datos</strong>:</li>
+<li>Seguridad</li>
+<li>Arquitectura de datos</li>
+<li>Operaciones y gestión</li>
+<li>
+<p>Orquestación de pipelines de datos</p>
+</li>
+<li>
+<p><strong>Ingeniería de Software</strong>:</p>
+</li>
+<li>Diseño, desarrollo, implementación y mantenimiento de aplicaciones de software.</li>
+<li>
+<p>Necesidad de escribir código limpio, legible, testeable y desplegable.</p>
+</li>
+<li>
+<p><strong>Evolución de la Ingeniería de Datos</strong>:</p>
+</li>
+<li>Antes no existía la ingeniería de datos como profesión oficial.</li>
+<li>Los ingenieros de software comenzaron a integrar aspectos de la ingeniería de datos en su trabajo.</li>
+<li>La creciente diversidad y volumen de datos llevó a la especialización en ingeniería de datos.</li>
+</ol>
+<h3>Importancia del Código en la Ingeniería de Datos</h3>
+<ul>
+<li><strong>Menos Código, Más Valor</strong>: Los ingenieros de datos actuales escriben menos código que sus predecesores, pero la calidad del código es más importante que nunca.</li>
+<li><strong>Lenguajes y Herramientas Comunes</strong>:</li>
+<li>SQL</li>
+<li>Spark</li>
+<li>Kafka</li>
+<li>Python</li>
+<li>Java (y lenguajes de la máquina virtual de Java como Scala)</li>
+<li>Bash</li>
+<li>Otros lenguajes como Rust o Go.</li>
+</ul>
+<h3>Desarrollo de Frameworks de Código Abierto</h3>
+<ul>
+<li>Participación en el desarrollo de frameworks de código abierto.</li>
+<li>Contribuciones a proyectos de código abierto mediante pull requests.</li>
+</ul>
+<h3>Infraestructura como Código</h3>
+<ul>
+<li>Desarrollo de soluciones de infraestructura como código y pipeline como código.</li>
+</ul>
+<h3>Habilidades Recomendadas</h3>
+<ul>
+<li>Es esencial desarrollar habilidades sólidas en ingeniería de software.</li>
+<li>La colaboración con ingenieros de software en la organización es valiosa para mejorar la calidad del código.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>La ingeniería de software es un componente crítico en el ciclo de vida de la ingeniería de datos. La capacidad de escribir código de alta calidad no solo es fundamental para el éxito en el rol de ingeniero de datos, sino que también aporta un valor significativo a la organización. En la próxima lección, se explorará cómo estos conceptos se aplican en la nube de AWS.</p>
+<h2>Próximos Pasos</h2>
+<ul>
+<li>Prepararse para ejercicios prácticos que aplican los conceptos discutidos.</li>
+<li>Unirse a la próxima lección para ver la aplicación del ciclo de vida de la ingeniería de datos en AWS.</li>
+</ul>
+<hr />
+<h1>Introducción a la Ingeniería de Datos - Módulo 2</h1>
+<h2>Descripción</h2>
+<p>En esta lección, se abordará la traducción de los conceptos del ciclo de vida de la ingeniería de datos a herramientas y tecnologías en la nube de AWS. Se mencionará la relevancia de estos conceptos en otras plataformas de nube, como Microsoft Azure y Google Cloud, y se destacará la importancia de adquirir habilidades técnicas en el contexto de AWS.</p>
+<h2>Contenido</h2>
+<h3>Proveedores de Nube</h3>
+<ul>
+<li><strong>AWS</strong>: Proveedor líder en la nube, asociado con el curso.</li>
+<li><strong>Otros Proveedores</strong>:</li>
+<li>Microsoft Azure</li>
+<li>Google Cloud Platform</li>
+<li>Proveedores más pequeños</li>
+</ul>
+<h3>Relevancia de los Conceptos</h3>
+<ul>
+<li>Los conceptos aprendidos son aplicables independientemente de la plataforma de nube utilizada.</li>
+<li>Las herramientas y detalles de implementación pueden variar entre plataformas.</li>
+</ul>
+<h3>Herramientas y Tecnologías</h3>
+<ul>
+<li>Se utilizarán herramientas específicas de AWS en los laboratorios del curso.</li>
+<li>Morgan Willis presentará las herramientas que se utilizarán y su relación con el ciclo de vida de la ingeniería de datos.</li>
+</ul>
+<h3>Orientación a Ejercicios de Laboratorio</h3>
+<ul>
+<li>Se proporcionará una orientación sobre el ejercicio de laboratorio para la semana.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Este módulo tiene como objetivo equipar a los estudiantes con las habilidades técnicas necesarias para la ingeniería de datos utilizando herramientas y tecnologías ampliamente adoptadas en la industria.</p>
+<hr />
+<h1>Ciclo de Vida de la Ingeniería de Datos en AWS</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los conceptos clave del ciclo de vida de la ingeniería de datos en AWS, así como las herramientas y tecnologías asociadas. Se abordarán los sistemas de origen, la ingesta, el almacenamiento, la transformación y la entrega de datos.</p>
+<h2>Etapas del Ciclo de Vida de la Ingeniería de Datos</h2>
+<ol>
+<li><strong>Sistemas de Origen</strong></li>
+<li><strong>Amazon RDS</strong>: Servicio que permite aprovisionar instancias de bases de datos relacionales como MySQL o PostgreSQL. Simplifica la gestión operativa, incluyendo tareas de parcheo y actualización.</li>
+<li><strong>Amazon DynamoDB</strong>: Base de datos NoSQL sin servidor, ideal para aplicaciones que requieren acceso de baja latencia a grandes volúmenes de datos. Tiene un esquema flexible y es adecuado para juegos, IoT, aplicaciones móviles y análisis en tiempo real.</li>
+<li><strong>Amazon Kinesis Data Streams</strong>: Permite la transmisión de actividades de usuario en tiempo real desde plataformas de ventas.</li>
+<li><strong>Amazon SQS</strong>: Servicio de cola de mensajes que puede ser utilizado en la construcción de pipelines de datos.</li>
+<li>
+<p><strong>Apache Kafka</strong>: Plataforma de transmisión de código abierto que puede ser implementada de forma independiente o a través de Amazon MSK.</p>
+</li>
+<li>
+<p><strong>Ingesta de Datos</strong></p>
+</li>
+<li><strong>Amazon DMS</strong>: Servicio para migrar y replicar datos de una fuente a un destino de manera automatizada.</li>
+<li><strong>AWS Glue ETL</strong>: Herramienta principal para procesos de integración de datos en los laboratorios del curso.</li>
+<li>
+<p><strong>Amazon Kinesis Data Firehose</strong>: Utilizado para la ingesta de datos desde fuentes de transmisión.</p>
+</li>
+<li>
+<p><strong>Almacenamiento de Datos</strong></p>
+</li>
+<li><strong>Amazon Redshift</strong>: Opción de almacenamiento en un data warehouse.</li>
+<li><strong>Amazon S3</strong>: Almacenamiento de objetos para un data lake.</li>
+<li>
+<p><strong>Lakehouse</strong>: Combinación de servicios que permite el acceso a datos estructurados y no estructurados.</p>
+</li>
+<li>
+<p><strong>Transformación de Datos</strong></p>
+</li>
+<li><strong>AWS Glue</strong>: Herramienta para la transformación de datos.</li>
+<li>
+<p><strong>Apache Spark y DBT</strong>: Alternativas que pueden ser utilizadas en combinación con Glue.</p>
+</li>
+<li>
+<p><strong>Entrega de Datos</strong></p>
+</li>
+<li><strong>Análisis y Business Intelligence</strong>: Herramientas como Amazon Athena y Redshift para consultar datos estructurados y no estructurados. Uso de dashboards en Jupyter Notebook y herramientas como Amazon QuickSight, Apache Superset y Metabase.</li>
+<li><strong>Inteligencia Artificial y Aprendizaje Automático</strong>: Entrega de datos en lotes para entrenamiento de modelos y uso de bases de datos vectoriales para recomendaciones de productos.</li>
+</ol>
+<h2>Resumen de Herramientas y Servicios</h2>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Herramientas y Servicios</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sistemas de Origen</td>
+<td>Amazon RDS, Amazon DynamoDB, Amazon Kinesis, SQS, Apache Kafka</td>
+</tr>
+<tr>
+<td>Ingesta</td>
+<td>Amazon DMS, AWS Glue ETL, Kinesis Data Firehose</td>
+</tr>
+<tr>
+<td>Almacenamiento</td>
+<td>Amazon Redshift, Amazon S3</td>
+</tr>
+<tr>
+<td>Transformación</td>
+<td>AWS Glue, Apache Spark, DBT</td>
+</tr>
+<tr>
+<td>Entrega</td>
+<td>Amazon Athena, Redshift, Amazon QuickSight, Apache Superset, Metabase</td>
+</tr>
+</tbody>
+</table>
+<h2>Conclusión</h2>
+<p>Este documento proporciona una visión general de las herramientas y tecnologías que se utilizarán en el ciclo de vida de la ingeniería de datos en AWS. En el próximo video, se relacionarán los conceptos del ciclo de vida con tecnologías específicas en AWS.</p>
+<hr />
+<h1>Introducción a los Subyacentes del Ciclo de Vida de la Ingeniería de Datos en AWS</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los conceptos clave relacionados con los subyacentes del ciclo de vida de la ingeniería de datos en AWS, incluyendo seguridad, gestión de datos, operaciones de datos, orquestación y ingeniería de software. Se describen las herramientas y servicios relevantes que se utilizarán en el curso.</p>
+<h2>Subyacentes del Ciclo de Vida de la Ingeniería de Datos</h2>
+<h3>1. Seguridad</h3>
+<ul>
+<li><strong>Modelo de Responsabilidad Compartida</strong>: AWS es responsable de la seguridad de los centros de datos y servicios, mientras que el usuario es responsable de la seguridad de los sistemas construidos con esos recursos.</li>
+<li><strong>Gestión de Identidad y Acceso (IAM)</strong>: Permite establecer roles y permisos que controlan el acceso a los recursos de AWS.</li>
+<li><strong>Seguridad de Red</strong>: Familiarizarse con Amazon Virtual Private Cloud (VPC) y grupos de seguridad, que son firewalls a nivel de instancia.</li>
+</ul>
+<h3>2. Gestión de Datos</h3>
+<ul>
+<li><strong>AWS Glue</strong>: Utiliza crawlers y catálogos de datos para descubrir, crear y gestionar metadatos de datos almacenados en Amazon S3.</li>
+<li><strong>Lake Formation</strong>: Ayuda a gestionar y escalar permisos de acceso a datos de manera centralizada.</li>
+</ul>
+<h3>3. Operaciones de Datos</h3>
+<ul>
+<li><strong>Amazon CloudWatch</strong>: Reúne métricas y proporciona características de monitoreo para recursos en la nube y aplicaciones.</li>
+<li><strong>Amazon CloudWatch Logs</strong>: Almacena y analiza registros operativos.</li>
+<li><strong>Amazon Simple Notification Service (SNS)</strong>: Configura notificaciones entre aplicaciones o mediante texto o correo electrónico.</li>
+</ul>
+<h3>4. Orquestación</h3>
+<ul>
+<li><strong>Apache Airflow</strong>: Herramienta de orquestación que se puede implementar como herramienta de código abierto o usar una versión administrada de AWS.</li>
+<li><strong>Nuevas Herramientas de Orquestación</strong>: Conocer herramientas como Dagster, Prefect y Mage que abordan problemas que Airflow no resuelve.</li>
+</ul>
+<h3>5. Ingeniería de Software</h3>
+<ul>
+<li><strong>Amazon Cloud9</strong>: IDE para desarrollo, alojado en Amazon EC2.</li>
+<li><strong>Automatización de Despliegue</strong>: Uso de Amazon CodeDeploy y herramientas de CI/CD.</li>
+<li><strong>Control de Versiones</strong>: Manejo de versiones con Git y GitHub.</li>
+</ul>
+<h2>Tabla Resumen de Herramientas y Servicios</h2>
+<table>
+<thead>
+<tr>
+<th>Subyacente</th>
+<th>Herramienta/Servicio</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Seguridad</td>
+<td>IAM</td>
+<td>Controla el acceso a los recursos de AWS.</td>
+</tr>
+<tr>
+<td></td>
+<td>VPC</td>
+<td>Proporciona una red privada virtual.</td>
+</tr>
+<tr>
+<td>Gestión de Datos</td>
+<td>AWS Glue</td>
+<td>Descubre y gestiona metadatos.</td>
+</tr>
+<tr>
+<td></td>
+<td>Lake Formation</td>
+<td>Gestiona permisos de acceso a datos.</td>
+</tr>
+<tr>
+<td>Operaciones de Datos</td>
+<td>Amazon CloudWatch</td>
+<td>Monitorea recursos y aplicaciones.</td>
+</tr>
+<tr>
+<td></td>
+<td>Amazon CloudWatch Logs</td>
+<td>Almacena y analiza registros operativos.</td>
+</tr>
+<tr>
+<td></td>
+<td>Amazon SNS</td>
+<td>Configura notificaciones entre aplicaciones.</td>
+</tr>
+<tr>
+<td>Orquestación</td>
+<td>Apache Airflow</td>
+<td>Herramienta de orquestación de flujos de trabajo.</td>
+</tr>
+<tr>
+<td></td>
+<td>Dagster, Prefect, Mage</td>
+<td>Nuevas herramientas de orquestación.</td>
+</tr>
+<tr>
+<td>Ingeniería de Software</td>
+<td>Amazon Cloud9</td>
+<td>IDE para desarrollo en la nube.</td>
+</tr>
+<tr>
+<td></td>
+<td>Amazon CodeDeploy</td>
+<td>Automatiza el despliegue de código.</td>
+</tr>
+</tbody>
+</table>
+<h2>Conclusión</h2>
+<p>Este resumen proporciona una visión general de los subyacentes del ciclo de vida de la ingeniería de datos en AWS y las herramientas que se utilizarán en el curso. A medida que avanzas, podrás aplicar estos conceptos y herramientas en la creación de pipelines de datos en AWS. </p>
+<p>Próximamente, se realizará un ejercicio práctico donde se implementará un pipeline de datos de extremo a extremo en AWS.</p>
+<hr />
+<h1>Introducción al Laboratorio de Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>Este documento proporciona un resumen del laboratorio de ingeniería de datos en AWS, donde se explorará un pipeline de datos de extremo a extremo. Se describen las tareas que se realizarán, la estructura de los datos y las herramientas que se utilizarán.</p>
+<h2>Contenido del Laboratorio</h2>
+<p>El laboratorio se centra en un escenario donde trabajas como ingeniero de datos para un minorista que se especializa en modelos a escala de automóviles clásicos. El objetivo principal es construir un pipeline de datos que transforme y sirva información a un analista de datos en el equipo de marketing.</p>
+<h3>Tareas Principales</h3>
+<ol>
+<li><strong>Exploración de la Base de Datos Relacional</strong>: </li>
+<li>
+<p>Tablas disponibles:</p>
+<ul>
+<li>Clientes</li>
+<li>Productos</li>
+<li>Líneas de productos</li>
+<li>Pedidos</li>
+<li>Detalles de pedidos</li>
+<li>Pagos</li>
+<li>Empleados</li>
+<li>Oficinas</li>
+</ul>
+</li>
+<li>
+<p><strong>Ingesta de Datos</strong>: </p>
+</li>
+<li>Extraer datos relevantes para el análisis.</li>
+<li>
+<p>Transformar los datos en una estructura más comprensible y rápida para consultas analíticas.</p>
+</li>
+<li>
+<p><strong>Modelado de Datos</strong>: </p>
+</li>
+<li>La transformación de datos se conoce como modelado de datos, que se abordará en detalle en el Curso 4 de la especialización.</li>
+<li>La estructura final de los datos transformados será un <strong>esquema en estrella</strong>.</li>
+</ol>
+<h3>Estructura del Esquema en Estrella</h3>
+<ul>
+<li><strong>Tabla Central (Tabla de Hechos)</strong>: Contiene medidas relacionadas con los pedidos de ventas, como el total de ventas o el precio promedio.</li>
+<li><strong>Tablas Circundantes (Dimensiones)</strong>: Proporcionan contexto adicional, como ubicaciones de clientes y detalles de pedidos.</li>
+</ul>
+<h3>Diagrama Arquitectónico del Pipeline</h3>
+<ul>
+<li><strong>Base de Datos RDS MySQL</strong>: Representa el sistema fuente que contiene las tablas.</li>
+<li><strong>AWS Glue</strong>: Herramienta para ingerir datos y aplicar transformaciones.</li>
+<li><strong>ETL (Extracción, Transformación y Carga)</strong>: Proceso que se aprenderá más a fondo en las próximas semanas.</li>
+</ul>
+<h3>Herramientas y Recursos</h3>
+<ul>
+<li><strong>AWS Glue Crawler</strong>: Herramienta de gestión de datos que infiere la estructura de los datos en S3 y escribe metadatos en el catálogo de datos de AWS Glue.</li>
+<li><strong>Amazon Athena</strong>: Servicio que permite a los analistas consultar datos almacenados en S3 utilizando consultas SQL.</li>
+</ul>
+<h3>Configuración del Entorno</h3>
+<ul>
+<li><strong>AWS Cloud9</strong>: Entorno de desarrollo integrado (IDE) que se creará como primer paso en el laboratorio.</li>
+<li><strong>Jupyter Notebook</strong>: Se utilizará para realizar análisis de los datos transformados.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Este laboratorio está diseñado para proporcionar una experiencia práctica en la interacción con un pipeline de datos en AWS. A medida que avances en la especialización, aprenderás más sobre las herramientas y técnicas involucradas en cada etapa del ciclo de vida de la ingeniería de datos. </p>
+<h3>Recursos Adicionales</h3>
+<ul>
+<li><strong>Terraform</strong>: Herramienta de infraestructura como código que se explorará en el Curso 2 de la especialización.</li>
+<li><strong>Instrucciones del Laboratorio</strong>: Se proporcionarán instrucciones detalladas para la configuración y ejecución de los recursos del pipeline de datos.</li>
+</ul>
+<p>¡Prepárate para sumergirte en el mundo de la ingeniería de datos!</p>
+<hr />
+<h1>Guía de Configuración del Laboratorio - Introducción a la Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En este documento se describen los pasos necesarios para acceder y configurar el laboratorio de la especialización en Ingeniería de Datos. Se detallan las instrucciones para abrir el entorno de trabajo, configurar AWS Cloud9 y lanzar el Jupyter Notebook.</p>
+<h2>Pasos para Configurar el Laboratorio</h2>
+<ol>
+<li><strong>Acceso al Laboratorio</strong></li>
+<li>Inicia sesión en Coursera y selecciona el laboratorio correspondiente a la semana, titulado "Graded app".</li>
+<li>
+<p>Acepta el código de honor de Coursera y lanza la aplicación.</p>
+</li>
+<li>
+<p><strong>Inicio del Entorno AWS</strong></p>
+</li>
+<li>Haz clic en el botón para iniciar el laboratorio y espera a que el círculo se vuelva verde para abrir la consola de AWS.</li>
+<li>
+<p>Ten en cuenta que la primera vez que inicies el laboratorio, el entorno se cargará en unos segundos. En intentos posteriores, puede tardar alrededor de 10 minutos debido a un procedimiento de limpieza en la cuenta de AWS.</p>
+</li>
+<li>
+<p><strong>Lanzar AWS Cloud9</strong></p>
+</li>
+<li>Una vez que el icono esté verde, haz clic en él para abrir la consola de AWS en una nueva pestaña del navegador.</li>
+<li>En la barra de búsqueda, escribe "Cloud9" y selecciona el servicio.</li>
+<li>
+<p>Haz clic en "Crear Entorno".</p>
+</li>
+<li>
+<p><strong>Configuración del Entorno</strong></p>
+</li>
+<li>Nombre del entorno: <code>de-c1w2</code></li>
+<li>Tipo de instancia EC2: <code>t3</code></li>
+<li>Configuraciones de red: selecciona "Secure Shell" y elige la VPC llamada <code>de-c1w2</code> y la subred pública <code>de-c1w2 public subnet</code>.</li>
+<li>
+<p>Haz clic en "Crear". AWS tardará unos minutos en configurar el entorno.</p>
+</li>
+<li>
+<p><strong>Descargar Archivos del Laboratorio</strong></p>
+</li>
+<li>Una vez que el entorno esté listo, abre el IDE.</li>
+<li>
+<p>Copia el comando de la <strong>Paso 5</strong> de las instrucciones del laboratorio y pégalo en el terminal para descargar el contenido del laboratorio desde un bucket S3.</p>
+</li>
+<li>
+<p><strong>Acceso a Instrucciones Detalladas</strong></p>
+</li>
+<li>Abre el archivo marcado y selecciona "Preview" para ver el archivo <code>c1_w2_Assignment.md</code>.</li>
+<li>
+<p>Si las instrucciones no se muestran, haz clic en el botón de "Refresh".</p>
+</li>
+<li>
+<p><strong>Instalación de Terraform y Jupyter Notebook</strong></p>
+</li>
+<li>Copia el comando del <strong>Paso 7</strong> y pégalo en el terminal para instalar Terraform y lanzar el Jupyter Notebook.</li>
+<li>Una vez instalado, recibirás una URL para acceder al Jupyter Lab. Copia esta URL y pégala en una nueva pestaña del navegador.</li>
+</ol>
+<h2>Navegación entre Entornos</h2>
+<ul>
+<li><strong>Entorno Cloud9</strong>: Utilizado para configurar tu pipeline de datos.</li>
+<li><strong>Consola de Gestión de AWS</strong>: Para ver los detalles de los recursos de AWS creados.</li>
+<li><strong>Entorno Jupyter Lab</strong>: Utilizado en la última parte del laboratorio.</li>
+</ul>
+<h2>Notas Finales</h2>
+<ul>
+<li>Es normal sentirse abrumado al principio con la cantidad de pestañas abiertas, pero con la práctica, la navegación se volverá más familiar.</li>
+<li>Recuerda regresar a la página de instrucciones del laboratorio al final para enviar tu trabajo.</li>
+</ul>
+<p>En el próximo video, se explicarán los siguientes pasos para configurar tu pipeline de datos. ¡Nos vemos allí!</p>
+<hr />
+<h1>Introducción al Laboratorio de Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En este documento se presenta un resumen del contenido del laboratorio del Módulo 2 del curso de Introducción a la Ingeniería de Datos. Se describen los pasos necesarios para configurar el entorno, explorar la base de datos, crear recursos en AWS y ejecutar trabajos de transformación de datos.</p>
+<h2>Contenido del Laboratorio</h2>
+<h3>1. Configuración del Entorno</h3>
+<ul>
+<li>Se utilizó un entorno de Cloud 9 con la estructura de carpetas necesaria para el laboratorio.</li>
+<li>Se abrió el archivo <code>c1w2_assignment.md</code> que contiene las instrucciones detalladas.</li>
+</ul>
+<h3>2. Exploración del Sistema de Origen</h3>
+<ul>
+<li>La base de datos del sistema de origen ya está instanciada.</li>
+<li>Para ver los detalles de la base de datos, se debe acceder a la consola de AWS y buscar el servicio RDS.</li>
+<li>Se puede obtener el endpoint de la base de datos desde la consola o mediante un comando en la terminal.</li>
+</ul>
+<h4>Conexión a la Base de Datos</h4>
+<p>Para conectarse a la base de datos MySQL, se utiliza el siguiente comando:</p>
+<pre><code class="language-bash">mysql -h &lt;endpoint&gt; -u admin -p useradmin -P 3306
+</code></pre>
+<ul>
+<li>Para explorar las tablas, se utiliza el comando <code>SHOW TABLES;</code>.</li>
+<li>Se puede revisar el script que pobló la base de datos en el archivo <code>mysqlsampledatabase.sql</code>.</li>
+</ul>
+<h3>3. Creación de Recursos para el Pipeline de Datos</h3>
+<ul>
+<li>Se utilizarán archivos de Terraform para crear y configurar los recursos necesarios, como AWS Glue y un bucket de S3.</li>
+<li>Los archivos de Terraform se encuentran en la carpeta <code>Terraform</code>.</li>
+</ul>
+<h4>Recursos Declarados en <code>glue.tf</code></h4>
+<ul>
+<li>Catálogo de datos de AWS Glue.</li>
+<li>Conexión entre AWS Glue y la base de datos RDS.</li>
+<li>Crawler de Glue para explorar el bucket de S3.</li>
+<li>Trabajo de Glue que especifica la conexión al sistema de origen y la ubicación del script de transformación.</li>
+</ul>
+<h3>4. Ejecución de Terraform</h3>
+<p>Para crear los recursos, se deben ejecutar los siguientes comandos en la terminal:</p>
+<pre><code class="language-bash">cd Terraform
+terraform init
+terraform plan
+terraform apply
+</code></pre>
+<ul>
+<li>Se debe confirmar la creación de los recursos escribiendo <code>yes</code>.</li>
+</ul>
+<h3>5. Ejecución del Trabajo de Glue</h3>
+<ul>
+<li>Una vez creados los recursos, se puede ejecutar el trabajo de Glue desde la terminal.</li>
+<li>Para monitorear el estado del trabajo, se debe acceder a la sección de trabajos ETL en la consola de AWS Glue.</li>
+</ul>
+<h3>6. Consulta de Datos en Jupyter Lab</h3>
+<ul>
+<li>Se utilizará un notebook de Python para realizar consultas analíticas sobre los datos transformados.</li>
+<li>Se importará el paquete AWS Wrangler para extraer datos de S3 utilizando Amazon Athena.</li>
+</ul>
+<h4>Ejemplo de Consultas</h4>
+<ul>
+<li>Consulta para extraer todos los productos de la tabla <code>dim_products</code>.</li>
+<li>Consulta para encontrar las ventas totales por país.</li>
+</ul>
+<h3>7. Finalización del Laboratorio</h3>
+<ul>
+<li>Al finalizar, se debe regresar a la página de instrucciones del laboratorio y hacer clic en "submit".</li>
+<li>El entorno del laboratorio expirará en 2 horas, por lo que es importante enviar el trabajo a tiempo.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Este laboratorio proporciona una experiencia práctica en la configuración de un entorno de datos, la exploración de bases de datos y la creación de pipelines de datos utilizando herramientas de AWS. Se recomienda seguir las instrucciones cuidadosamente y revisar los videos si se presentan dificultades.</p>
+<hr />
+<h1>Resumen de la Semana 2 - Introducción a la Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En esta segunda semana del curso de Introducción a la Ingeniería de Datos, se ha puesto un enfoque en el marco mental de alto nivel para la ingeniería de datos, en lugar de centrarse en la construcción de infraestructura de datos. Se exploró un pipeline de datos de extremo a extremo en AWS, lo que ayuda a los estudiantes a orientarse sobre cómo aplicar la teoría en la práctica.</p>
+<h2>Contenido</h2>
+<h3>Ciclo de Vida de la Ingeniería de Datos</h3>
+<p>Se revisaron las etapas del ciclo de vida de la ingeniería de datos, que incluyen:</p>
+<ol>
+<li><strong>Generación de Datos y Sistemas de Origen</strong></li>
+<li><strong>Ingesta de Datos</strong></li>
+<li><strong>Transformación de Datos</strong></li>
+<li><strong>Almacenamiento de Datos</strong></li>
+<li><strong>Servir Datos</strong></li>
+</ol>
+<p>Estas etapas son fundamentales para convertir datos en bruto en información útil y disponible para los usuarios finales.</p>
+<h3>Corrientes Subyacentes</h3>
+<p>Además de las etapas del ciclo de vida, se discutieron las corrientes subyacentes que afectan la ingeniería de datos:</p>
+<ul>
+<li><strong>Seguridad</strong></li>
+<li><strong>Gestión de Datos</strong></li>
+<li><strong>DataOps</strong></li>
+<li><strong>Arquitectura de Datos</strong></li>
+<li><strong>Orquestación</strong></li>
+<li><strong>Ingeniería de Software</strong></li>
+</ul>
+<h3>Práctica y Teoría</h3>
+<p>La combinación de la práctica y el marco mental desarrollado durante esta semana ayudará a los estudiantes a tener éxito en todos los aspectos de su trabajo como ingenieros de datos.</p>
+<h2>Próximos Pasos</h2>
+<p>En las próximas lecciones, se realizará un análisis profundo sobre lo que significa construir una buena arquitectura de datos. </p>
+<p>¡Nos vemos en la próxima clase!</p>
+<hr />
+    </body>
+    <script>
+        var stylesBot = "styles_bot.css";
+        var stylesMsj = "styles_msj.css";
+        const botName =  'DE - Mod 2';
+        const title = 'Modulo 2 Data Engineering';
+        const bot = '2';
+    </script>
+    <script src='./modulo_1.js'></script>
+    </html>
+    

@@ -1,0 +1,1319 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <link rel="stylesheet" href="./styles.css">
+        <title>Modulo 3</title>
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+        
+    </head>
+    <body>
+        <h1>Introducción a la Ingeniería de Datos - Módulo 3: Resumen de la Semana 3</h1>
+<h2>Descripción</h2>
+<p>En esta semana, profundizaremos en la construcción de una buena arquitectura de datos. Aprenderemos cómo la arquitectura de datos se integra en el contexto más amplio de la arquitectura empresarial y exploraremos ejemplos específicos de arquitectura. También discutiremos principios orientadores para pensar como un arquitecto de datos.</p>
+<h2>Contenidos Clave</h2>
+<ol>
+<li><strong>Arquitectura de Datos y Arquitectura Empresarial</strong></li>
+<li>La arquitectura de datos es una parte fundamental de la arquitectura empresarial de una organización.</li>
+<li>
+<p>Pensar como un arquitecto es crucial para el éxito en el trabajo de un ingeniero de datos.</p>
+</li>
+<li>
+<p><strong>Ejemplos de Arquitectura</strong></p>
+</li>
+<li>Se presentarán ejemplos específicos de arquitecturas de datos.</li>
+<li>
+<p>Se discutirá cómo traducir las necesidades de los interesados en decisiones tecnológicas para los sistemas de datos.</p>
+</li>
+<li>
+<p><strong>Principios Orientadores</strong></p>
+</li>
+<li>
+<p>Se compartirán principios que ayudarán a desarrollar una mentalidad arquitectónica.</p>
+</li>
+<li>
+<p><strong>Laboratorio Práctico</strong></p>
+</li>
+<li>Evaluación de compensaciones en aspectos como:<ul>
+<li>Costo</li>
+<li>Rendimiento</li>
+<li>Escalabilidad</li>
+<li>Seguridad</li>
+</ul>
+</li>
+<li>
+<p>Análisis de una arquitectura de datos en la nube de AWS.</p>
+</li>
+<li>
+<p><strong>Marco de Trabajo Bien Arquitectado de AWS</strong></p>
+</li>
+<li>Exploración de un conjunto de principios que ayudan a diseñar sistemas de datos robustos y efectivos.</li>
+</ol>
+<h2>Objetivos de Aprendizaje</h2>
+<p>Al final de la semana, los participantes estarán equipados con herramientas útiles para todas las etapas de su trayectoria en ingeniería de datos.</p>
+<h2>Conclusión</h2>
+<p>Prepárate para un aprendizaje profundo sobre la arquitectura de datos y cómo aplicar estos conceptos en el mundo real. ¡Únete al próximo video para comenzar!</p>
+<hr />
+<h1>Introducción a la Arquitectura de Datos</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los conceptos clave sobre la arquitectura de datos y su relación con la arquitectura empresarial, así como la importancia de la toma de decisiones flexibles y reversibles en el contexto de la ingeniería de datos.</p>
+<h2>Arquitectura Empresarial</h2>
+<p>La arquitectura empresarial se define como el diseño de sistemas que apoyan el cambio en una organización, logrado a través de decisiones flexibles y reversibles, evaluando cuidadosamente los compromisos. Esta definición se alinea estrechamente con la arquitectura de datos, que se define como el diseño de sistemas para satisfacer las necesidades de datos en evolución de una empresa.</p>
+<h3>Dominios de la Arquitectura Empresarial</h3>
+<p>La arquitectura empresarial abarca varios dominios, que se pueden clasificar en cuatro áreas principales:</p>
+<table>
+<thead>
+<tr>
+<th>Dominio</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Arquitectura de Negocios</strong></td>
+<td>Estrategia de producto o servicio y modelo de negocio de la empresa.</td>
+</tr>
+<tr>
+<td><strong>Arquitectura de Aplicaciones</strong></td>
+<td>Estructura e interacción de las aplicaciones clave que satisfacen las necesidades del negocio.</td>
+</tr>
+<tr>
+<td><strong>Arquitectura Técnica</strong></td>
+<td>Componentes de software y hardware necesarios para soportar la implementación de sistemas de negocio.</td>
+</tr>
+<tr>
+<td><strong>Arquitectura de Datos</strong></td>
+<td>Soporte a las necesidades de datos en evolución de la empresa.</td>
+</tr>
+</tbody>
+</table>
+<h2>Gestión del Cambio</h2>
+<p>La gestión del cambio es un concepto crucial en la arquitectura empresarial y de datos. Las necesidades de una organización están en constante evolución, y la arquitectura de datos debe adaptarse a esos cambios.</p>
+<h3>Decisiones de Puerta de Una Vía y Dos Vías</h3>
+<p>Jeff Bezos introdujo la idea de decisiones de puerta de una vía y dos vías:</p>
+<ul>
+<li><strong>Puerta de Una Vía</strong>: Decisiones difíciles de revertir. Ejemplo: romper un huevo.</li>
+<li><strong>Puerta de Dos Vías</strong>: Decisiones fácilmente reversibles. Ejemplo: elegir una clase de almacenamiento en S3, que se puede cambiar más tarde.</li>
+</ul>
+<h3>Importancia de las Decisiones Reversibles</h3>
+<p>Las decisiones reversibles permiten a las organizaciones iterar y mejorar rápidamente cómo recopilan, utilizan y almacenan datos. La toma de decisiones flexible y reversible es fundamental para la arquitectura empresarial y de datos.</p>
+<h2>Rol del Ingeniero de Datos</h2>
+<p>Los ingenieros de datos deben pensar como arquitectos, creando soluciones técnicas que apoyen directamente los objetivos comerciales. La arquitectura no se trata solo de mapear procesos, sino de resolver problemas comerciales y crear nuevas oportunidades.</p>
+<h2>Ley de Conway</h2>
+<p>Antes de avanzar a los principios de una buena arquitectura de datos, es importante mencionar la Ley de Conway, que influye en la arquitectura de todos los sistemas de datos. Esta ley sugiere que la estructura de una organización afecta la forma en que se diseñan sus sistemas.</p>
+<hr />
+<p>Este resumen proporciona una visión general de la arquitectura de datos y su contexto dentro de la arquitectura empresarial, destacando la importancia de la flexibilidad y la adaptabilidad en la toma de decisiones.</p>
+<hr />
+<h1>Ley de Conway en la Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En este documento se presenta un resumen de la Ley de Conway, un principio fundamental que influye en la arquitectura y los sistemas de datos dentro de las organizaciones. Se explora cómo la estructura de comunicación de una organización afecta el diseño de sus sistemas.</p>
+<h2>Ley de Conway</h2>
+<p>La Ley de Conway, formulada por Melvin Conway, establece que:</p>
+<blockquote>
+<p>"Cualquier organización que diseña un sistema producirá un diseño cuya estructura es una copia de la estructura de comunicación de la organización."</p>
+</blockquote>
+<h3>Ejemplo Práctico</h3>
+<p>Consideremos una empresa con cuatro departamentos: ventas, marketing, finanzas y operaciones. Si estos departamentos operan de manera aislada, sus patrones de comunicación también lo serán. Esto resultará en la creación de sistemas de datos igualmente aislados:</p>
+<ul>
+<li><strong>Ventas</strong>: Desarrolla un sistema de datos.</li>
+<li><strong>Marketing</strong>: Construye otro sistema.</li>
+<li><strong>Finanzas</strong>: Crea un tercer sistema.</li>
+<li><strong>Operaciones</strong>: Implementa un cuarto sistema.</li>
+</ul>
+<h4>Comunicación Interdepartamental</h4>
+<p>Si, en cambio, los departamentos se comunican de manera transversal, comparten ideas y colaboran, los sistemas de datos que desarrollen reflejarán esta cultura de colaboración. Esto resulta en un sistema más integrado y eficiente.</p>
+<h2>Implicaciones para los Ingenieros de Datos</h2>
+<p>Como ingeniero de datos, es crucial entender que:</p>
+<ol>
+<li><strong>Estructura de Comunicación</strong>: Antes de diseñar una arquitectura de datos, es fundamental comprender la estructura de comunicación de la organización.</li>
+<li><strong>Evitar Conflictos</strong>: Intentar construir una arquitectura de datos que choque con la estructura de comunicación de la empresa puede llevar a problemas significativos.</li>
+</ol>
+<h2>Recursos Adicionales</h2>
+<p>Para aquellos interesados en profundizar en la Ley de Conway, se ha incluido un enlace en la sección de recursos al final de la semana.</p>
+<h2>Conclusión</h2>
+<p>La Ley de Conway es un principio poderoso que resalta la importancia de la comunicación en el diseño de sistemas. En el próximo video, se explorarán los principios clave de una buena arquitectura de datos.</p>
+<hr />
+<h1>Principios de una Buena Arquitectura de Datos</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los principios fundamentales que deben considerarse al abordar la arquitectura de datos. Estos principios se agrupan en tres categorías y se discuten en detalle, centrándose en su impacto en la organización y la evolución de la arquitectura a lo largo del tiempo.</p>
+<h2>Principios de Arquitectura de Datos</h2>
+<h3>Grupo 1: Impacto en la Organización</h3>
+<ol>
+<li><strong>Elegir Componentes Comunes con Sabiduría</strong></li>
+<li>La elección de componentes y prácticas comunes es crucial para su uso en toda la organización.</li>
+<li>Ejemplos de componentes comunes incluyen:<ul>
+<li>Almacenamiento de objetos</li>
+<li>Sistemas de control de versiones</li>
+<li>Sistemas de observabilidad y monitoreo</li>
+<li>Motores de procesamiento de datos</li>
+</ul>
+</li>
+<li>
+<p>Las plataformas en la nube son ideales para adoptar estos componentes, permitiendo la separación de almacenamiento computado, lo que facilita el acceso a los datos por diferentes equipos.</p>
+</li>
+<li>
+<p><strong>La Arquitectura es Liderazgo</strong></p>
+</li>
+<li>Un arquitecto de datos debe identificar los componentes comunes adecuados en consulta con los miembros de la organización.</li>
+<li>Es importante evitar un enfoque de "talla única" que pueda obstaculizar la productividad.</li>
+<li>A medida que se adquiere experiencia, se puede asumir un rol de mentoría y capacitación sobre estos componentes.</li>
+</ol>
+<h3>Grupo 2: Proceso Evolutivo</h3>
+<ul>
+<li>La arquitectura de datos es un proceso continuo que debe adaptarse y evolucionar con el tiempo.</li>
+</ul>
+<h3>Grupo 3: Prioridades No Escritas</h3>
+<ul>
+<li>Consideraciones importantes que deben tenerse en cuenta incluyen:</li>
+<li><strong>Costo</strong></li>
+<li><strong>Seguridad</strong></li>
+<li><strong>Escalabilidad</strong></li>
+<li><strong>Modos de falla</strong></li>
+</ul>
+<h2>Conclusión</h2>
+<p>La arquitectura de datos no solo se trata de elegir las herramientas adecuadas, sino también de fomentar la colaboración entre equipos y adaptarse a las necesidades cambiantes de la organización. En el próximo video, se explorarán los principios relacionados con la flexibilidad en la arquitectura.</p>
+<hr />
+<h1>Introducción a la Ingeniería de Datos - Módulo 3: Siempre Arquitectando</h1>
+<h2>Descripción</h2>
+<p>En este módulo, se exploran conceptos clave sobre la toma de decisiones en la arquitectura de sistemas de datos, haciendo énfasis en la importancia de las decisiones reversibles y el uso de interfaces de programación de aplicaciones (APIs). Se discute cómo estas prácticas permiten a los equipos adaptarse y evolucionar en un entorno tecnológico en constante cambio.</p>
+<h2>Conceptos Clave</h2>
+<h3>Puertas Unidireccionales y Bidireccionales</h3>
+<ul>
+<li><strong>Puertas Unidireccionales</strong>: Decisiones difíciles o imposibles de revertir.</li>
+<li><strong>Puertas Bidireccionales</strong>: Decisiones reversibles que permiten ajustes y cambios sin complicaciones.</li>
+</ul>
+<h3>Mandato de API de Amazon</h3>
+<ul>
+<li>En 2002, Jeff Bezos envió un correo a todos los empleados de Amazon estableciendo que:</li>
+<li>Todos los equipos deben utilizar interfaces de servicio (APIs) para comunicarse y servir datos y funcionalidades.</li>
+<li>Aquellos que no cumplan con este mandato serán despedidos.</li>
+</ul>
+<h3>Importancia de las APIs</h3>
+<ul>
+<li>Las APIs permiten que los equipos funcionen como un sistema acoplado de manera flexible.</li>
+<li>Cada equipo debe proporcionar datos y funcionalidades a través de una interfaz de servicio estable y predecible.</li>
+<li>Las APIs deben ser construidas desde cero para ser eventualmente accesibles al público.</li>
+</ul>
+<h3>Principios de Arquitectura</h3>
+<ol>
+<li><strong>Tomar Decisiones Reversibles</strong>: Asegurarse de que las decisiones puedan ser deshechas si el resultado no es el esperado.</li>
+<li><strong>Construir Sistemas Acoplados de Manera Flexible</strong>: Componentes que se pueden intercambiar fácilmente sin rediseñar todo el sistema.</li>
+<li><strong>Siempre Estar Arquitectando</strong>: La arquitectura de datos debe evolucionar junto con las necesidades de la organización.</li>
+</ol>
+<h2>Evolución de la Arquitectura de Datos</h2>
+<ul>
+<li>La arquitectura de datos debe adaptarse a las necesidades cambiantes de la organización.</li>
+<li>Como ingeniero de datos, es crucial no solo construir sistemas que satisfagan las necesidades actuales, sino también anticipar cambios futuros en los requisitos empresariales y la tecnología disponible.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>La capacidad de adaptarse y evolucionar es fundamental en la ingeniería de datos. En el próximo video, se abordarán las mejores prácticas relacionadas con el costo, la seguridad, la escalabilidad y los modos de falla de los sistemas que se construyen.</p>
+<h2>Recursos</h2>
+<ul>
+<li>Para más información sobre el mandato de API de Amazon, consulta el enlace en la sección de recursos al final de esta semana.</li>
+</ul>
+<hr />
+<h1>Introducción a la Ingeniería de Datos: Módulo 3 - Cuando tus Sistemas Fallan</h1>
+<h2>Descripción</h2>
+<p>En este módulo, se abordan los principios fundamentales para construir sistemas de datos que no solo satisfacen las necesidades de los interesados, sino que también son escalables y seguros. Se enfatiza la importancia de anticipar fallos y se presentan conceptos clave como disponibilidad, confiabilidad y durabilidad de los sistemas de datos.</p>
+<h2>Principios Clave</h2>
+<ol>
+<li><strong>Planificación para el fracaso</strong></li>
+<li><strong>Arquitectura para la escalabilidad</strong></li>
+<li><strong>Priorizar la seguridad</strong></li>
+<li><strong>Adoptar FinOps</strong></li>
+</ol>
+<h2>Conceptos Importantes</h2>
+<h3>Disponibilidad</h3>
+<ul>
+<li><strong>Definición</strong>: Porcentaje de tiempo que un servicio o componente se espera que esté operativo.</li>
+<li><strong>Ejemplo</strong>: En Amazon S3, la disponibilidad varía entre 99.5% y 99.99%. </li>
+<li><strong>99.5%</strong>: Aproximadamente 44 horas de inactividad al año.</li>
+<li><strong>99.99%</strong>: Aproximadamente 1 hora de inactividad al año.</li>
+</ul>
+<h3>Confiabilidad</h3>
+<ul>
+<li><strong>Definición</strong>: Probabilidad de que un servicio o componente realice su función prevista dentro de un intervalo de tiempo definido.</li>
+</ul>
+<h3>Durabilidad</h3>
+<ul>
+<li><strong>Definición</strong>: Capacidad de un sistema de almacenamiento para resistir la pérdida de datos debido a fallos de hardware, errores de software o desastres naturales.</li>
+<li><strong>Ejemplo</strong>: Amazon S3 tiene una durabilidad de 99.99999999 (11 nueves).</li>
+</ul>
+<h3>Objetivos de Recuperación</h3>
+<ul>
+<li><strong>RTO (Recovery Time Objective)</strong>: Tiempo máximo aceptable para una interrupción del servicio.</li>
+<li><strong>RPO (Recovery Point Objective)</strong>: Estado aceptable después de la recuperación, relacionado con la pérdida de datos tolerable.</li>
+</ul>
+<h2>Seguridad en los Sistemas</h2>
+<ul>
+<li><strong>Enfoque Tradicional</strong>: Seguridad de perímetro endurecido, donde todo lo externo es no confiable.</li>
+<li><strong>Enfoque Zero Trust</strong>: Cada acción requiere autenticación, y el acceso se otorga solo según sea necesario.</li>
+</ul>
+<h2>Costos y Oportunidades</h2>
+<ul>
+<li><strong>Costos Inesperados</strong>: Ejemplo de servicios en la nube que consumen el presupuesto anual en un mes.</li>
+<li><strong>Oportunidades Perdidas</strong>: Falta de preparación para escalar ante un aumento repentino en la demanda.</li>
+</ul>
+<h2>FinOps y Escalabilidad</h2>
+<ul>
+<li><strong>FinOps</strong>: Gestión de costos en sistemas en la nube.</li>
+<li><strong>Escalabilidad</strong>: Capacidad de aumentar o disminuir recursos según la demanda.</li>
+</ul>
+<h2>Resumen</h2>
+<p>Planificar para el fracaso, arquitectar para la escalabilidad, priorizar la seguridad y adoptar FinOps son principios esenciales para servir mejor a las necesidades de la organización, tanto en situaciones normales como en casos de fallo.</p>
+<h2>Próximo Tema</h2>
+<p>En el siguiente video, se explorarán enfoques arquitectónicos específicos para diferentes tipos de sistemas de datos, centrándose en arquitecturas por lotes.</p>
+<hr />
+<h1>Introducción a las Arquitecturas por Lotes en Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los conceptos clave sobre las arquitecturas de procesamiento por lotes, un enfoque tradicional en la ingeniería de datos. Se discutirán los patrones de arquitectura, las diferencias entre ETL y ELT, y consideraciones importantes al diseñar sistemas de datos.</p>
+<h2>Contenidos</h2>
+<h3>1. Procesamiento por Lotes</h3>
+<p>El procesamiento por lotes es un enfoque tradicional donde se ingesta, transforma y almacena datos en bloques o lotes. Este método es más práctico cuando el análisis en tiempo real no es crítico. </p>
+<h4>Ejemplo</h4>
+<p>En una empresa de comercio electrónico, un analista de datos podría estar interesado en analizar las ventas diarias de un producto específico. En este caso, se podría establecer una arquitectura por lotes que ingeste y procese los datos una vez al día.</p>
+<h3>2. Patrones de Arquitectura</h3>
+<h4>2.1. ETL (Extract, Transform, Load)</h4>
+<ul>
+<li><strong>Extracción</strong>: Se ingesta o extrae lotes de datos de una o múltiples fuentes.</li>
+<li><strong>Transformación</strong>: Se aplican transformaciones para limpiar, estandarizar y modelar los datos.</li>
+<li><strong>Carga</strong>: Se cargan los datos en un almacén de datos para su almacenamiento y uso posterior.</li>
+</ul>
+<h4>2.2. ELT (Extract, Load, Transform)</h4>
+<ul>
+<li><strong>Extracción</strong>: Similar a ETL, se ingesta datos.</li>
+<li><strong>Carga</strong>: Los datos se cargan directamente en el almacén de datos.</li>
+<li><strong>Transformación</strong>: Las transformaciones se realizan dentro del almacén de datos, aprovechando el poder computacional de las soluciones modernas en la nube.</li>
+</ul>
+<h3>3. Uso de Datos</h3>
+<p>Después de procesar los datos, se sirven para diferentes casos de uso, que pueden incluir:
+- Análisis
+- Aprendizaje automático
+- Reverse ETL: donde los datos procesados se envían de vuelta a los sistemas de origen.</p>
+<h3>4. Data Marts</h3>
+<p>Un <strong>data mart</strong> es un subconjunto más refinado de un almacén de datos, enfocado en un departamento o área de negocio específica. Facilita el acceso a los datos para analistas y la creación de informes.</p>
+<h4>Ejemplo de Data Marts</h4>
+<ul>
+<li><strong>Ventas</strong></li>
+<li><strong>Marketing</strong></li>
+<li><strong>Operaciones</strong></li>
+</ul>
+<h3>5. Consideraciones para la Arquitectura de Datos</h3>
+<p>Al diseñar una arquitectura de datos, es importante considerar:</p>
+<ul>
+<li><strong>Colaboración</strong>: Elegir componentes comunes que faciliten la interoperabilidad entre equipos.</li>
+<li><strong>Planificación para fallos</strong>: Prepararse para situaciones como la caída de un sistema fuente o cambios en el esquema de datos.</li>
+<li><strong>Especificaciones de disponibilidad y fiabilidad</strong>: Evaluar la disponibilidad de cada componente en la tubería de datos.</li>
+<li><strong>Flexibilidad</strong>: Construir un sistema que pueda adaptarse a cambios en la frecuencia de ingesta o variaciones en el volumen de datos.</li>
+<li><strong>Análisis de costo-beneficio</strong>: Evaluar los trade-offs entre el rendimiento de los componentes y el valor que se puede proporcionar al negocio.</li>
+</ul>
+<h3>6. Conclusión</h3>
+<p>Las decisiones tecnológicas al construir sistemas de datos presentan riesgos y oportunidades que pueden agregar valor a la organización. En el próximo video, se explorarán arquitecturas de streaming.</p>
+<hr />
+<p>Este documento proporciona una visión general de las arquitecturas por lotes en la ingeniería de datos, destacando su importancia y las consideraciones clave al implementarlas.</p>
+<hr />
+<h1>Arquitecturas de Streaming en Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los conceptos clave sobre arquitecturas de streaming en el contexto de la ingeniería de datos, abordando las diferencias entre procesamiento por lotes y en tiempo real, así como las arquitecturas Lambda y Kappa. También se discuten las herramientas y enfoques actuales para manejar datos en tiempo real y por lotes.</p>
+<h2>Conceptos Clave</h2>
+<ol>
+<li><strong>Datos como Eventos</strong>: </li>
+<li>Los datos se producen en forma de eventos continuos, como clics en un sitio web o mediciones de sensores.</li>
+<li>
+<p>Los datos pueden ser procesados en lotes o en tiempo real.</p>
+</li>
+<li>
+<p><strong>Procesamiento por Lotes vs. Streaming</strong>:</p>
+</li>
+<li><strong>Procesamiento por Lotes</strong>: Se acumulan datos y se procesan en intervalos de tiempo predefinidos o cuando se alcanza un umbral de tamaño.</li>
+<li>
+<p><strong>Streaming</strong>: Los datos se ingieren y se proporcionan a sistemas downstream de manera continua y casi en tiempo real, a menudo en menos de un segundo.</p>
+</li>
+<li>
+<p><strong>Componentes de un Sistema de Streaming</strong>:</p>
+</li>
+<li><strong>Productor</strong>: Fuente de datos (ej. datos de clics, dispositivos IoT).</li>
+<li><strong>Consumidor</strong>: Servicio o aplicación que procesa los datos (ej. un lago de datos o un almacén de datos).</li>
+<li><strong>Broker de Streaming</strong>: Coordina los datos entre productores y consumidores.</li>
+</ol>
+<h2>Evolución de las Arquitecturas</h2>
+<h3>Arquitectura Lambda</h3>
+<ul>
+<li><strong>Descripción</strong>: Combina procesamiento por lotes y streaming, operando de manera independiente.</li>
+<li><strong>Componentes</strong>:</li>
+<li><strong>Capa de Streaming</strong>: Procesa datos en tiempo real y puede almacenarlos en bases de datos NoSQL.</li>
+<li><strong>Capa de Lotes</strong>: Utiliza un almacén de datos para transformar y almacenar datos procesados.</li>
+<li>
+<p><strong>Capa de Servicio</strong>: Proporciona una vista combinada de los resultados de ambas capas.</p>
+</li>
+<li>
+<p><strong>Desafíos</strong>: Manejo de sistemas paralelos con diferentes bases de código.</p>
+</li>
+</ul>
+<h3>Arquitectura Kappa</h3>
+<ul>
+<li><strong>Descripción</strong>: Propone usar una plataforma de procesamiento de streaming como la columna vertebral para la gestión de datos.</li>
+<li><strong>Ventajas</strong>:</li>
+<li>Facilita una arquitectura basada en eventos.</li>
+<li>Permite el procesamiento en tiempo real y la retención de datos históricos para procesamiento por lotes.</li>
+</ul>
+<h2>Herramientas y Enfoques Actuales</h2>
+<ul>
+<li><strong>Modelo de Flujo de Datos de Google</strong>: Implementado en el marco de trabajo Apache Beam, donde todos los datos se ven como eventos.</li>
+<li><strong>Apache Flink</strong>: Herramienta de procesamiento de streaming ampliamente utilizada.</li>
+</ul>
+<h2>Principios de Arquitectura de Datos</h2>
+<ul>
+<li><strong>Flexibilidad y Escalabilidad</strong>: Construir sistemas que puedan adaptarse a cambios y crecer según sea necesario.</li>
+<li><strong>Modos de Fallo Potenciales</strong>: Anticipar y planificar posibles fallos en el sistema.</li>
+<li><strong>Cumplimiento</strong>: Asegurar que los sistemas de datos cumplan con leyes, regulaciones y políticas de privacidad.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>La ingeniería de datos moderna enfrenta el desafío de unificar el procesamiento por lotes y el streaming. Las arquitecturas Lambda y Kappa han proporcionado inspiración, pero los ingenieros de datos deben seguir innovando y adaptándose a las nuevas herramientas y enfoques para manejar estos desafíos.</p>
+<h2>Próximo Tema</h2>
+<p>En el siguiente video se abordará la arquitectura para el cumplimiento normativo en sistemas de datos.</p>
+<hr />
+<h1>Arquitectura para el Cumplimiento Normativo</h1>
+<h2>Descripción</h2>
+<p>Este documento resume los conceptos clave sobre la importancia del cumplimiento normativo en la ingeniería de datos, destacando regulaciones relevantes como el GDPR y la HIPAA, y su impacto en el trabajo de un ingeniero de datos.</p>
+<h2>Introducción</h2>
+<p>El cumplimiento normativo puede parecer un tema aburrido, pero es crucial para los ingenieros de datos. La falta de cumplimiento puede resultar en demandas y multas significativas para las organizaciones. Este documento aborda las regulaciones más relevantes y cómo los ingenieros de datos deben adaptarse a ellas.</p>
+<h2>Regulaciones Clave</h2>
+<h3>1. Reglamento General de Protección de Datos (GDPR)</h3>
+<ul>
+<li><strong>Enactado</strong>: 2018 en la Unión Europea.</li>
+<li><strong>Objetivo</strong>: Protección de la privacidad y datos personales.</li>
+<li><strong>Definición de Datos Personales</strong>: Incluye información identificable y cualquier dato que pueda usarse para identificar a un individuo.</li>
+<li><strong>Requisitos</strong>:</li>
+<li>Obtener consentimiento adecuado de los individuos.</li>
+<li>Capacidad para eliminar datos de manera oportuna.</li>
+</ul>
+<h3>2. Ley de Portabilidad y Responsabilidad de Seguros de Salud (HIPAA)</h3>
+<ul>
+<li><strong>Aplicación</strong>: Datos de salud en EE. UU.</li>
+<li><strong>Requisitos</strong>: Cumplimiento de normas sobre datos sensibles de pacientes.</li>
+</ul>
+<h3>3. Ley Sarbanes-Oxley</h3>
+<ul>
+<li><strong>Aplicación</strong>: Datos financieros en EE. UU.</li>
+<li><strong>Requisitos</strong>: Normas sobre informes financieros y prácticas de mantenimiento de registros.</li>
+</ul>
+<h2>Consideraciones para Ingenieros de Datos</h2>
+<ul>
+<li><strong>Ubicación y Clientes</strong>: La ubicación de la empresa y de los clientes influye en la aplicabilidad de las regulaciones.</li>
+<li><strong>Adaptabilidad</strong>: Construir sistemas flexibles y desacoplados que se adapten a cambios regulatorios futuros.</li>
+<li><strong>Prevención de Riesgos</strong>: Evitar demandas y multas mediante el cumplimiento normativo.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>El cumplimiento normativo es un aspecto esencial en la arquitectura de datos. Los ingenieros de datos deben estar al tanto de las regulaciones que afectan su trabajo y construir sistemas que cumplan con las normativas actuales y futuras. En la próxima lección, se explorarán las tecnologías adecuadas para la arquitectura de datos.</p>
+<h2>Resumen de Regulaciones</h2>
+<table>
+<thead>
+<tr>
+<th>Regulación</th>
+<th>Área de Aplicación</th>
+<th>Requisitos Clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GDPR</td>
+<td>Protección de Datos</td>
+<td>Consentimiento, eliminación de datos</td>
+</tr>
+<tr>
+<td>HIPAA</td>
+<td>Datos de Salud</td>
+<td>Protección de datos sensibles</td>
+</tr>
+<tr>
+<td>Sarbanes-Oxley</td>
+<td>Datos Financieros</td>
+<td>Informes financieros, mantenimiento de registros</td>
+</tr>
+</tbody>
+</table>
+<h2>Tareas para Ingenieros de Datos</h2>
+<ul>
+<li>Mantenerse informado sobre las regulaciones aplicables.</li>
+<li>Diseñar sistemas que cumplan con las normativas actuales y futuras.</li>
+<li>Implementar prácticas que eviten el incumplimiento y sus consecuencias.</li>
+</ul>
+<p>Recuerda que el cumplimiento normativo es parte integral de la ingeniería de datos y debe ser considerado en cada etapa del desarrollo de sistemas.</p>
+<hr />
+<h1>Elección de Herramientas y Tecnologías en Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En esta lección, se abordará cómo seleccionar las herramientas y tecnologías adecuadas para construir una arquitectura de datos efectiva. Se discutirá la importancia de considerar los compromisos entre diferentes opciones de diseño y cómo estas decisiones impactan en la calidad de los productos de datos.</p>
+<h2>Contenido</h2>
+<h3>1. Importancia de la Arquitectura de Datos</h3>
+<ul>
+<li>La arquitectura de datos es fundamental para satisfacer las necesidades de datos de una organización.</li>
+<li>Se debe considerar:</li>
+<li><strong>Qué</strong> se necesita (la arquitectura).</li>
+<li><strong>Por qué</strong> es importante (los objetivos de negocio).</li>
+<li><strong>Cuándo</strong> se requiere (los plazos y prioridades).</li>
+</ul>
+<h3>2. Opciones de Herramientas y Tecnologías</h3>
+<ul>
+<li>Existen múltiples opciones para herramientas y tecnologías en ingeniería de datos:</li>
+<li><strong>Ingestión</strong></li>
+<li><strong>Almacenamiento</strong></li>
+<li><strong>Transformación</strong></li>
+<li><strong>Servir datos</strong></li>
+</ul>
+<h4>Tipos de Herramientas</h4>
+<table>
+<thead>
+<tr>
+<th>Tipo de Herramienta</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Open Source</td>
+<td>Software de código abierto, accesible y modificable.</td>
+</tr>
+<tr>
+<td>Managed Open Source</td>
+<td>Soluciones de código abierto gestionadas por terceros.</td>
+</tr>
+<tr>
+<td>Software Propietario</td>
+<td>Soluciones comerciales con soporte y características específicas.</td>
+</tr>
+</tbody>
+</table>
+<h3>3. Consideraciones Clave</h3>
+<ul>
+<li><strong>Objetivo Final</strong>: Entregar productos de datos de alta calidad que cumplan con los requisitos de los usuarios finales.</li>
+<li><strong>Compromisos de Ubicación</strong>:</li>
+<li><strong>On-Premises</strong>: Sistemas locales.</li>
+<li><strong>Nube</strong>: Soluciones basadas en la nube.</li>
+<li><strong>Híbrido</strong>: Combinación de ambos.</li>
+</ul>
+<h3>4. Optimización de Costos</h3>
+<ul>
+<li>Evaluar si construir herramientas internamente o adquirir soluciones preexistentes.</li>
+<li>Considerar:</li>
+<li>Tamaño y capacidades del equipo.</li>
+<li>Actividades que realmente generan valor para el negocio.</li>
+</ul>
+<h3>5. Construcción para el Presente y Futuro</h3>
+<ul>
+<li>Diseñar sistemas que satisfagan las necesidades actuales, pero que también sean escalables para futuras demandas.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>La elección de herramientas y tecnologías es un proceso crítico en la ingeniería de datos. Es esencial tener en cuenta los principios de una buena arquitectura de datos y los ciclos de vida de la ingeniería de datos para asegurar el éxito en la implementación de soluciones efectivas.</p>
+<h3>Próximos Pasos</h3>
+<p>Únete al siguiente video para profundizar en estos temas y prepararte para tomar decisiones informadas en la elección de herramientas y tecnologías.</p>
+<hr />
+<h1>Introducción a la Ingeniería de Datos - Módulo 3: Sistemas de Datos en la Nube</h1>
+<h2>Descripción</h2>
+<p>En este módulo, se explora la evolución de los sistemas de datos desde soluciones locales (on-premises) hacia plataformas en la nube. Se discuten las ventajas y desventajas de cada enfoque, así como las tendencias actuales en la industria.</p>
+<h2>Contenido</h2>
+<h3>Evolución de los Sistemas de Datos</h3>
+<ul>
+<li><strong>Sistemas On-Premises</strong>: </li>
+<li>Propiedad y mantenimiento del hardware y software por parte de la empresa.</li>
+<li>
+<p>Responsabilidad operativa de aprovisionar, mantener, actualizar y escalar los recursos.</p>
+</li>
+<li>
+<p><strong>Sistemas en la Nube</strong>:</p>
+</li>
+<li>Proveedor de la nube (ej. AWS) se encarga del hardware y centros de datos.</li>
+<li>Alquiler de recursos de computación y almacenamiento.</li>
+<li>Escalabilidad fácil para satisfacer la demanda o reducir costos.</li>
+</ul>
+<h3>Ventajas de la Nube</h3>
+<ul>
+<li><strong>Flexibilidad</strong>: Posibilidad de cambiar herramientas y tecnologías con facilidad.</li>
+<li><strong>Escalabilidad</strong>: Ajuste de recursos según las necesidades del negocio.</li>
+<li><strong>Reducción de Costos</strong>: No es necesario mantener hardware propio.</li>
+</ul>
+<h3>Tendencias en la Industria</h3>
+<ul>
+<li>Aumento en la adopción de sistemas en la nube.</li>
+<li>Migración de sistemas on-premises a la nube.</li>
+<li>Algunas empresas mantienen sistemas on-premises por razones de:</li>
+<li>Naturaleza del negocio.</li>
+<li>Regulaciones.</li>
+<li>Seguridad y privacidad del cliente.</li>
+</ul>
+<h3>Consideraciones para Ingenieros de Datos</h3>
+<ul>
+<li>Posibilidad de trabajar en empresas con sistemas híbridos (combinación de on-premises y nube).</li>
+<li>Enfoque del curso en la construcción de sistemas de datos en la nube, dado que es la mejor opción para la mayoría de los casos de uso empresarial.</li>
+</ul>
+<h3>Próximo Tema</h3>
+<ul>
+<li>Transición de sistemas monolíticos a sistemas modulares en el desarrollo de software y ingeniería de datos.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>La industria se está moviendo hacia un mayor uso de la nube y menos hacia sistemas on-premises. Como aspirante a ingeniero de datos, es fundamental centrarse en el aprendizaje de la construcción de sistemas de datos en la nube. </p>
+<hr />
+<p>Este documento resume las ideas clave del video sobre la evolución de los sistemas de datos y la importancia de la nube en la ingeniería de datos moderna.</p>
+<hr />
+<h1>Monolitos vs Sistemas Modulares en Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En este documento se exploran las diferencias entre arquitecturas monolíticas y modulares en el contexto de la ingeniería de datos. Se discuten las ventajas y desventajas de cada enfoque, así como su impacto en la flexibilidad y mantenimiento de los sistemas.</p>
+<h2>Arquitectura Monolítica</h2>
+<ul>
+<li><strong>Definición</strong>: Sistemas auto-contenidos compuestos por componentes fuertemente acoplados.</li>
+<li><strong>Características</strong>:</li>
+<li>Todos los componentes se construyen y despliegan como una única aplicación.</li>
+<li>
+<p>Utiliza una sola tecnología y generalmente un único lenguaje de programación.</p>
+</li>
+<li>
+<p><strong>Ventajas</strong>:</p>
+</li>
+<li>
+<p><strong>Simplicidad</strong>: Fácil de entender y gestionar, ya que toda la funcionalidad está en un solo lugar.</p>
+</li>
+<li>
+<p><strong>Desventajas</strong>:</p>
+</li>
+<li><strong>Dificultad de Mantenimiento</strong>: A medida que el sistema crece, actualizar un componente puede requerir la actualización de otros, lo que a menudo implica reescribir toda la aplicación.</li>
+<li><strong>Ejemplo</strong>: Un pipeline ETL monolítico que tardaba 48 horas en ejecutarse. Si algo fallaba, todo el proceso debía reiniciarse, causando retrasos significativos en la entrega de informes.</li>
+</ul>
+<h2>Sistemas Modulares</h2>
+<ul>
+<li><strong>Definición</strong>: Sistemas compuestos por componentes débilmente acoplados, donde la aplicación se divide en áreas de preocupación auto-contenidas.</li>
+<li><strong>Características</strong>:</li>
+<li>
+<p>Emergen con el auge de los microservicios, donde cada servicio se despliega como una unidad independiente.</p>
+</li>
+<li>
+<p><strong>Ventajas</strong>:</p>
+</li>
+<li><strong>Interoperabilidad</strong>: Los sistemas modulares permiten la integración fácil de herramientas que soportan diferentes etapas del ciclo de vida de la ingeniería de datos.</li>
+<li><strong>Flexibilidad</strong>: La capacidad de intercambiar herramientas a medida que la tecnología cambia es invaluable, permitiendo decisiones flexibles y reversibles.</li>
+<li><strong>Mejora Continua</strong>: Facilita la optimización de costos y la elección entre soluciones de código abierto o comerciales.</li>
+</ul>
+<h2>Comparación de Arquitecturas</h2>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Monolítica</th>
+<th>Modular</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Acoplamiento</td>
+<td>Fuerte</td>
+<td>Débil</td>
+</tr>
+<tr>
+<td>Mantenimiento</td>
+<td>Difícil a medida que crece</td>
+<td>Más fácil, actualizaciones independientes</td>
+</tr>
+<tr>
+<td>Despliegue</td>
+<td>Único</td>
+<td>Servicios individuales</td>
+</tr>
+<tr>
+<td>Flexibilidad</td>
+<td>Limitada</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>Ejemplo de uso</td>
+<td>Pipeline ETL monolítico</td>
+<td>Microservicios</td>
+</tr>
+</tbody>
+</table>
+<h2>Conclusión</h2>
+<p>La elección entre una arquitectura monolítica y modular depende de las necesidades específicas del proyecto y del equipo. La tendencia actual en la ingeniería de datos se inclina hacia un enfoque modular, que permite una mayor flexibilidad y adaptabilidad a los cambios tecnológicos.</p>
+<h2>Próximos Pasos</h2>
+<p>En el siguiente video, se abordará la optimización de costos en la implementación de arquitecturas modulares.</p>
+<hr />
+<h1>Optimización de Costos y Valor Empresarial en Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los conceptos clave sobre la optimización de costos en el ciclo de vida de la ingeniería de datos, centrándose en el Costo Total de Propiedad (TCO), el Costo Total de Oportunidad de Propiedad (TOCO) y la importancia de FinOps. Se discuten las implicaciones de las decisiones tecnológicas en el presupuesto y el retorno de la inversión.</p>
+<h2>Contenido</h2>
+<h3>1. Introducción</h3>
+<p>En cada etapa del ciclo de vida de la ingeniería de datos, existen múltiples herramientas y tecnologías disponibles. Cada elección conlleva un costo que no solo incluye el precio del software o servicio, sino también costos de implementación y costos de oportunidad.</p>
+<h3>2. Costo Total de Propiedad (TCO)</h3>
+<p>El TCO es el costo total estimado de un proyecto o iniciativa a lo largo de su ciclo de vida. Incluye:</p>
+<ul>
+<li><strong>Costos Directos</strong>: </li>
+<li>Salarios del equipo.</li>
+<li>Facturas de servicios en la nube (ej. AWS).</li>
+<li>
+<p>Tarifas de licencias de software.</p>
+</li>
+<li>
+<p><strong>Costos Indirectos</strong>: </p>
+</li>
+<li>Costos por tiempo de inactividad de la red.</li>
+<li>Soporte técnico continuo.</li>
+<li>Pérdida de productividad.</li>
+</ul>
+<h4>Tabla 1: Comparación de Costos</h4>
+<table>
+<thead>
+<tr>
+<th>Tipo de Costo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Costos Directos</td>
+<td>Gastos fácilmente identificables relacionados con el desarrollo.</td>
+</tr>
+<tr>
+<td>Costos Indirectos</td>
+<td>Gastos no directamente atribuibles al desarrollo, como soporte y tiempo de inactividad.</td>
+</tr>
+</tbody>
+</table>
+<h3>3. Tipos de Gastos</h3>
+<p>Los gastos se dividen en dos categorías principales:</p>
+<ul>
+<li><strong>Gastos de Capital (CapEx)</strong>: </li>
+<li>Pagos por activos fijos a largo plazo.</li>
+<li>
+<p>Común en sistemas de datos antes de la nube.</p>
+</li>
+<li>
+<p><strong>Gastos Operativos (OpEx)</strong>: </p>
+</li>
+<li>Gastos asociados con las operaciones diarias.</li>
+<li>Común en sistemas basados en la nube, donde se paga por uso.</li>
+</ul>
+<h3>4. Costo Total de Oportunidad de Propiedad (TOCO)</h3>
+<p>El TOCO se refiere al costo de las oportunidades perdidas al elegir una herramienta o tecnología específica. Es más difícil de cuantificar, pero implica que cada elección excluye otras posibilidades.</p>
+<ul>
+<li><strong>Ejemplo</strong>: Elegir el stack de datos A significa renunciar a los beneficios de los stacks B, C, D, etc.</li>
+</ul>
+<h3>5. Estrategias para Minimizar TCO y TOCO</h3>
+<p>Para minimizar el TCO y el TOCO, es crucial construir sistemas flexibles y desacoplados que sean fáciles de actualizar. </p>
+<ul>
+<li><strong>Tecnologías Inmutables</strong>: </li>
+<li>Almacenamiento en la nube (ej. almacenamiento de objetos).</li>
+<li>
+<p>SQL como lenguaje de consulta.</p>
+</li>
+<li>
+<p><strong>Tecnologías Transitorias</strong>: </p>
+</li>
+<li>Procesamiento en tiempo real.</li>
+<li>Orquestación y AI.</li>
+</ul>
+<h3>6. FinOps</h3>
+<p>FinOps se centra en minimizar los costos asociados con los sistemas de datos (TCO y TOCO) mientras se maximiza la generación de ingresos. </p>
+<h4>Estrategias de FinOps:</h4>
+<ul>
+<li>Elegir servicios en la nube que permitan un enfoque OpEx.</li>
+<li>Optar por tecnologías de pago por uso y opciones modulares que faciliten la iteración y el crecimiento.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>La elección de herramientas y tecnologías en ingeniería de datos tiene un impacto significativo en los costos y el retorno de la inversión. En el próximo video, se explorarán las compensaciones entre construir componentes de sistemas de datos propios y comprar soluciones prefabricadas.</p>
+<hr />
+<h1>Construir vs Comprar en Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen las ideas y conceptos discutidos en el video "14_Build vs Buy" del curso de Introducción a la Ingeniería de Datos, Módulo 3. Se abordan las consideraciones sobre la elección de herramientas y tecnologías en la arquitectura de datos, así como las ventajas y desventajas de construir soluciones personalizadas frente a utilizar servicios existentes.</p>
+<h2>Contenido</h2>
+<h3>Elección de Herramientas y Tecnologías</h3>
+<ul>
+<li><strong>Construcción en la Nube</strong>: Se recomienda utilizar servicios en la nube con pago por uso, como Amazon S3 para almacenamiento de objetos, en lugar de construir soluciones personalizadas.</li>
+<li><strong>Frameworks de Código Abierto</strong>: Muchas veces, los equipos optan por construir sobre frameworks de código abierto para obtener soluciones específicas.</li>
+</ul>
+<h3>Consideraciones para Construir o Comprar</h3>
+<ol>
+<li><strong>Requerimientos del Sistema</strong>: Dependiendo de las necesidades, puede ser necesario construir o personalizar herramientas.</li>
+<li><strong>Opciones Disponibles</strong>:</li>
+<li>Soluciones completamente de código abierto.</li>
+<li>Opciones comerciales de código abierto (versiones gestionadas).</li>
+<li>Software y servicios propietarios no abiertos.</li>
+</ol>
+<h3>Parámetros Clave a Considerar</h3>
+<ul>
+<li><strong>Capacidades del Equipo</strong>: Evaluar si el equipo tiene la capacidad y el tiempo para implementar y mantener una solución de código abierto.</li>
+<li><strong>Costo Total de Propiedad</strong>: No solo se deben considerar los costos de licencia, sino también el costo del equipo necesario para construir y mantener el sistema.</li>
+<li><strong>Valor Agregado</strong>: Determinar si construir o mantener una solución personalizada realmente aporta valor a la organización o si se trata de un esfuerzo que no genera beneficios adicionales.</li>
+</ul>
+<h3>Recomendaciones</h3>
+<ul>
+<li>Para equipos pequeños, se sugiere considerar primero soluciones de código abierto o comerciales de código abierto.</li>
+<li>Si no se encuentra lo necesario, evaluar la compra de una solución propietaria.</li>
+<li>Esto permitirá al equipo enfocarse en oportunidades únicas que generen el mayor valor para la organización.</li>
+</ul>
+<h3>Conclusión</h3>
+<p>La decisión entre construir o comprar herramientas y tecnologías en ingeniería de datos debe basarse en un análisis cuidadoso de las capacidades del equipo, los costos involucrados y el valor que se puede obtener. En el próximo video, se explorarán las diferencias entre opciones sin servidor y con servidor para herramientas y tecnologías.</p>
+<h2>Tabla de Comparación de Opciones</h2>
+<table>
+<thead>
+<tr>
+<th>Opción</th>
+<th>Ventajas</th>
+<th>Desventajas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Código Abierto</td>
+<td>Comunidad de soporte, personalización</td>
+<td>Requiere tiempo y recursos para mantenimiento</td>
+</tr>
+<tr>
+<td>Comercial de Código Abierto</td>
+<td>Gestión simplificada, soporte profesional</td>
+<td>Costo potencialmente más alto</td>
+</tr>
+<tr>
+<td>Propietario</td>
+<td>Soporte completo, fácil de implementar</td>
+<td>Menos flexibilidad, costos de licencia</td>
+</tr>
+<tr>
+<td>Construcción desde cero</td>
+<td>Solución completamente adaptada a necesidades</td>
+<td>Alto costo y esfuerzo, riesgo de reinventar la rueda</td>
+</tr>
+</tbody>
+</table>
+<h2>Lista de Consideraciones</h2>
+<ul>
+<li>Evaluar la capacidad del equipo.</li>
+<li>Analizar el costo total de propiedad.</li>
+<li>Determinar el valor agregado de la solución.</li>
+<li>Considerar la disponibilidad de soluciones existentes.</li>
+</ul>
+<p>¡Únete al próximo video para explorar las diferencias entre opciones sin servidor y con servidor!</p>
+<hr />
+<h1>Opciones de Cómputo: Servidores, Contenedores y Serverless</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen las principales ideas y conceptos sobre las opciones de cómputo disponibles para alojar aplicaciones de software, centrándose en tres enfoques: servidores, contenedores y soluciones serverless. Se discuten las diferencias, ventajas y desventajas de cada opción, así como consideraciones de costos y uso.</p>
+<h2>Introducción</h2>
+<p>Para alojar cualquier aplicación de software, se necesita un servidor, que es esencialmente una computadora o un conjunto de computadoras que proporciona recursos de cómputo como CPU, memoria (RAM), almacenamiento en disco, y posiblemente GPU y conectividad de red. Los servidores ofrecen recursos de cómputo a través de una red, generalmente a través de Internet.</p>
+<h2>Opciones de Cómputo</h2>
+<h3>1. Servidores</h3>
+<ul>
+<li><strong>Responsabilidad</strong>: El usuario es responsable de configurar y gestionar el servidor (por ejemplo, una instancia de Amazon EC2).</li>
+<li><strong>Tareas Incluidas</strong>:</li>
+<li>Actualización del sistema operativo.</li>
+<li>Instalación y actualización de paquetes.</li>
+<li>Gestión de redes, escalabilidad y seguridad.</li>
+</ul>
+<h3>2. Contenedores</h3>
+<ul>
+<li><strong>Definición</strong>: Un contenedor es una unidad más modular que envuelve el código y todas sus dependencias en un paquete que puede ejecutarse en un servidor.</li>
+<li><strong>Características</strong>:</li>
+<li>Más ligero que una máquina virtual tradicional, ya que solo empaqueta un espacio de usuario aislado (sistema de archivos y algunos procesos).</li>
+<li>El usuario sigue siendo responsable de configurar los elementos esenciales del código de la aplicación y sus dependencias.</li>
+</ul>
+<h3>3. Serverless</h3>
+<ul>
+<li><strong>Definición</strong>: El término "serverless" no significa que no haya servidores, sino que la configuración y el mantenimiento del servidor no son responsabilidad del usuario.</li>
+<li><strong>Ventajas</strong>:</li>
+<li>Interacción con la aplicación sin preocuparse por la gestión de servidores.</li>
+<li>Escalabilidad automática, disponibilidad y tolerancia a fallos.</li>
+<li>Facturación "pago por uso".</li>
+<li><strong>Ejemplo</strong>: AWS Lambda, que permite ejecutar código en respuesta a eventos sin gestionar un servidor.</li>
+</ul>
+<h2>Consideraciones de Uso</h2>
+<ul>
+<li><strong>Costo y Conveniencia</strong>: Las opciones serverless son populares debido a su costo y conveniencia, ya que se paga solo por el uso.</li>
+<li><strong>Cuándo Usar Serverless</strong>:</li>
+<li>Ideal para tareas simples y discretas.</li>
+<li>No es adecuado para aplicaciones con muchas partes móviles o que requieren gran capacidad de cómputo o memoria.</li>
+<li><strong>Alternativa</strong>: Si las limitaciones de ejecución, frecuencia, concurrencia y duración de los servicios serverless son un problema, se debe considerar un enfoque basado en contenedores.</li>
+</ul>
+<h2>Recomendaciones</h2>
+<p>Para la mayoría de las aplicaciones modernas de ingeniería de datos en la nube, se puede optar por herramientas serverless o contenedorizadas. Se recomienda comenzar con soluciones serverless y, si es necesario, pasar a contenedores y orquestación.</p>
+<h2>Conclusión</h2>
+<p>Es fundamental entender los detalles de la fijación de precios en la nube para predecir los costos de las implementaciones serverless y decidir si son más rentables que las opciones de servidor. La monitorización de las tasas de eventos, duración y costo por evento es crucial para modelar el costo total de los servicios utilizados.</p>
+<h2>Tabla Comparativa</h2>
+<table>
+<thead>
+<tr>
+<th>Opción</th>
+<th>Responsabilidad del Usuario</th>
+<th>Escalabilidad</th>
+<th>Costo</th>
+<th>Ideal para</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Servidor</td>
+<td>Alta</td>
+<td>Manual</td>
+<td>Fijo</td>
+<td>Aplicaciones complejas</td>
+</tr>
+<tr>
+<td>Contenedor</td>
+<td>Moderada</td>
+<td>Automática</td>
+<td>Variable</td>
+<td>Aplicaciones modulares</td>
+</tr>
+<tr>
+<td>Serverless</td>
+<td>Baja</td>
+<td>Automática</td>
+<td>Pago por uso</td>
+<td>Tareas simples y discretas</td>
+</tr>
+</tbody>
+</table>
+<h2>Lista de Recursos</h2>
+<ul>
+<li><strong>AWS EC2</strong>: Servicio de computación en la nube.</li>
+<li><strong>AWS Lambda</strong>: Ejecución de código en respuesta a eventos.</li>
+<li><strong>Kubernetes</strong>: Orquestación de contenedores.</li>
+</ul>
+<h2>Próximos Pasos</h2>
+<p>En el siguiente video, se explorarán los aspectos del ciclo de vida de la ingeniería de datos que influyen en la elección de herramientas y tecnologías para la arquitectura de datos.</p>
+<hr />
+<h1>Cómo los Subcorrientes Impactan tus Decisiones en Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En esta lección, se exploran los subcorrientes del ciclo de vida de la ingeniería de datos y su impacto en la elección de herramientas y tecnologías para construir una arquitectura de datos. Se revisan seis subcorrientes clave: seguridad, gestión de datos, operaciones de datos, arquitectura de datos, orquestación e ingeniería de software.</p>
+<h2>Subcorrientes del Ciclo de Vida de la Ingeniería de Datos</h2>
+<table>
+<thead>
+<tr>
+<th>Subcorriente</th>
+<th>Consideraciones Clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Seguridad</strong></td>
+<td>- Comprender las características de seguridad de las herramientas.</td>
+</tr>
+<tr>
+<td></td>
+<td>- Implementar tecnologías de autenticación adecuadas.</td>
+</tr>
+<tr>
+<td></td>
+<td>- Usar software de organizaciones reputadas y comunidades de código abierto confiables.</td>
+</tr>
+<tr>
+<td><strong>Gestión de Datos</strong></td>
+<td>- Preguntar cómo se implementan las prácticas de gobernanza de datos.</td>
+</tr>
+<tr>
+<td></td>
+<td>- Asegurarse de que los datos estén protegidos contra brechas.</td>
+</tr>
+<tr>
+<td></td>
+<td>- Verificar el cumplimiento con regulaciones de privacidad de datos como GDPR.</td>
+</tr>
+<tr>
+<td><strong>Operaciones de Datos</strong></td>
+<td>- Evaluar las características de automatización y monitoreo de las herramientas.</td>
+</tr>
+<tr>
+<td></td>
+<td>- Entender el Acuerdo de Nivel de Servicio (SLA) del proveedor si se opta por un servicio gestionado.</td>
+</tr>
+<tr>
+<td><strong>Arquitectura de Datos</strong></td>
+<td>- Buscar modularidad e interoperabilidad entre herramientas.</td>
+</tr>
+<tr>
+<td></td>
+<td>- La buena modularidad permite flexibilidad y desacoplamiento entre componentes.</td>
+</tr>
+<tr>
+<td><strong>Orquestación</strong></td>
+<td>- Apache Airflow es el líder en orquestación, pero hay otras opciones como Prefect, Dagster y Mage.</td>
+</tr>
+<tr>
+<td></td>
+<td>- Comprender los objetivos de tu arquitectura de datos para elegir la herramienta adecuada.</td>
+</tr>
+<tr>
+<td><strong>Ingeniería de Software</strong></td>
+<td>- Evaluar la capacidad y experiencia de tu equipo para decidir entre construir o usar herramientas existentes.</td>
+</tr>
+<tr>
+<td></td>
+<td>- Evitar el "trabajo pesado no diferenciado" que no agrega valor a la organización.</td>
+</tr>
+</tbody>
+</table>
+<h2>Conclusiones</h2>
+<p>Es fundamental tener en cuenta cada uno de estos subcorrientes al seleccionar herramientas y tecnologías para tu arquitectura de datos. A medida que avanzamos, se abordarán conceptos prácticos y se explorará el marco arquitectónico bien diseñado de AWS para evaluar las elecciones arquitectónicas en tu propia arquitectura de datos.</p>
+<h2>Próximos Pasos</h2>
+<p>Únete a la próxima lección para explorar el marco arquitectónico bien diseñado de AWS y evaluar las elecciones arquitectónicas para tu propia arquitectura de datos en AWS.</p>
+<hr />
+<h1>Introducción al Marco de Arquitectura Bien Diseñada de AWS</h1>
+<h2>Descripción</h2>
+<p>En esta lección, se presenta el Marco de Arquitectura Bien Diseñada de AWS, que proporciona un conjunto de principios y mejores prácticas para construir arquitecturas escalables y robustas en la nube de AWS. Este marco complementa los principios y prácticas discutidos previamente en el curso sobre fundamentos de arquitectura de datos.</p>
+<h2>Contenido</h2>
+<h3>Principios del Marco de Arquitectura Bien Diseñada</h3>
+<p>El Marco de Arquitectura Bien Diseñada de AWS se basa en varios principios que son esenciales para el diseño de una buena arquitectura de datos. Estos principios son:</p>
+<ol>
+<li><strong>Excelencia Operacional</strong></li>
+<li><strong>Seguridad</strong></li>
+<li><strong>Fiabilidad</strong></li>
+<li><strong>Eficiencia del Rendimiento</strong></li>
+<li><strong>Optimización de Costos</strong></li>
+<li><strong>Sostenibilidad</strong></li>
+</ol>
+<h3>Recursos Adicionales</h3>
+<p>Al buscar "AWS Well-Architected Framework", se pueden encontrar diversos recursos útiles, tales como:</p>
+<ul>
+<li>Documentos técnicos (white papers) enfocados en casos de uso específicos.</li>
+<li>Herramientas proporcionadas por AWS para aplicar el marco.</li>
+</ul>
+<h3>Aplicación Práctica</h3>
+<p>En el próximo video, Morgan ofrecerá una introducción a los seis pilares clave de este marco y mostrará dónde se puede aprender más y practicar con él. Posteriormente, se realizará un ejercicio práctico en el laboratorio para aplicar los principios de una buena arquitectura de datos en la nube de AWS.</p>
+<h2>Conclusión</h2>
+<p>El Marco de Arquitectura Bien Diseñada de AWS es una guía valiosa para cualquier ingeniero de datos que busque construir arquitecturas efectivas y eficientes en la nube. La comprensión y aplicación de estos principios son fundamentales para el éxito en la ingeniería de datos.</p>
+<hr />
+<h1>Marco de Referencia Bien Arquitectado de AWS</h1>
+<h2>Descripción</h2>
+<p>El Marco de Referencia Bien Arquitectado de AWS es una guía que ayuda a los arquitectos y desarrolladores a construir soluciones efectivas en la nube de AWS. Este marco se basa en la experiencia acumulada de AWS trabajando con miles de clientes y se centra en evaluar y mejorar las soluciones para asegurar que se construyan de manera correcta.</p>
+<h2>Pilares Clave del Marco de Referencia</h2>
+<p>El Marco de Referencia Bien Arquitectado se compone de seis pilares fundamentales:</p>
+<table>
+<thead>
+<tr>
+<th>Pilar</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Excelencia Operacional</strong></td>
+<td>Se enfoca en desarrollar y ejecutar cargas de trabajo de manera efectiva, monitoreando sistemas y mejorando procesos.</td>
+</tr>
+<tr>
+<td><strong>Seguridad</strong></td>
+<td>Se centra en proteger datos, sistemas y activos utilizando tecnologías en la nube y fomentando una cultura de seguridad.</td>
+</tr>
+<tr>
+<td><strong>Confiabilidad</strong></td>
+<td>Trata sobre el diseño de sistemas que funcionen correctamente y se recuperen rápidamente de fallos.</td>
+</tr>
+<tr>
+<td><strong>Eficiencia de Rendimiento</strong></td>
+<td>Se basa en un enfoque basado en datos para construir arquitecturas de alto rendimiento y mantener la eficiencia.</td>
+</tr>
+<tr>
+<td><strong>Optimización de Costos</strong></td>
+<td>Busca maximizar el valor empresarial al menor costo posible, utilizando herramientas como AWS Cost Explorer.</td>
+</tr>
+<tr>
+<td><strong>Sostenibilidad</strong></td>
+<td>Se enfoca en reducir el consumo de energía y aumentar la eficiencia en todos los componentes del sistema.</td>
+</tr>
+</tbody>
+</table>
+<h2>Detalles de los Pilares</h2>
+<ol>
+<li><strong>Excelencia Operacional</strong></li>
+<li>Desarrollar y ejecutar cargas de trabajo de manera efectiva.</li>
+<li>Monitorear sistemas para obtener información sobre las operaciones.</li>
+<li>
+<p>Mejorar continuamente procesos y procedimientos.</p>
+</li>
+<li>
+<p><strong>Seguridad</strong></p>
+</li>
+<li>Proteger datos y sistemas utilizando herramientas adecuadas.</li>
+<li>
+<p>Fomentar una cultura de seguridad en el equipo.</p>
+</li>
+<li>
+<p><strong>Confiabilidad</strong></p>
+</li>
+<li>Diseñar sistemas que funcionen correctamente y se recuperen de fallos.</li>
+<li>
+<p>Planificar para fallos y adaptarse a cambios.</p>
+</li>
+<li>
+<p><strong>Eficiencia de Rendimiento</strong></p>
+</li>
+<li>Evaluar la capacidad de recursos computacionales para satisfacer requisitos del sistema.</li>
+<li>
+<p>Mantener la eficiencia a medida que cambian las demandas.</p>
+</li>
+<li>
+<p><strong>Optimización de Costos</strong></p>
+</li>
+<li>Construir sistemas que ofrezcan el máximo valor empresarial al menor costo.</li>
+<li>
+<p>Utilizar servicios como AWS Cost Explorer para recomendaciones de optimización.</p>
+</li>
+<li>
+<p><strong>Sostenibilidad</strong></p>
+</li>
+<li>Considerar el impacto ambiental de las cargas de trabajo en la nube.</li>
+<li>Reducir el consumo de energía y aumentar la eficiencia.</li>
+</ol>
+<h2>Aplicación del Marco de Referencia</h2>
+<p>El Marco de Referencia Bien Arquitectado no proporciona diseños específicos para copiar, sino que actúa como un conjunto de principios y preguntas que facilitan conversaciones productivas sobre soluciones existentes. Esto permite diseñar y operar sistemas confiables, seguros, eficientes, rentables y sostenibles en la nube.</p>
+<h3>Lentes del Marco de Referencia</h3>
+<p>Existen aplicaciones específicas del Marco de Referencia llamadas "Lentes", que se centran en áreas, industrias o tecnologías particulares. Cada lente ofrece preguntas, mejores prácticas y planes de mejora específicos. Se recomienda explorar la <strong>Lente de Análisis de Datos</strong>, que se enfoca en consideraciones específicas de datos.</p>
+<h2>Recursos Adicionales</h2>
+<p>Para más información sobre cada uno de los pilares y para explorar la herramienta Bien Arquitectado que permite evaluar arquitecturas, se pueden seguir los enlaces proporcionados en la sección de recursos al final del curso.</p>
+<h2>Conclusión</h2>
+<p>Ahora es tu turno de aplicar los principios discutidos en tu propia arquitectura de datos en AWS. A través de los próximos videos, se te guiará en un ejercicio práctico para implementar estos conceptos. ¡Buena suerte!</p>
+<hr />
+<h1>Introducción al Laboratorio de Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En este laboratorio, se explorará la arquitectura de una aplicación web diseñada para servir datos analíticos a clientes externos. Se utilizarán instancias EC2 y se aplicarán principios de arquitectura de datos, así como el marco bien arquitectado de AWS. El objetivo es garantizar que la aplicación sea escalable, eficiente en el uso de recursos y segura.</p>
+<h2>Contenido del Laboratorio</h2>
+<h3>Objetivos</h3>
+<ul>
+<li>Compartir datos transformados con una audiencia más amplia.</li>
+<li>Asegurar que la aplicación web escale según las necesidades de los clientes.</li>
+<li>Monitorear el rendimiento de la aplicación utilizando Amazon CloudWatch.</li>
+<li>Aplicar principios de buena arquitectura de datos.</li>
+</ul>
+<h3>Arquitectura de la Aplicación Web</h3>
+<p>La aplicación web está diseñada con una arquitectura de tres capas:</p>
+<table>
+<thead>
+<tr>
+<th>Capa</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Capa de Datos</strong></td>
+<td>Representada por un bucket S3, donde se extraen los datos.</td>
+</tr>
+<tr>
+<td><strong>Capa de Lógica</strong></td>
+<td>Compuesta por instancias EC2 y un balanceador de carga (ALB) que procesa las solicitudes de los clientes.</td>
+</tr>
+<tr>
+<td><strong>Capa de Presentación</strong></td>
+<td>Interfaz que muestra los resultados a los clientes, como los dashboards analíticos.</td>
+</tr>
+</tbody>
+</table>
+<h4>Detalles de la Capa de Lógica</h4>
+<ul>
+<li><strong>Grupo de Auto Scaling de EC2</strong>: Colección de instancias EC2 que ejecutan la misma lógica de aplicación. Permite aumentar o disminuir la capacidad de cómputo según la demanda.</li>
+<li><strong>Balanceador de Carga (ALB)</strong>: Distribuye el tráfico entrante entre las instancias EC2 y actúa como un punto de contacto único para los clientes.</li>
+</ul>
+<h3>Proceso del Laboratorio</h3>
+<ol>
+<li><strong>Acceso a la Consola de AWS</strong>: Iniciar el laboratorio en Coursera y acceder a la consola de gestión de AWS.</li>
+<li><strong>Simulación de Tráfico</strong>: Generar tráfico hacia la aplicación web para evaluar su escalabilidad.</li>
+<li><strong>Monitoreo de Recursos</strong>: Utilizar Amazon CloudWatch para monitorear la actividad de la red y los recursos de cómputo.</li>
+<li><strong>Configuración de Instancias EC2</strong>: Ajustar las configuraciones para optimizar el rendimiento y los costos.</li>
+<li><strong>Seguridad del Balanceador de Carga</strong>: Controlar el tráfico entrante a través de la aplicación.</li>
+</ol>
+<h3>Instrucciones</h3>
+<ul>
+<li>Abrir el ítem del laboratorio en Coursera y seguir las instrucciones proporcionadas.</li>
+<li>Asegurarse de que el ícono del laboratorio esté verde antes de proceder a la consola.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Este laboratorio proporcionará una comprensión práctica de cómo escalar y monitorear una aplicación web en AWS, aplicando principios de arquitectura de datos y optimización de recursos. En el siguiente video, se explorarán más detalles sobre la monitorización de los recursos de la aplicación.</p>
+<hr />
+<h1>Introducción a la Ingeniería de Datos - Módulo 3: Monitoreo de la Aplicación Web</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen las tareas del laboratorio relacionadas con el monitoreo de instancias EC2 en un grupo de escalado automático y las actividades de red a través del balanceador de carga de aplicaciones. Se utilizarán herramientas como Amazon CloudWatch y Apache Benchmark para simular tráfico y monitorear el rendimiento de la aplicación.</p>
+<h2>Contenido</h2>
+<h3>Tareas del Laboratorio</h3>
+<ol>
+<li><strong>Monitoreo de Instancias EC2</strong></li>
+<li>Acceder a las instancias EC2 desde la consola de AWS.</li>
+<li>
+<p>Localizar el balanceador de carga y obtener la dirección de la página web de la aplicación.</p>
+</li>
+<li>
+<p><strong>Simulación de Tráfico</strong></p>
+</li>
+<li>
+<p>Utilizar Apache Benchmark para realizar pruebas de estrés enviando múltiples solicitudes HTTP a la aplicación.</p>
+</li>
+<li>
+<p><strong>Monitoreo de Recursos</strong></p>
+</li>
+<li>Usar Amazon CloudWatch para rastrear métricas de rendimiento, como la utilización de CPU y la actividad de red.</li>
+</ol>
+<h3>Pasos Detallados</h3>
+<h4>1. Acceso a la Aplicación Web</h4>
+<ul>
+<li>Buscar "EC2" en la barra de búsqueda de la consola de AWS.</li>
+<li>Navegar a la sección de balanceo de carga y copiar la dirección DNS del balanceador de carga.</li>
+<li>Abrir la dirección en una nueva pestaña para visualizar la interfaz de la aplicación.</li>
+</ul>
+<h4>2. Simulación de Tráfico con Apache Benchmark</h4>
+<ul>
+<li>Abrir AWS CloudShell desde la consola de AWS.</li>
+<li>Instalar Apache Benchmark utilizando el comando proporcionado en las instrucciones del laboratorio.</li>
+<li>Ejecutar el comando para generar la prueba de estrés:
+  <code>bash
+  ab -n 7000 -c 50 http://&lt;DIRECCIÓN_DE_LA_APLICACIÓN&gt;</code>
+  Donde <code>&lt;DIRECCIÓN_DE_LA_APLICACIÓN&gt;</code> es la dirección copiada del balanceador de carga.</li>
+</ul>
+<h4>3. Monitoreo de Recursos en Amazon CloudWatch</h4>
+<ul>
+<li>Desde la consola, buscar "EC2" y navegar a la sección de grupos de escalado automático.</li>
+<li>Abrir el grupo proporcionado y acceder a la pestaña de monitoreo.</li>
+<li>Observar los gráficos de:</li>
+<li>Utilización de CPU</li>
+<li>Actividad de red entrante y saliente (en bytes)</li>
+</ul>
+<h3>Gráficos de Monitoreo</h3>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Utilización de CPU</td>
+<td>Muestra el uso de recursos para procesar las solicitudes.</td>
+</tr>
+<tr>
+<td>Actividad de Red Entrante</td>
+<td>Monitorea el tráfico de datos que llega a la aplicación.</td>
+</tr>
+<tr>
+<td>Actividad de Red Saliente</td>
+<td>Monitorea el tráfico de datos que sale de la aplicación.</td>
+</tr>
+</tbody>
+</table>
+<h3>Conclusiones</h3>
+<ul>
+<li>Se realizó un monitoreo efectivo de la aplicación web mediante la simulación de tráfico y la observación de métricas clave.</li>
+<li>La práctica de observabilidad y monitoreo es fundamental en DataOps y se alinea con el pilar de excelencia operativa del marco bien arquitectado de AWS.</li>
+</ul>
+<h2>Próximos Pasos</h2>
+<p>En el siguiente video, se explorarán aspectos de seguridad, disponibilidad, escalabilidad y costos de la aplicación web.</p>
+<hr />
+<h1>Resumen del Video 21: Recorrido por el Laboratorio - Aplicando los Principios de la Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En este video, se presenta un recorrido por el laboratorio donde se aplican principios de arquitectura de datos para asegurar la seguridad, disponibilidad y escalabilidad de aplicaciones, optimizando costos. Se revisan configuraciones de seguridad, confiabilidad, optimización de costos y escalabilidad en un entorno de AWS.</p>
+<h2>Contenido</h2>
+<h3>1. Seguridad</h3>
+<ul>
+<li><strong>Principio de Seguridad</strong>: Priorizar la seguridad al construir aplicaciones o sistemas de datos.</li>
+<li><strong>Configuración del Balanceador de Carga</strong>:</li>
+<li>Controlar el acceso a la aplicación web.</li>
+<li>Configurar el balanceador para recibir solo ciertos tipos de solicitudes.</li>
+<li><strong>Puertos</strong>: <ul>
+<li>El puerto 80 está asignado a solicitudes HTTP.</li>
+<li>El puerto 90 puede exponer datos privados si no se configura correctamente.</li>
+</ul>
+</li>
+</ul>
+<h4>Ejemplo de Configuración</h4>
+<table>
+<thead>
+<tr>
+<th>Puerto</th>
+<th>Protocolo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>80</td>
+<td>HTTP</td>
+<td>Acceso permitido</td>
+</tr>
+<tr>
+<td>90</td>
+<td>Privado</td>
+<td>Acceso bloqueado</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Verificación de Seguridad</strong>:</li>
+<li>Comprobar que el puerto 90 no sea accesible desde Internet.</li>
+<li>Ajustar las reglas de seguridad del grupo de seguridad del balanceador.</li>
+</ul>
+<h3>2. Confiabilidad</h3>
+<ul>
+<li><strong>Grupos de Autoescalado</strong>: </li>
+<li>Configuración inicial con dos instancias EC2 en diferentes zonas de disponibilidad.</li>
+<li>Asegura que si una zona falla, la otra puede manejar las solicitudes.</li>
+</ul>
+<h3>3. Optimización de Costos</h3>
+<ul>
+<li><strong>Tipos de Instancias EC2</strong>:</li>
+<li>Diferentes instancias tienen diferentes capacidades de procesamiento y costos.</li>
+<li>Se recomienda cambiar de instancias T3 Micro a T3 Nano si son demasiado costosas.</li>
+</ul>
+<h4>Ejemplo de Cambio de Instancia</h4>
+<table>
+<thead>
+<tr>
+<th>Tipo de Instancia</th>
+<th>Capacidad de Memoria</th>
+<th>Costo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T3 Micro</td>
+<td>Alta</td>
+<td>Alto</td>
+</tr>
+<tr>
+<td>T3 Nano</td>
+<td>Baja</td>
+<td>Bajo</td>
+</tr>
+</tbody>
+</table>
+<h3>4. Escalabilidad</h3>
+<ul>
+<li><strong>Grupos de Autoescalado</strong>:</li>
+<li>Solo se paga por lo que se usa.</li>
+<li>Configuración de políticas de escalado automático basadas en métricas de carga.</li>
+</ul>
+<h4>Configuración de Política de Escalado</h4>
+<ul>
+<li><strong>Métrica</strong>: Conteo de solicitudes del balanceador de carga por objetivo.</li>
+<li><strong>Valor objetivo</strong>: 60 solicitudes.</li>
+<li><strong>Tiempo de calentamiento</strong>: 60 segundos.</li>
+</ul>
+<h3>5. Pruebas de Estrés</h3>
+<ul>
+<li>Realizar pruebas de estrés con Apache Benchmark enviando 1 millón de solicitudes.</li>
+<li>Monitorear el uso de CPU y métricas de red para verificar la respuesta del sistema.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Al finalizar el laboratorio, es importante seguir las instrucciones cuidadosamente y enviar el trabajo antes de que expire el entorno del laboratorio. Se recomienda revisar los videos de recorrido si es necesario.</p>
+<h3>Notas Finales</h3>
+<ul>
+<li>El entorno del laboratorio expira después de 2 horas.</li>
+<li>Asegúrate de enviar el laboratorio para que cuente hacia la finalización del curso.</li>
+</ul>
+<hr />
+    </body>
+    <script>
+        var stylesBot = "styles_bot.css";
+        var stylesMsj = "styles_msj.css";
+        const botName =  'DE - Mod 3';
+        const title = 'Modulo 3 Data Engineering';
+        const bot = '3';
+    </script>
+    <script src='./modulo_1.js'></script>
+    </html>
+    

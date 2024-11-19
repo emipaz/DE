@@ -1,0 +1,1074 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+      <head>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+         <title>Modulo 4</title>
+         <script type="text/javascript"  async
+           src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML">
+         </script>
+       </head>
+    <body>
+        <h1>Resumen del Curso: Introducción a la Ingeniería de Datos - Módulo 4</h1>
+<h2>Descripción</h2>
+<p>En esta cuarta semana del curso, se integran los conceptos aprendidos en las semanas anteriores sobre la recopilación de requisitos, el ciclo de vida de la ingeniería de datos y la arquitectura de datos. Se abordará un escenario práctico que incluye la definición de requisitos funcionales y no funcionales, así como la selección de herramientas y tecnologías para la implementación de sistemas en la nube.</p>
+<h2>Contenido</h2>
+<h3>1. Recopilación de Requisitos</h3>
+<ul>
+<li>Conversaciones entre ingenieros de datos y científicos de datos.</li>
+<li>Identificación de necesidades para proyectos de análisis y aprendizaje automático.</li>
+<li>Importancia de involucrar a otros interesados, como el equipo de marketing y los ingenieros de software.</li>
+</ul>
+<h3>2. Marco de Trabajo para Ingenieros de Datos</h3>
+<p>El proceso se puede dividir en los siguientes pasos:</p>
+<ol>
+<li><strong>Identificación de objetivos comerciales y necesidades de los interesados.</strong></li>
+<li><strong>Definición de requisitos del sistema.</strong></li>
+<li><strong>Selección de herramientas y tecnologías.</strong></li>
+<li><strong>Construcción y despliegue del sistema.</strong></li>
+</ol>
+<h3>3. Detalles de Cada Paso</h3>
+<ul>
+<li><strong>Paso 1:</strong> Preguntar sobre las acciones que tomarán los interesados.</li>
+<li><strong>Paso 2:</strong> Traducir las necesidades de los interesados en requisitos del sistema.</li>
+<li><strong>Paso 3:</strong> Prototipado y pruebas.</li>
+<li><strong>Paso 4:</strong> Evolución del sistema.</li>
+</ul>
+<h3>4. Ciclo de Vida de la Ingeniería de Datos</h3>
+<ul>
+<li>En las semanas 2 y 3, se exploraron:</li>
+<li><strong>Componentes de los sistemas de datos.</strong></li>
+<li><strong>Personas involucradas:</strong> Propietarios de sistemas de origen y usuarios finales.</li>
+</ul>
+<h3>5. Principios de Buena Arquitectura de Datos</h3>
+<ul>
+<li>Planificación para fallos.</li>
+<li>Selección de componentes comunes desde el inicio del diseño del sistema.</li>
+</ul>
+<h3>6. Objetivos de la Semana</h3>
+<ul>
+<li>Integrar todos los conceptos aprendidos en un escenario práctico.</li>
+<li>Traducir los requisitos en un diseño arquitectónico.</li>
+<li>Construir el sistema en la nube de AWS.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Al final de esta semana, los participantes estarán equipados para traducir requisitos en un diseño arquitectónico y construir un sistema en la nube, aplicando las mejores prácticas y conceptos discutidos a lo largo del curso.</p>
+<h2>Próximos Pasos</h2>
+<ul>
+<li>Unirse al siguiente video para comenzar con la implementación práctica.</li>
+</ul>
+<hr />
+<h1>Introducción a la Ingeniería de Datos - Módulo 3: Requisitos</h1>
+<h2>Descripción</h2>
+<p>En este módulo, se exploran los aspectos fundamentales del marco de pensamiento de un ingeniero de datos, centrándose en la recopilación de requisitos y la jerarquía de necesidades que deben ser consideradas para el éxito de un proyecto de ingeniería de datos.</p>
+<h2>Jerarquía de Necesidades</h2>
+<p>La jerarquía de necesidades en el contexto de la ingeniería de datos se puede desglosar de la siguiente manera:</p>
+<ol>
+<li><strong>Objetivos y Metas del Negocio</strong></li>
+<li>Definen el éxito para la empresa.</li>
+<li>
+<p>Ejemplos: crecimiento de ingresos, aumento de cuota de mercado, expansión de la base de usuarios.</p>
+</li>
+<li>
+<p><strong>Necesidades de los Stakeholders</strong></p>
+</li>
+<li>Los stakeholders son los empleados que contribuyen a alcanzar los objetivos del negocio.</li>
+<li>Necesitan recursos, herramientas y gestión adecuada.</li>
+<li>
+<p>Requieren sistemas de datos robustos.</p>
+</li>
+<li>
+<p><strong>Requisitos del Sistema</strong></p>
+</li>
+<li>Se refiere a los requisitos que los sistemas de datos deben cumplir para satisfacer las necesidades de los stakeholders.</li>
+<li>Se dividen en:<ul>
+<li><strong>Requisitos Funcionales</strong>: Especifican lo que el sistema debe hacer.</li>
+<li>Ejemplo: Un sistema que monitorea transacciones bancarias debe poder reportar transacciones potencialmente fraudulentas de inmediato.</li>
+<li><strong>Requisitos No Funcionales</strong>: Características del sistema que permiten su correcto funcionamiento.</li>
+<li>Ejemplo: Un sistema de streaming debe poder escalar para procesar datos de 10,000 usuarios simultáneamente.</li>
+</ul>
+</li>
+</ol>
+<h2>Importancia de la Recopilación de Requisitos</h2>
+<ul>
+<li>La recopilación de requisitos es crucial para alinear el trabajo de los ingenieros de datos con los objetivos del negocio.</li>
+<li>Se recomienda comenzar la recopilación de requisitos desde la parte superior de la jerarquía, hablando con la alta dirección sobre los objetivos de la empresa.</li>
+<li>En empresas pequeñas, es posible hablar directamente con el CEO; en organizaciones más grandes, se debe escalar en la cadena de mando.</li>
+</ul>
+<h2>Consejos para la Interacción con Líderes Empresariales</h2>
+<ul>
+<li>Es fundamental entender las necesidades de los stakeholders y los objetivos del negocio para el trabajo de un ingeniero de datos.</li>
+<li>La interacción con ejecutivos de alto nivel, como el CTO, es clave para el éxito en la ingeniería de datos.</li>
+</ul>
+<h2>Próximos Pasos</h2>
+<p>En el siguiente video, se presentará a Matt Housley, un experto en la interacción con ejecutivos de C-suite, quien compartirá consejos sobre cómo comenzar en la ingeniería de datos y cómo involucrarse con líderes empresariales para resolver problemas de negocio.</p>
+<hr />
+<p>Este resumen proporciona una visión general de los conceptos clave discutidos en el video sobre la recopilación de requisitos en la ingeniería de datos, destacando la importancia de alinear las necesidades de los stakeholders con los objetivos del negocio.</p>
+<hr />
+<h2>Introducción a la Ingeniería de Datos: Conversación con Matt Housley</h2>
+<h3>Descripción</h3>
+<p>En este documento se resumen las ideas y conceptos discutidos en la conversación entre Joe y Matt Housley sobre la ingeniería de datos, su libro "Fundamentals of Data Engineering" y el curso relacionado. Se abordan temas como la motivación detrás del libro, el público objetivo, la importancia de los conceptos fundamentales y consejos para quienes desean ingresar al campo de la ingeniería de datos.</p>
+<h3>Motivación del Libro</h3>
+<ul>
+<li><strong>Identificación de una Brecha</strong>: El libro fue escrito para abordar la falta de materiales educativos que definan el campo de la ingeniería de datos, más allá de herramientas y tecnologías.</li>
+<li><strong>Enfoque en Principios Fundamentales</strong>: Se busca proporcionar un marco mental para pensar y operar como un ingeniero de datos.</li>
+</ul>
+<h3>Público Objetivo</h3>
+<ul>
+<li><strong>Audiencia Principal</strong>: Personas con un trasfondo técnico que desean transitar hacia la ingeniería de datos.</li>
+<li><strong>Audiencias Secundarias</strong>: </li>
+<li>Gerentes de producto técnicos que trabajan con ingenieros de datos.</li>
+<li>Cualquier persona interesada en comprender mejor los conceptos de ingeniería de datos.</li>
+</ul>
+<h3>Relación entre el Libro y el Curso</h3>
+<ul>
+<li><strong>Complementariedad</strong>: El libro y el curso se complementan, permitiendo a los estudiantes aplicar conceptos teóricos a través de ejemplos prácticos.</li>
+<li><strong>Uso de Herramientas en AWS</strong>: El curso utiliza herramientas y tecnologías en la nube de AWS para proporcionar experiencia práctica.</li>
+</ul>
+<p>$## Consejos para Ingresar a la Ingeniería de Datos</p>
+<ol>
+<li><strong>Aprender Conceptos Básicos de Datos</strong>: Familiarizarse con datos tabulares y su uso en análisis.</li>
+<li><strong>Experimentar con Diferentes Herramientas</strong>: No limitarse a un solo conjunto de herramientas; adquirir experiencia general.</li>
+<li><strong>Desarrollar un Marco Mental</strong>: Comprender cómo pensar como un ingeniero de datos para clasificar herramientas y tecnologías adecuadamente.</li>
+</ol>
+<h3>Conclusión</h3>
+<p>La conversación entre Joe y Matt destaca la importancia de tener una base sólida en conceptos de datos y la necesidad de un enfoque práctico para quienes desean ingresar al campo de la ingeniería de datos. La combinación del libro y el curso proporciona un camino claro para desarrollar las habilidades necesarias en este campo en crecimiento.</p>
+<h3>Tabla Resumen</h3>
+<table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motivación del Libro</td>
+<td>Abordar la falta de materiales educativos en ingeniería de datos.</td>
+</tr>
+<tr>
+<td>Público Objetivo</td>
+<td>Técnicos que desean transitar a ingeniería de datos y gerentes de producto.</td>
+</tr>
+<tr>
+<td>Relación Libro-Curso</td>
+<td>Complementariedad entre teoría y práctica.</td>
+</tr>
+<tr>
+<td>Consejos para Nuevos Ingenieros</td>
+<td>Aprender conceptos básicos, experimentar con herramientas, desarrollar un marco mental.</td>
+</tr>
+</tbody>
+</table>
+<h2>Lista de Recursos</h2>
+<ul>
+<li><strong>Libro</strong>: <em>Fundamentals of Data Engineering</em></li>
+<li><strong>Curso</strong>: Introducción a la Ingeniería de Datos</li>
+<li><strong>Herramientas</strong>: AWS, Microsoft Excel</li>
+</ul>
+<p>Este documento proporciona una visión general de la conversación y los temas tratados, ofreciendo un recurso útil para aquellos interesados en la ingeniería de datos.</p>
+<hr />
+<h1>Resumen de la Conversación con el CTO</h1>
+<h2>Descripción</h2>
+<p>En este documento se presenta un resumen de la conversación entre un ingeniero de datos recién contratado y el CTO de una empresa de comercio electrónico. Se discuten los objetivos comerciales y las iniciativas tecnológicas que impactarán el trabajo del ingeniero de datos.</p>
+<h2>Objetivos de la Empresa</h2>
+<ul>
+<li><strong>Expansión de la cuota de mercado</strong>: La empresa busca aumentar su presencia en el mercado frente a nuevas marcas emergentes.</li>
+<li><strong>Nuevas ofertas de productos</strong>: Se planea diversificar la gama de productos disponibles.</li>
+<li><strong>Internacionalización</strong>: La empresa tiene la intención de expandirse a mercados internacionales.</li>
+</ul>
+<h2>Desafíos Tecnológicos</h2>
+<ul>
+<li><strong>Tecnología heredada</strong>: La empresa enfrenta problemas con el código antiguo que podría causar interrupciones costosas y dañar la marca.</li>
+<li><strong>División entre software y datos</strong>: Existe una desconexión entre el desarrollo de software y la ingeniería de datos, lo que dificulta la analítica.</li>
+</ul>
+<h2>Iniciativas Tecnológicas</h2>
+<ol>
+<li><strong>Refactorización del código</strong>: Se busca eliminar el código antiguo y mejorar la escalabilidad del sistema.</li>
+<li><strong>Transición a un enfoque de streaming</strong>: Se planea cambiar de un enfoque basado en lotes a uno basado en streaming utilizando tecnologías como Kinesis y Kafka.</li>
+</ol>
+<h3>Herramientas y Tecnologías</h3>
+<table>
+<thead>
+<tr>
+<th>Herramienta</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kinesis</td>
+<td>Versión nativa de Amazon para streaming.</td>
+</tr>
+<tr>
+<td>Kafka</td>
+<td>Plataforma de streaming que se considerará para escalar ciertos pipelines.</td>
+</tr>
+</tbody>
+</table>
+<h2>Rol del Ingeniero de Datos</h2>
+<ul>
+<li><strong>Colaboración con el equipo de software</strong>: Asistir en la refactorización del código para asegurar que la salida sea adecuada para la analítica.</li>
+<li><strong>Desarrollo de pipelines de datos</strong>: Crear pipelines que alimenten un motor de recomendaciones, analizando la taxonomía de productos y el comportamiento del cliente.</li>
+</ul>
+<h2>Objetivos de IA y Aprendizaje Automático</h2>
+<ul>
+<li><strong>Mejora de la retención de clientes</strong>: Se busca crear un motor de recomendaciones que mejore la experiencia del cliente en el sitio.</li>
+<li><strong>Colaboración con científicos de datos</strong>: Trabajar en conjunto para desarrollar los pipelines necesarios para el motor de recomendaciones.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>El ingeniero de datos tiene un papel crucial en la modernización de los sistemas y en la mejora de la calidad de los datos, lo que contribuirá al éxito de las iniciativas tecnológicas de la empresa. Se espera que el ingeniero adquiera habilidades en Kinesis y Kafka para gestionar y expandir las capacidades de streaming.</p>
+<hr />
+<p>Este resumen proporciona una visión general de los temas discutidos en la conversación, destacando los objetivos, desafíos y el papel del ingeniero de datos en la empresa.</p>
+<hr />
+<h1>Resumen de la Conversación con el Equipo de Marketing</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen las ideas y conceptos discutidos en la conversación entre un ingeniero de datos y un gerente de marketing de productos. Se abordan las necesidades y expectativas del equipo de marketing en relación con dos iniciativas clave: la creación de paneles de control (dashboards) para métricas de ventas de productos y un sistema de recomendaciones de productos.</p>
+<h2>Objetivos del Curso</h2>
+<ul>
+<li>Comprender los objetivos comerciales de alto nivel de la empresa.</li>
+<li>Recopilar requisitos basados en las necesidades de los interesados (stakeholders).</li>
+</ul>
+<h2>Iniciativas Clave</h2>
+<ol>
+<li><strong>Dashboards de Ventas de Productos</strong></li>
+<li>Visualización de métricas y tendencias de ventas.</li>
+<li>
+<p>Necesidad de datos en tiempo real para capturar picos de demanda.</p>
+</li>
+<li>
+<p><strong>Sistema de Recomendaciones de Productos</strong></p>
+</li>
+<li>Mejora de las recomendaciones personalizadas basadas en el historial de compras del cliente.</li>
+</ol>
+<h2>Elementos Clave en la Recopilación de Requisitos</h2>
+<ol>
+<li><strong>Estado Actual de los Sistemas</strong></li>
+<li>Identificar sistemas existentes y problemas asociados.</li>
+<li><strong>Acciones Planeadas por los Stakeholders</strong></li>
+<li>Comprender cómo se utilizarán los datos.</li>
+<li><strong>Identificación de Otros Stakeholders</strong></li>
+<li>Conversaciones necesarias para obtener información adicional.</li>
+</ol>
+<h2>Detalles de la Conversación</h2>
+<h3>Dashboards de Ventas</h3>
+<ul>
+<li><strong>Estado Actual</strong>: </li>
+<li>Los dashboards actuales muestran métricas de ventas por categoría y región, pero hay un retraso de dos días en la actualización de datos.</li>
+<li>
+<p>Se pueden observar tendencias a largo plazo, pero se requiere información en tiempo real para actuar rápidamente.</p>
+</li>
+<li>
+<p><strong>Necesidades</strong>:</p>
+</li>
+<li>Monitoreo en tiempo real de productos que están en tendencia.</li>
+<li>Capacidad para lanzar campañas promocionales dirigidas basadas en picos de demanda regional.</li>
+</ul>
+<h3>Sistema de Recomendaciones</h3>
+<ul>
+<li><strong>Estado Actual</strong>:</li>
+<li>
+<p>Sistema básico que muestra los productos más populares de la semana, sin personalización.</p>
+</li>
+<li>
+<p><strong>Necesidades</strong>:</p>
+</li>
+<li>Implementar un sistema que considere el historial de compras del cliente y los productos en su carrito para ofrecer recomendaciones personalizadas.</li>
+</ul>
+<h2>Conclusiones</h2>
+<p>La conversación entre el ingeniero de datos y el gerente de marketing resalta la importancia de entender las necesidades específicas del equipo de marketing para desarrollar soluciones efectivas. Se identificaron áreas clave para mejorar tanto en los dashboards como en el sistema de recomendaciones, lo que permitirá a la empresa tomar decisiones más informadas y mejorar la retención de clientes.</p>
+<h2>Próximos Pasos</h2>
+<ul>
+<li>Profundizar en los requisitos del sistema en futuras conversaciones.</li>
+<li>Comenzar el desarrollo de las soluciones basadas en la información recopilada.</li>
+</ul>
+<hr />
+<p>Este resumen proporciona una visión clara de las necesidades del equipo de marketing y los objetivos del ingeniero de datos en el contexto de la ingeniería de datos.</p>
+<hr />
+<h1>Resumen del Video: Desglosando la Conversación con Marketing</h1>
+<h2>Descripción</h2>
+<p>En este video, se analiza la conversación mantenida con el departamento de marketing sobre sus necesidades. Se profundiza en la documentación de los requisitos recopilados, utilizando una jerarquía que permite visualizar la conexión entre los requisitos del sistema y los objetivos comerciales de alto nivel.</p>
+<h2>Objetivos Comerciales</h2>
+<p>Los objetivos comerciales identificados son:
+- Continuar con la trayectoria de crecimiento de la empresa.
+- Enfocarse en la retención y lealtad del cliente.
+- Expandirse a nuevos mercados y ofrecer nuevos productos.
+- Ser impulsados por datos en la toma de decisiones.</p>
+<h2>Necesidades de los Stakeholders</h2>
+<p>Los stakeholders considerados son:
+- Científico de datos.
+- Gerente de marketing de productos.</p>
+<h3>Necesidades Identificadas</h3>
+<ol>
+<li><strong>Tableros de análisis (Analytics Dashboards)</strong></li>
+<li>Necesitan datos "en tiempo real" o "actuales".</li>
+<li>Desean ser notificados sobre picos de demanda para productos específicos.</li>
+<li>Se requieren actualizaciones horarias en los tableros.</li>
+</ol>
+<p><strong>Requisito Funcional:</strong>
+   - El sistema de datos debe servir datos transformados que no tengan más de una hora de antigüedad.</p>
+<ol>
+<li><strong>Sistema de recomendaciones (Recommender System)</strong></li>
+<li>La solución actual muestra productos populares al momento de la compra.</li>
+<li>Se desea un sistema que ofrezca recomendaciones personalizadas basadas en el historial de navegación y compras del usuario.</li>
+</ol>
+<p><strong>Requisito Funcional:</strong>
+   - El sistema debe proporcionar los datos de entrenamiento adecuados para el desarrollo del modelo de recomendación.
+   - Debe ser capaz de ingerir, transformar y servir datos de usuario al modelo entrenado, y devolver los resultados del modelo (IDs de productos) a la plataforma de ventas.</p>
+<h2>Consideraciones sobre Requisitos Funcionales</h2>
+<ul>
+<li>Traducir las necesidades de los stakeholders en requisitos funcionales puede ser complicado.</li>
+<li>Es importante no confundir las características del tablero con los requisitos del sistema de datos.</li>
+<li>La responsabilidad de construir los tableros recae en los científicos de datos, quienes necesitan acceso a datos actualizados.</li>
+</ul>
+<h2>Documentación de Requisitos Funcionales</h2>
+<p>Se han documentado dos requisitos funcionales básicos:
+1. Proveer datos transformados con una antigüedad máxima de una hora para los tableros de análisis.
+2. Proveer datos de entrenamiento y permitir la interacción entre el modelo de recomendación y la plataforma de ventas.</p>
+<h2>Próximos Pasos</h2>
+<p>En el próximo video, se abordará la documentación de requisitos no funcionales y se llevará a cabo una conversación con un ingeniero de software que mantiene la plataforma de ventas, que es el sistema fuente del cual se estará ingiriendo datos.</p>
+<hr />
+<p>Este resumen proporciona una visión clara de las necesidades del departamento de marketing y cómo se traducen en requisitos funcionales para el sistema de datos.</p>
+<hr />
+<h1>Resumen de la Conversación con el Ingeniero de Software</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen las ideas y conceptos discutidos en la conversación entre un ingeniero de datos y un ingeniero de software sobre la ingesta de datos desde una plataforma de ventas. Se abordan los desafíos comunes en el flujo de datos, la comunicación con los propietarios de sistemas de origen y las mejores prácticas para mitigar problemas relacionados con la disponibilidad de datos y cambios en el esquema.</p>
+<h2>Temas Clave</h2>
+<ol>
+<li><strong>Desafíos en la Ingesta de Datos</strong></li>
+<li>La falta de disponibilidad de datos.</li>
+<li>
+<p>Cambios en el esquema que rompen los scripts de procesamiento.</p>
+</li>
+<li>
+<p><strong>Comunicación con Propietarios de Sistemas</strong></p>
+</li>
+<li>Importancia de establecer líneas de comunicación abiertas.</li>
+<li>
+<p>Discusión sobre cómo anticipar y manejar interrupciones o cambios en los datos.</p>
+</li>
+<li>
+<p><strong>Soluciones Propuestas</strong></p>
+</li>
+<li>Creación de una réplica de solo lectura de la base de datos de producción.</li>
+<li>
+<p>Implementación de una API para acceder a los datos sin afectar el sistema de producción.</p>
+</li>
+<li>
+<p><strong>Problemas Potenciales</strong></p>
+</li>
+<li>Mantenimiento de sistemas que puede causar retrasos en la entrega de datos.</li>
+<li>
+<p>Fallos en servidores o centros de datos que pueden hacer que los datos no estén disponibles temporalmente.</p>
+</li>
+<li>
+<p><strong>Cambios en el Esquema de la Base de Datos</strong></p>
+</li>
+<li>Necesidad de realizar cambios en el esquema debido a nuevas características o expansión de productos.</li>
+<li>Importancia de notificar con anticipación sobre cambios en el esquema para ajustar los pipelines de datos.</li>
+</ol>
+<h2>Tabla de Problemas y Soluciones</h2>
+<table>
+<thead>
+<tr>
+<th>Problema</th>
+<th>Solución Propuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Datos no disponibles temporalmente</td>
+<td>Notificación automática a los usuarios de datos</td>
+</tr>
+<tr>
+<td>Cambios en el esquema</td>
+<td>Notificación anticipada sobre cambios en el esquema</td>
+</tr>
+<tr>
+<td>Acceso directo a la base de datos</td>
+<td>Configuración de una réplica de solo lectura y API</td>
+</tr>
+</tbody>
+</table>
+<h2>Lista de Recomendaciones</h2>
+<ul>
+<li><strong>Establecer Comunicación Abierta</strong>: Mantener un diálogo constante con los propietarios de sistemas de origen.</li>
+<li><strong>Anticipar Cambios</strong>: Estar al tanto de los cambios en el esquema y su impacto en los pipelines de datos.</li>
+<li><strong>Implementar Redundancias</strong>: Construir redundancias en los sistemas para minimizar el tiempo de inactividad.</li>
+<li><strong>Automatizar Verificaciones</strong>: Incluir verificaciones automáticas en el proceso de ingesta de datos para asegurar la conformidad con el esquema.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>La colaboración entre ingenieros de datos y propietarios de sistemas es crucial para construir sistemas de datos robustos. La comunicación abierta y la planificación anticipada son fundamentales para mitigar problemas y asegurar un flujo de datos continuo y confiable. En el próximo video, se explorarán más a fondo los requisitos no funcionales del sistema.</p>
+<hr />
+<h1>Documentación de Requisitos No Funcionales</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen las ideas y conceptos discutidos en el video "Documenting Nonfunctional Requirements" del curso de Introducción a la Ingeniería de Datos. Se abordan los requisitos no funcionales necesarios para los sistemas de datos, así como la importancia de documentarlos adecuadamente.</p>
+<h2>Conversación con el Ingeniero de Software</h2>
+<p>Durante la conversación con el ingeniero de software, se identificaron varios puntos clave:</p>
+<ul>
+<li><strong>Solución de Acceso a Datos</strong>: Se sugirió establecer una base de datos de réplica de solo lectura y una API para proporcionar acceso continuo a los datos.</li>
+<li><strong>Estabilidad de la Base de Datos</strong>: Se discutieron formas de asegurar la estabilidad en la base de datos de réplica para minimizar cambios disruptivos en los sistemas posteriores.</li>
+<li><strong>Notificaciones de Cambios</strong>: Se acordó que se proporcionarían notificaciones en caso de interrupciones del sistema o cambios anticipados en el esquema de la base de datos.</li>
+</ul>
+<h2>Documentación de Requisitos</h2>
+<h3>Formato Jerárquico</h3>
+<p>La documentación se organiza en un formato jerárquico que incluye:</p>
+<ol>
+<li><strong>Objetivos del Negocio</strong></li>
+<li><strong>Necesidades de los Interesados</strong></li>
+<li><strong>Requisitos del Sistema</strong></li>
+</ol>
+<h3>Requisitos Funcionales</h3>
+<p>Se han documentado dos requisitos funcionales:</p>
+<ul>
+<li><strong>Tableros Analíticos</strong></li>
+<li><strong>Sistema de Recomendación</strong></li>
+</ul>
+<h3>Requisitos No Funcionales</h3>
+<p>Los requisitos no funcionales son características o atributos que el sistema debe tener para funcionar correctamente. A continuación se presentan algunos ejemplos:</p>
+<h4>Para los Tableros Analíticos</h4>
+<ul>
+<li><strong>Escalabilidad y Latencia</strong>: </li>
+<li>
+<p>El sistema debe ser capaz de escalar para ingerir, transformar y servir el volumen de datos esperado durante el máximo nivel de actividad de los usuarios, manteniendo los requisitos de latencia.</p>
+</li>
+<li>
+<p><strong>Confiabilidad y Mantenibilidad</strong>:</p>
+</li>
+<li>El sistema debe realizar verificaciones de calidad de datos para asegurar que los datos ingeridos sean conformes.</li>
+<li>Las etapas de ingestión y transformación deben ser fácilmente adaptables a cambios en el esquema de datos.</li>
+</ul>
+<h4>Para el Sistema de Recomendación</h4>
+<ul>
+<li><strong>Latencia</strong>:</li>
+<li>
+<p>El sistema debe tener una latencia de menos de un segundo desde la ingestión de datos del usuario hasta la entrega de datos de recomendación.</p>
+</li>
+<li>
+<p><strong>Escalabilidad</strong>:</p>
+</li>
+<li>
+<p>El sistema debe ser capaz de escalar para manejar el número máximo de usuarios concurrentes en la plataforma.</p>
+</li>
+<li>
+<p><strong>Confiabilidad</strong>:</p>
+</li>
+<li>El sistema debe devolver siempre un conjunto de recomendaciones dentro de un segundo. Si el pipeline de recomendaciones falla, debe volver a servir una selección de los productos más populares.</li>
+</ul>
+<h2>Resumen</h2>
+<p>Es fundamental entender los sistemas no solo en términos de su funcionalidad, sino también en cómo esa funcionalidad servirá a los interesados y a los objetivos finales del negocio. La documentación de requisitos no funcionales es crucial para garantizar que los sistemas de datos sean robustos y cumplan con las expectativas de rendimiento y confiabilidad.</p>
+<h2>Próximos Pasos</h2>
+<p>En el siguiente video, se resumirán los temas principales de esta lección antes de elegir herramientas y tecnologías basadas en los requisitos del sistema.</p>
+<hr />
+<h1>Resumen de la Recolección de Requisitos en Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En esta lección se aborda la importancia de la recolección de requisitos en la ingeniería de datos, enfatizando la necesidad de comprender cómo los sistemas que se construyen aportan valor a los interesados. Se discuten las mejores prácticas para identificar necesidades, documentar hallazgos y evaluar compromisos en el desarrollo de sistemas de datos.</p>
+<h2>Puntos Clave</h2>
+<ol>
+<li><strong>Identificación de Interesados</strong>:</li>
+<li>Antes de construir o modificar sistemas de datos, es crucial identificar a los interesados y entender sus necesidades en el contexto de los objetivos empresariales.</li>
+<li>
+<p>Conversar con diversas personas en la organización, desde líderes hasta científicos de datos y ingenieros de software.</p>
+</li>
+<li>
+<p><strong>Preguntas Abiertas</strong>:</p>
+</li>
+<li>
+<p>Realizar preguntas abiertas para comprender los sistemas actuales, problemas potenciales y las acciones que los interesados planean tomar con los datos.</p>
+</li>
+<li>
+<p><strong>Documentación</strong>:</p>
+</li>
+<li>
+<p>Documentar todos los hallazgos es esencial para confirmar que el sistema propuesto satisfará las necesidades de los interesados y de la empresa.</p>
+</li>
+<li>
+<p><strong>Requisitos Funcionales y No Funcionales</strong>:</p>
+</li>
+<li>
+<p>Una vez que se comprenden las necesidades, se deben redactar requisitos funcionales y no funcionales para el sistema.</p>
+</li>
+<li>
+<p><strong>Evaluación de Compromisos</strong>:</p>
+</li>
+<li>Es importante discutir con los interesados sobre las prioridades: características del sistema, tiempo de implementación o costo.</li>
+<li>Se introduce el concepto de <strong>Triángulo de Hierro</strong> en la gestión de proyectos, que incluye:<ul>
+<li><strong>Tiempo</strong>: Duración del proyecto.</li>
+<li><strong>Alcance</strong>: Extensión del trabajo.</li>
+<li><strong>Costo</strong>: Presupuesto disponible.</li>
+</ul>
+</li>
+</ol>
+<h3>Triángulo de Hierro</h3>
+<table>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiempo</td>
+<td>Duración del proyecto.</td>
+</tr>
+<tr>
+<td>Alcance</td>
+<td>Extensión del trabajo a realizar.</td>
+</tr>
+<tr>
+<td>Costo</td>
+<td>Presupuesto asignado.</td>
+</tr>
+</tbody>
+</table>
+<h2>Principios para Romper el Triángulo de Hierro</h2>
+<ul>
+<li>Aplicar principios y procesos como:</li>
+<li>Construcción de sistemas desacoplados.</li>
+<li>Optimización para decisiones de puerta de dos vías.</li>
+<li>Comprensión profunda de las necesidades de los interesados.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>La recolección de requisitos es fundamental para el éxito en la ingeniería de datos. A través de la identificación de interesados, la documentación adecuada y la evaluación de compromisos, se pueden construir y mantener sistemas de datos de alta calidad dentro de un cronograma y presupuesto predecibles. En la próxima lección, se explorarán los costos y capacidades de diferentes herramientas y tecnologías para la construcción de sistemas.</p>
+<p>¡Nos vemos en la próxima lección!</p>
+<hr />
+<h1>Recolección de Requisitos en Ingeniería de Datos</h1>
+<h2>Descripción</h2>
+<p>En esta lección, se simula un proyecto desde la recolección de requisitos hasta la implementación, utilizando los conceptos aprendidos en el curso de Introducción a la Ingeniería de Datos. Aunque en la práctica este proceso puede llevar semanas, meses o incluso años, en esta actividad se realizará en un tiempo reducido.</p>
+<h2>Objetivos de la Lección</h2>
+<ul>
+<li>Comprender el proceso de recolección de requisitos.</li>
+<li>Extraer requisitos funcionales y no funcionales de una conversación entre un ingeniero de datos y un científico de datos.</li>
+<li>Identificar herramientas y servicios de AWS para implementar soluciones de datos.</li>
+</ul>
+<h2>Plan de Actividades</h2>
+<ol>
+<li><strong>Revisión de la Conversación</strong>: Se presentará una conversación entre el ingeniero de datos y el científico de datos sobre un sistema de recomendación.</li>
+<li>
+<p><strong>Material Adicional</strong>: Se proporcionará la transcripción de la conversación para facilitar la revisión.</p>
+</li>
+<li>
+<p><strong>Extracción de Requisitos</strong>: </p>
+</li>
+<li>Se deberán identificar requisitos funcionales y no funcionales a partir de la conversación.</li>
+<li>
+<p>Se completará un cuestionario para evaluar la comprensión de los requisitos.</p>
+</li>
+<li>
+<p><strong>Exploración de Herramientas de AWS</strong>: </p>
+</li>
+<li>Se presentarán diversas herramientas y servicios de AWS que pueden ser utilizados para implementar la solución.</li>
+<li>
+<p>Se completará un segundo cuestionario para identificar qué herramientas satisfacen los requisitos del sistema de datos.</p>
+</li>
+<li>
+<p><strong>Ejercicio Práctico en el Laboratorio</strong>: </p>
+</li>
+<li>Se proporcionará un entorno de laboratorio con la infraestructura básica del sistema de recomendación.</li>
+<li>Se personalizará el sistema según las elecciones de herramientas realizadas en el cuestionario.</li>
+</ol>
+<h2>Consideraciones Finales</h2>
+<p>Este ejercicio es una simulación breve y limitada en comparación con la experiencia real de un ingeniero de datos. Sin embargo, es útil para imaginar el proceso de construcción de un sistema sin las restricciones habituales del entorno laboral.</p>
+<h2>Recursos</h2>
+<ul>
+<li><strong>Transcripción de la Conversación</strong>: Acceso a la transcripción para revisión.</li>
+<li><strong>Cuestionarios</strong>: Evaluaciones para identificar requisitos y herramientas.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Se invita a los participantes a trabajar a través de los materiales de lectura y cuestionarios, y luego proceder a la práctica en el laboratorio para aplicar lo aprendido.</p>
+<hr />
+<h1>Resumen de la Conversación sobre el Sistema de Recomendación</h1>
+<h2>Descripción</h2>
+<p>En esta conversación, se discuten los avances en el desarrollo de un sistema de recomendación basado en contenido para un equipo de marketing. Se abordan aspectos técnicos del modelo, la estructura de los datos de entrenamiento y las expectativas de rendimiento del sistema.</p>
+<h2>Proyectos en Curso</h2>
+<ul>
+<li><strong>Sistema de Recomendación</strong>: Se está desarrollando un sistema que utiliza características de productos y usuarios para generar recomendaciones.</li>
+<li><strong>Tablero de Análisis</strong>: Se está trabajando en un tablero para visualizar datos relevantes.</li>
+</ul>
+<h2>Detalles del Sistema de Recomendación</h2>
+<ul>
+<li><strong>Modelo Utilizado</strong>: Sistema de recomendación basado en contenido.</li>
+<li><strong>Características</strong>:</li>
+<li><strong>Entradas</strong>: <ul>
+<li>Características del usuario: número de cliente, límite de crédito, ciudad, código postal, país.</li>
+<li>Características del producto: código de producto, cantidad en stock, precio de compra, MSRP, línea de producto, escala de producto.</li>
+</ul>
+</li>
+<li><strong>Salida</strong>: Lista de identificadores de productos recomendados.</li>
+</ul>
+<h3>Proceso de Entrenamiento</h3>
+<ul>
+<li><strong>Formato de Datos</strong>: Los datos de entrenamiento están en formato tabular, donde cada fila representa una compra de producto y contiene las características mencionadas.</li>
+<li><strong>Frecuencia de Reentrenamiento</strong>: </li>
+<li>Se planea monitorear el rendimiento del modelo.</li>
+<li>Posibles intervalos de reentrenamiento: semanal, mensual o trimestral, dependiendo de la estabilidad del modelo.</li>
+</ul>
+<h2>Expectativas de Rendimiento</h2>
+<ul>
+<li><strong>Velocidad de Recomendaciones</strong>: Se espera que el sistema genere recomendaciones de manera casi instantánea, idealmente en menos de 2 segundos.</li>
+<li><strong>Tiempo de Ejecución del Modelo</strong>: En pruebas locales, el modelo genera recomendaciones en milisegundos.</li>
+</ul>
+<h2>Escalabilidad</h2>
+<ul>
+<li><strong>Usuarios Concurrentes</strong>: </li>
+<li>Actualmente hay alrededor de 100,000 clientes en la base de datos.</li>
+<li>Se anticipa un crecimiento en el número de usuarios, con picos de actividad de hasta 10,000 usuarios simultáneos.</li>
+</ul>
+<h2>Tabla de Características del Sistema de Recomendación</h2>
+<table>
+<thead>
+<tr>
+<th>Tipo de Característica</th>
+<th>Ejemplo de Atributos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Características del Usuario</strong></td>
+<td>Número de cliente, Límite de crédito, Ciudad, Código postal, País</td>
+</tr>
+<tr>
+<td><strong>Características del Producto</strong></td>
+<td>Código de producto, Cantidad en stock, Precio de compra, MSRP, Línea de producto, Escala de producto</td>
+</tr>
+<tr>
+<td><strong>Valor de Calificación</strong></td>
+<td>Valor de 1 a 5 que representa la calificación del usuario para el producto</td>
+</tr>
+</tbody>
+</table>
+<h2>Conclusiones</h2>
+<p>La conversación destaca la importancia de un sistema de recomendación eficiente y escalable, que pueda adaptarse a las necesidades cambiantes del negocio y proporcionar recomendaciones relevantes a los usuarios en tiempo real. Se requiere una colaboración continua entre los equipos de marketing y desarrollo para asegurar el éxito del proyecto.</p>
+<hr />
+<h1>Servicios de AWS para Pipelines por Lotes</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los conceptos y herramientas discutidos en el video sobre servicios de AWS para el procesamiento de datos por lotes. Se abordan las decisiones tecnológicas necesarias para construir un sistema de datos, centrándose en las opciones de AWS para la ingesta, transformación y almacenamiento de datos.</p>
+<h2>Contenido</h2>
+<h3>Introducción</h3>
+<p>Después de recopilar los requisitos del sistema, es crucial traducirlos en elecciones de herramientas y tecnologías. La elección de la tecnología adecuada depende de los requisitos específicos del proyecto, similar a elegir un vehículo para el transporte.</p>
+<h3>Comparación de Opciones</h3>
+<p>Se presentan dos vehículos como analogía para ilustrar la importancia de entender los requisitos:
+- <strong>Jumbo Jet</strong>
+  - Rango: 10,000 millas náuticas
+  - Velocidad máxima: 1,100 km/h
+  - Capacidad: 250+ pasajeros
+  - Costo: <script type="math/tex">225,000,000
+- **Tesla Model S**
+  - Rango: 360 km
+  - Velocidad máxima: 320 km/h
+  - Capacidad: 4 pasajeros
+  - Costo: </script>70,000</p>
+<p>La elección del vehículo depende de factores como la distancia, el número de pasajeros y el presupuesto.</p>
+<h3>Componentes del Sistema de Datos</h3>
+<p>Para el sistema de datos que se trabajará, se identifican dos componentes: <strong>por lotes</strong> y <strong>streaming</strong>. Este documento se centra en el procesamiento por lotes, específicamente en el paradigma de <strong>Extract, Transform, Load (ETL)</strong>.</p>
+<h4>Proceso ETL</h4>
+<ol>
+<li><strong>Ingesta de datos</strong>: Obtener datos de un sistema fuente, como Amazon Relational Database Service (RDS).</li>
+<li><strong>Transformación</strong>: Aplicar transformaciones para que los datos sean útiles para los científicos de datos.</li>
+<li><strong>Carga</strong>: Almacenar los datos transformados y proporcionar acceso a ellos.</li>
+</ol>
+<h3>Opciones de Ingesta y Transformación</h3>
+<p>Existen varias maneras de implementar el proceso ETL en AWS:</p>
+<ul>
+<li>
+<p><strong>EC2</strong>: Crear una instancia y escribir scripts para la ingesta y transformación. Sin embargo, esto puede ser complicado y requiere gestión de seguridad y software.</p>
+</li>
+<li>
+<p><strong>AWS Lambda</strong>: Permite ejecutar código en respuesta a eventos. Sin embargo, tiene limitaciones como un tiempo de espera de 15 minutos y restricciones de memoria y CPU.</p>
+</li>
+</ul>
+<h4>Herramientas Serverless para Procesamiento por Lotes</h4>
+<ol>
+<li><strong>Amazon Glue ETL</strong></li>
+<li>Ventajas: Descubrimiento automático de datos mediante crawlers, creación de un catálogo de datos, y una interfaz visual para diseñar pipelines.</li>
+<li>
+<p>Ideal para proyectos que requieren conveniencia y facilidad de uso.</p>
+</li>
+<li>
+<p><strong>Amazon EMR Serverless</strong></p>
+</li>
+<li>Ventajas: Mayor control sobre el procesamiento de datos, soporte para frameworks como Apache Spark y Hadoop.</li>
+<li>Ideal para análisis a gran escala y personalización.</li>
+</ol>
+<h3>Almacenamiento y Servicio de Datos</h3>
+<p>La elección del almacenamiento depende del caso de uso:
+- <strong>Amazon RDS</strong>: Para datos tabulares normalizados.
+- <strong>Amazon Redshift</strong>: Para consultas analíticas complejas en grandes conjuntos de datos, aunque a un costo más alto.
+- <strong>Amazon S3</strong>: Comúnmente utilizado como área de preparación, flexible y escalable, ideal para almacenar cualquier tipo de datos.</p>
+<h3>Conclusión</h3>
+<p>Este documento proporciona una visión general de las herramientas y servicios de AWS para el procesamiento de datos por lotes. En la próxima sesión, se explorarán las herramientas para el procesamiento de datos en streaming.</p>
+<h2>Tabla Resumen de Servicios</h2>
+<table>
+<thead>
+<tr>
+<th>Servicio</th>
+<th>Ventajas</th>
+<th>Desventajas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AWS Lambda</td>
+<td>Ejecución en respuesta a eventos</td>
+<td>Limitaciones de tiempo y recursos</td>
+</tr>
+<tr>
+<td>Amazon Glue ETL</td>
+<td>Descubrimiento automático y fácil de usar</td>
+<td>Menos control sobre el procesamiento</td>
+</tr>
+<tr>
+<td>Amazon EMR</td>
+<td>Mayor control y flexibilidad</td>
+<td>Complejidad en la gestión</td>
+</tr>
+<tr>
+<td>Amazon RDS</td>
+<td>Ideal para datos tabulares</td>
+<td>Costos variables</td>
+</tr>
+<tr>
+<td>Amazon Redshift</td>
+<td>Potente para análisis complejos</td>
+<td>Costo elevado</td>
+</tr>
+<tr>
+<td>Amazon S3</td>
+<td>Flexible y escalable</td>
+<td>Puede requerir gestión adicional</td>
+</tr>
+</tbody>
+</table>
+<h2>Lista de Pasos para el Proceso ETL</h2>
+<ol>
+<li><strong>Ingesta de datos</strong> desde Amazon RDS.</li>
+<li><strong>Transformación</strong> de datos utilizando Glue ETL o EMR.</li>
+<li><strong>Carga</strong> de datos en Amazon S3 o RDS según el caso de uso.</li>
+</ol>
+<p>Este resumen proporciona una base sólida para entender las opciones disponibles en AWS para el procesamiento de datos por lotes.</p>
+<hr />
+<h1>Servicios de AWS para Pipelines de Streaming</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los conceptos y servicios de AWS relacionados con la construcción de pipelines de streaming, complementando lo aprendido sobre pipelines por lotes. Se explorarán las opciones disponibles en AWS para manejar datos en tiempo real, así como las mejores prácticas para su implementación.</p>
+<h2>Contenido</h2>
+<h3>Introducción a los Datos de Streaming</h3>
+<p>Los datos de streaming pueden provenir de diversas fuentes, tales como:
+- Dispositivos IoT
+- Datos de clics de sitios web o aplicaciones móviles
+- Cambios en bases de datos mediante un proceso conocido como <strong>Change Data Capture (CDC)</strong></p>
+<h3>Opciones para Ingesta de Datos de Streaming</h3>
+<ol>
+<li><strong>Instancias EC2</strong>: </li>
+<li>Permiten escribir scripts personalizados para realizar CDC o conectarse a fuentes de streaming.</li>
+<li>
+<p>Requiere gestión de software, seguridad y complejidad de implementación.</p>
+</li>
+<li>
+<p><strong>Funciones Lambda</strong>:</p>
+</li>
+<li>Opción sin servidor para crear sistemas de streaming.</li>
+<li>Implica escribir código personalizado y puede tener limitaciones según el caso de uso.</li>
+</ol>
+<h3>Servicios de AWS para Streaming</h3>
+<p>A continuación, se presentan los principales servicios de AWS que soportan cargas de trabajo de streaming:</p>
+<table>
+<thead>
+<tr>
+<th>Servicio</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Amazon Kinesis Data Streams</strong></td>
+<td>Permite la ingesta de datos en tiempo real. Acepta datos en varios formatos (JSON, XML, etc.) y permite múltiples consumidores para procesar los datos.</td>
+</tr>
+<tr>
+<td><strong>Amazon Managed Streaming for Apache Kafka (MSK)</strong></td>
+<td>Servicio gestionado que facilita la construcción y ejecución de aplicaciones que utilizan Apache Kafka para procesar datos de streaming. Soporta versiones de código abierto de Kafka.</td>
+</tr>
+<tr>
+<td><strong>Amazon Data Firehose</strong></td>
+<td>Facilita la lectura de datos de un stream y su almacenamiento en destinos como S3 o Redshift, sin necesidad de escribir código personalizado.</td>
+</tr>
+</tbody>
+</table>
+<h3>Comparación entre Kinesis y MSK</h3>
+<ul>
+<li><strong>Kinesis</strong>: Recomendado para principiantes debido a su facilidad de uso y menor carga operativa.</li>
+<li><strong>MSK</strong>: Mejor opción si ya se tiene experiencia con Kafka o se busca mayor flexibilidad y control.</li>
+</ul>
+<h3>Uso de Amazon Data Firehose</h3>
+<ul>
+<li>Diseñado para simplificar el proceso de mover datos de un stream a un almacenamiento sin necesidad de integraciones complejas.</li>
+<li>Se integra con más de 20 fuentes de datos de AWS para la ingesta de datos de streaming.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Existen múltiples servicios en AWS que facilitan la implementación de pipelines de streaming. Es importante evaluar el caso de uso específico para elegir la herramienta adecuada. En el próximo ejercicio práctico, se aplicarán estos conceptos para implementar un pipeline de batch y streaming.</p>
+<h2>Próximos Pasos</h2>
+<ul>
+<li>Realizar el cuestionario sobre la selección de servicios para el sistema de recomendación de productos.</li>
+<li>Participar en el ejercicio práctico para implementar el pipeline de datos.</li>
+</ul>
+<p>¡Diviértete y nos vemos en el próximo curso!</p>
+<hr />
+<h1>Implementación del Pipeline por Lotes para un Sistema de Recomendación</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los pasos para implementar un pipeline por lotes y de streaming para un sistema de recomendación, utilizando AWS. Se detallan las herramientas y procesos necesarios para preparar los datos de entrenamiento y almacenar las salidas del sistema de recomendación.</p>
+<h2>Contenido</h2>
+<h3>Objetivos del Laboratorio</h3>
+<ol>
+<li>Implementar el pipeline por lotes para proporcionar datos de entrenamiento a los científicos de datos.</li>
+<li>Configurar una base de datos vectorial para almacenar las salidas del sistema de recomendación.</li>
+<li>Implementar el pipeline de streaming que utiliza el sistema de recomendación entrenado y la base de datos vectorial para generar recomendaciones de productos.</li>
+</ol>
+<h3>Diagrama de Arquitectura</h3>
+<p>El laboratorio se centra en la arquitectura del pipeline por lotes, que transforma los datos y los prepara para el entrenamiento del sistema de recomendación.</p>
+<h3>Recursos Necesarios</h3>
+<ul>
+<li><strong>Base de datos RDS MySQL</strong>: Contiene el conjunto de datos de modelos clásicos y una tabla adicional con las calificaciones de los productos.</li>
+<li><strong>AWS Glue ETL</strong>: Para ingerir y transformar los datos.</li>
+<li><strong>S3 Bucket</strong>: Para almacenar los datos transformados.</li>
+</ul>
+<h3>Pasos para la Implementación</h3>
+<ol>
+<li><strong>Conexión a la Base de Datos</strong></li>
+<li>Utilizar el comando para obtener el endpoint de la base de datos.</li>
+<li>Conectar a la base de datos usando MySQL con las credenciales adecuadas.</li>
+</ol>
+<p><code>bash
+   mysql -h &lt;endpoint&gt; -u admin -p</code></p>
+<ol>
+<li><strong>Exploración de la Tabla de Calificaciones</strong></li>
+<li>Ejecutar una consulta para obtener las primeras 20 filas de la tabla de calificaciones.</li>
+</ol>
+<p><code>sql
+   SELECT * FROM ratings LIMIT 20;</code></p>
+<ol>
+<li><strong>Configuración de Terraform</strong></li>
+<li>Instalar Terraform y definir variables ambientales.</li>
+<li>Crear los recursos necesarios para el pipeline por lotes, incluyendo Glue ETL y el S3 bucket.</li>
+</ol>
+<p><code>bash
+   ./setup.sh
+   cd terraform
+   terraform init
+   terraform plan
+   terraform apply</code></p>
+<ol>
+<li><strong>Ejecución del Trabajo de Glue</strong></li>
+<li>Iniciar el trabajo de Glue para transformar los datos.</li>
+</ol>
+<p><code>bash
+   aws glue start-job-run --job-name &lt;nombre_del_trabajo&gt;</code></p>
+<ol>
+<li><strong>Verificación de Datos en S3</strong></li>
+<li>Comprobar que el bucket S3 contiene los datos de entrenamiento en la carpeta <code>ratings_ml_training</code>.</li>
+</ol>
+<h3>Organización de los Archivos de Terraform</h3>
+<p>Los archivos de Terraform se organizan en módulos. Cada módulo contiene los recursos necesarios para una parte específica del laboratorio. Asegúrate de declarar los módulos en el archivo principal de Terraform.</p>
+<h3>Estructura de la Tabla de Calificaciones</h3>
+<table>
+<thead>
+<tr>
+<th>Número de Cliente</th>
+<th>Código de Producto</th>
+<th>Calificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A123</td>
+<td>5</td>
+</tr>
+<tr>
+<td>2</td>
+<td>B456</td>
+<td>4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>C789</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h3>Conclusión</h3>
+<p>Hasta este punto, hemos transformado los datos de calificaciones en un formato adecuado para entrenar el sistema de recomendación. En la siguiente parte del laboratorio, se configurará una base de datos vectorial para almacenar las salidas del modelo de recomendación.</p>
+<h2>Próximos Pasos</h2>
+<ul>
+<li>Configurar la base de datos vectorial.</li>
+<li>Implementar el pipeline de streaming para generar recomendaciones basadas en la actividad de navegación del usuario.</li>
+</ul>
+<hr />
+<h1>Configuración de la Base de Datos Vectorial</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los pasos para configurar una base de datos vectorial que almacenará las salidas de un modelo de recomendación. Se abordarán los elementos clave del proceso, incluyendo la interacción con un bucket de S3, la creación de la base de datos y la carga de embeddings.</p>
+<h2>Contenido</h2>
+<h3>1. Introducción</h3>
+<p>En esta sección, se configurará una base de datos vectorial que almacenará los resultados de un modelo de recomendación previamente entrenado. Los datos transformados se encuentran en un bucket de S3, que es compartido con los científicos de datos.</p>
+<h3>2. Estructura del Bucket S3</h3>
+<p>El bucket de S3 contiene tres carpetas principales:
+- <strong>embeddings</strong>: Contiene los embeddings de usuarios y productos.
+- <strong>models</strong>: Almacena el modelo entrenado que se utilizará para inferencias.
+- <strong>scalers</strong>: Incluye los objetos utilizados en la pre-procesamiento del entrenamiento.</p>
+<h4>Archivos en la Carpeta de Embeddings</h4>
+<p>En la carpeta de embeddings, se encuentran dos archivos CSV:
+- <strong>item_embeddings.csv</strong>: Embeddings de los productos.
+- <strong>user_embeddings.csv</strong>: Embeddings de los usuarios.</p>
+<p>Estos embeddings se utilizarán para encontrar productos similares a los que un usuario ha agregado a su carrito de compras.</p>
+<h3>3. Creación de la Base de Datos Vectorial</h3>
+<p>Para crear la base de datos vectorial, se seguirán los siguientes pasos:</p>
+<ol>
+<li><strong>Modificar Archivos de Configuración</strong>:</li>
+<li>Abrir el archivo <code>main.tf</code> y descomentar la sección que declara el módulo de la base de datos vectorial.</li>
+<li>
+<p>Abrir el archivo <code>outputs.tf</code> y descomentar las variables de salida del módulo de la base de datos vectorial.</p>
+</li>
+<li>
+<p><strong>Crear Recursos</strong>:</p>
+</li>
+<li>Ejecutar los siguientes comandos en la terminal:
+     <code>bash
+     terraform init
+     terraform plan
+     terraform apply</code></li>
+<li>
+<p>Confirmar la creación de recursos. La creación de la base de datos PostgreSQL puede tardar alrededor de siete minutos.</p>
+</li>
+<li>
+<p><strong>Obtener Credenciales</strong>:</p>
+</li>
+<li>Copiar el nombre de host o endpoint de la base de datos.</li>
+<li>Ejecutar comandos para obtener el nombre de usuario y la contraseña, que están marcados como sensibles.</li>
+</ol>
+<h3>4. Carga de Embeddings en la Base de Datos</h3>
+<p>Para cargar los embeddings en la base de datos vectorial, se realizarán los siguientes pasos:</p>
+<ol>
+<li><strong>Abrir el Archivo SQL</strong>:</li>
+<li>Navegar a la carpeta SQL y abrir el archivo SQL correspondiente.</li>
+<li>
+<p>Especificar el nombre del bucket de S3 en las sentencias SELECT.</p>
+</li>
+<li>
+<p><strong>Conectar a la Base de Datos</strong>:</p>
+</li>
+<li>Ejecutar el comando para conectarse a la base de datos, reemplazando el host con el nombre de host obtenido anteriormente.</li>
+<li>
+<p>Ingresar la contraseña cuando se solicite.</p>
+</li>
+<li>
+<p><strong>Ejecutar Sentencias SQL</strong>:</p>
+</li>
+<li>Ejecutar las sentencias SQL del script de embeddings.</li>
+<li>Listar las tablas disponibles para verificar que los embeddings se hayan cargado correctamente.</li>
+</ol>
+<h3>5. Conclusión</h3>
+<p>Una vez que se ha configurado la base de datos vectorial y se han cargado los embeddings del modelo, se procederá a la siguiente parte del laboratorio, que se centrará en el pipeline de streaming para pasar datos de usuarios y productos al sistema de recomendación.</p>
+<h2>Tabla Resumen de Pasos</h2>
+<table>
+<thead>
+<tr>
+<th>Paso</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Modificar Archivos</td>
+<td>Descomentar secciones en <code>main.tf</code> y <code>outputs.tf</code>.</td>
+</tr>
+<tr>
+<td>2. Crear Recursos</td>
+<td>Ejecutar comandos de Terraform para crear la base de datos.</td>
+</tr>
+<tr>
+<td>3. Obtener Credenciales</td>
+<td>Copiar el endpoint, nombre de usuario y contraseña.</td>
+</tr>
+<tr>
+<td>4. Cargar Embeddings</td>
+<td>Especificar el bucket en el archivo SQL y ejecutar las sentencias.</td>
+</tr>
+<tr>
+<td>5. Verificar Carga</td>
+<td>Listar tablas para confirmar la carga de embeddings.</td>
+</tr>
+</tbody>
+</table>
+<h2>Notas Finales</h2>
+<p>En el próximo video, se explorará la parte del pipeline de streaming que se utilizará para pasar datos al sistema de recomendación y almacenar las recomendaciones en un bucket de S3.</p>
+<hr />
+<h1>Implementación del Pipeline de Streaming</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los pasos necesarios para implementar un pipeline de streaming utilizando un sistema de recomendación y una base de datos vectorial. Se describen los componentes arquitectónicos, la configuración de variables ambientales y el proceso de carga de datos en un bucket de S3.</p>
+<h2>Diagrama Arquitectónico</h2>
+<p>El flujo de trabajo del streaming se compone de los siguientes elementos:</p>
+<ul>
+<li><strong>Lambda Function (Inferencia del Modelo)</strong>: Utiliza el modelo entrenado almacenado en S3 y las incrustaciones de la base de datos vectorial para proporcionar recomendaciones basadas en la actividad del usuario en línea.</li>
+<li><strong>AWS Kinesis Data Streams</strong>: Recibe la actividad del usuario en línea desde los registros de la plataforma de ventas.</li>
+<li><strong>Kinesis Data Firehose</strong>: Lee los eventos de Kinesis Data Streams y actúa como un servicio de entrega para cargar los datos en el bucket de S3.</li>
+</ul>
+<h2>Proceso de Implementación</h2>
+<ol>
+<li><strong>Configuración de la Lambda Function</strong>:</li>
+<li>Acceder al servicio Lambda en la consola de AWS.</li>
+<li>Seleccionar la función Lambda que contiene "model inference" en su nombre.</li>
+<li>Ir a la pestaña de configuración y seleccionar "variables ambientales".</li>
+<li>Editar y agregar el host de la base de datos, el nombre de usuario y la contraseña.</li>
+<li>
+<p>Guardar los cambios.</p>
+</li>
+<li>
+<p><strong>Implementación del Pipeline de Streaming</strong>:</p>
+</li>
+<li>Descomentar la sección final en el archivo <code>main.tf</code> que declara un módulo de streaming.</li>
+<li>Hacer lo mismo en el archivo de salidas.</li>
+<li>Ejecutar los siguientes comandos de Terraform:
+     <code>bash
+     terraform init
+     terraform plan
+     terraform apply</code></li>
+<li>
+<p>Nota: Terraform no creará Kinesis Data Streams ya que ya está proporcionado como un recurso del laboratorio.</p>
+</li>
+<li>
+<p><strong>Verificación de la Carga de Datos</strong>:</p>
+</li>
+<li>Buscar el bucket de S3 que contiene las recomendaciones.</li>
+<li>
+<p>Verificar que los datos están particionados por año, mes, día y hora para facilitar la localización.</p>
+</li>
+<li>
+<p><strong>Revisión de Logs</strong>:</p>
+</li>
+<li>Buscar el servicio Lambda y seleccionar la función de transformación.</li>
+<li>Ir a la pestaña de monitorización y ver los logs de CloudWatch para revisar el rendimiento de la función.</li>
+</ol>
+<h2>Notas Finales</h2>
+<ul>
+<li>Asegúrate de seguir las instrucciones del laboratorio cuidadosamente y revisitar los videos si es necesario.</li>
+<li>Una vez completadas todas las tareas del laboratorio, no olvides enviarlo en la página de instrucciones de configuración del laboratorio.</li>
+<li>Ten en cuenta que el entorno del laboratorio expirará después de dos horas.</li>
+</ul>
+<h2>Recursos Adicionales</h2>
+<ul>
+<li>Para una comprensión más profunda de Kinesis Data Streams, se recomienda revisar el curso dos.</li>
+</ul>
+<p>¡Ahora es tu turno de intentar este laboratorio!</p>
+<hr />
+    </body>
+    <script>
+        var stylesBot = "styles_bot.css";
+        var stylesMsj = "styles_msj.css";
+        const botName =  'DE - Mod 4';
+        const title = 'Modulo 4 Data Engineering';
+        const bot = '4';
+    </script>
+    <script src='./modulo_1.js'></script>
+    </html>
+    
