@@ -1,5 +1,4 @@
 import re
-import json
 import logging
 import markdown
 from html2text import html2text
