@@ -1,5 +1,5 @@
 MEMORIA = 10
-DOCUMENTOS = 5
+DOCUMENTOS = 10
 MODELO = "gpt-4o-mini"
 # MODELO = "gpt-3.5-turbo"
 # MODELO = "gpt-4-turbo"
