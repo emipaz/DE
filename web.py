@@ -1,14 +1,12 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify
 import threading
 import webbrowser
 import os
-import secrets
 from flask_cors import CORS
 from flask_talisman import Talisman
 from utils import (add_target_blank_to_links,
-                   markdown2html,
                    create_logger,
-                    markdown_to_html_with_math)
+                markdown_to_html_with_math)
 from bot import Chatbot
 
 app = Flask(__name__)
@@ -27,7 +25,8 @@ def wait_for_exit():
 
 def open_browser():
     # Ruta local del archivo HTML
-    html_file = "public_html/index.html"  # Cambia esto por la ruta real
+    base = os.path.dirname(os.path.abspath(__file__))
+    html_file = os.path.join(base, "public_html", "index.html")  # Cambia esto por la ruta real
     webbrowser.open(f"file://{html_file}")
 
 
@@ -61,17 +60,10 @@ def chatbot():
     return jsonify(response)
 
 
-
 if __name__ == '__main__':
 
     threading.Timer(1, open_browser).start()
-    # Iniciar un hilo para escuchar el comando 'salir'
-    threading.Thread(target=wait_for_exit, daemon=True).start()
-    
-    # Abrir el navegador en un hilo separado
-    #threading.Timer(1, open_browser).start()
-    
-    app.run(host="127.0.0.1", port=5002 , debug=True)
-    # app.run(debug=True, host='0.0.0.0', port=5002)
+    threading.Timer(2, wait_for_exit).start()
+    app.run(host="127.0.0.1", port=5002 , debug=True, use_reloader=False)
 
 
